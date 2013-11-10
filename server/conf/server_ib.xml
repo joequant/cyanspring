@@ -1,0 +1,129 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+
+	<import resource="business.xml" />
+	<import resource="strategy.xml" />
+	<import resource="classpath*:conf/common.xml" />
+	<import resource="MarketSession.xml" />
+	<import resource="persistence.xml" />
+
+	<bean id="globalStrategySettings" class="com.cyanspring.common.strategy.GlobalStrategySettings">
+		<property name="checkAdjQuote" value="false"/>
+		<property name="singleOrderCommonDisplayFields" ref="singleOrderCommonDisplayFields"/>
+		<property name="multiInstrumentCommonDisplayFields" ref="multiInstrumentCommonDisplayFields"/>
+		<property name="singleOrderCommonFieldDefs" ref="singleOrderCommonFieldDefs"/>
+		<property name="multiInstrumentCommonFieldDefs" ref="multiInstrumentCommonFieldDefs"/>
+	</bean>
+
+	<bean id="server" class="com.cyanspring.server.Server">
+		<property name = "plugins">
+	        <list>
+            	<ref bean="marketSessionManager"/>
+            	<ref bean="refDataManager"/>
+            	<ref bean="mdManager"/>
+            	<ref bean="downStreamManager"/>
+            	<ref bean="upStreamManager"/>
+	        </list>
+		</property>
+	</bean>
+
+	<bean id="systemInfo" class="com.cyanspring.common.SystemInfo">
+		<property name="env">
+			<value>Test</value>
+		</property>
+		<property name="category">
+			<value>EB</value>
+		</property>
+		<property name="id">
+			<value>S1</value>
+		</property>
+	</bean>	
+	
+	<bean id="transportService" class="com.cyanspring.transport.ActiveMQObjectService">
+		<property name="url" value="tcp://localhost:61616"></property>
+	</bean>
+	
+	<bean id="eventManager" class="com.cyanspring.core.event.RemoteEventManager">
+	    <constructor-arg>
+	    	<ref bean="transportService"/>
+	    </constructor-arg>
+		<property name="embedBroker" value="true"></property>
+	</bean>
+	
+	<bean id="persistenceManager" class="com.cyanspring.server.persistence.PersistenceManager">
+		<property name="textSize" value="4000"></property>
+		<property name="cleanStart" value="false"></property>
+		<property name="todayOnly" value="true"></property>
+	</bean>
+
+	<bean id="mdManager" class="com.cyanspring.server.marketdata.MarketDataManager">
+		    <constructor-arg>
+		    	<ref bean="ibAdaptor"/>
+		    </constructor-arg>
+	</bean>
+
+	<bean id="ibAdaptor" class="com.cyanspring.adaptor.ib.IbAdaptor">
+		<property name="host" value=""/>
+		<property name="port" value="7496"/>
+		<property name="clientId" value="1"/>
+		<property name="logMarketData" value="false"/>
+	</bean>
+
+	<bean id="strategyContainer" class="com.cyanspring.core.strategy.AsyncStrategyContainer" scope="prototype">
+	</bean>
+	
+	<bean id="orderManager" class="com.cyanspring.server.OrderManager">
+	</bean>
+	
+	<bean id="scheduleManager" class="com.cyanspring.common.event.ScheduleManager">
+	</bean>
+	
+	<bean id="tickTable" class="com.cyanspring.common.staticdata.HKexTickTable">
+	</bean>
+
+	<bean id="tickTableManager" class="com.cyanspring.common.staticdata.TickTableManager">
+	</bean>
+	
+	<bean id="businessManager" class="com.cyanspring.server.BusinessManager">
+		<property name="noOfContainers">
+			<value>10</value>
+		</property>
+	</bean>
+
+	<bean id="orderGenerator" class="com.cyanspring.server.OrderGenerator">
+	</bean>
+	
+	<bean id="refDataManager" class="com.cyanspring.common.staticdata.RefDataManager">
+		<property name="refDataFile">
+			<value>refdata/refData_IB.xml</value>
+		</property>
+	</bean>
+	
+	<bean id="downStreamManager" class="com.cyanspring.common.downstream.DownStreamManager">
+	    <constructor-arg>
+	        <list>
+		    	<ref bean="ibAdaptor"/>
+	        </list>
+	    </constructor-arg>
+	    <constructor-arg>
+	        <list>
+	        </list>
+	    </constructor-arg>
+	</bean>
+	
+	<bean id="upStreamManager" class="com.cyanspring.server.upstream.UpStreamManager">
+	    <constructor-arg>
+	        <list>
+	        </list>
+	    </constructor-arg>
+	</bean>
+ 			
+</beans>

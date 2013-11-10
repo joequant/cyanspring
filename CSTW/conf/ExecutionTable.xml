@@ -1,0 +1,72 @@
+<map>
+  <entry>
+    <string>/C:/Projects/algo/CSTW/conf/ExecutionTable.xml</string>
+    <list>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Symbol</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Side</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Qty</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Price</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>id</title>
+        <width>220</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>ExecId</title>
+        <width>196</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Created</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Modified</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Strategy Id</title>
+        <width>191</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Order ID</title>
+        <width>264</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Seq ID</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Parent Order ID</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Server Id</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+    </list>
+  </entry>
+</map>

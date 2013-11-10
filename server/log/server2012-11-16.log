@@ -1,0 +1,154 @@
+16:11:02,018 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@13caecd: startup date [Fri Nov 16 16:11:02 CST 2012]; root of context hierarchy
+16:11:02,127 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+16:11:02,298 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+16:11:02,345 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+16:11:02,423 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\strategy.xml]
+16:11:02,455 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\SingleInstrumentStrategy.xml]
+16:11:02,487 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MultiInstrumentStrategy.xml]
+16:11:02,518 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\CustomStrategy.xml]
+16:11:02,549 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+16:11:02,565 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+16:11:02,596 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+16:11:03,017 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ce2187: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderDisplayFields,strategyFields,sdmaFields,sniperFields,vwapFields,povFields,icebergFields,custom1Fields,inputFields,amendableFields,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,multiInstrumentStrategyDisplayFields,multiInstrumentStrategyDisplayConfiguration,dollarNeutralDisplayConfig,lowHighDisplayConfig,customStrategy2Config,customStrategy3Config,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,sdmaStrategy,povStrategy,sniperStrategy,icebergStrategy,defaulExecutionAnalyzer,defaultExecutionManager,dollarNeutralStrategyFieldConverter,dollarNeutralStrategy,lowHighStrategyFieldConverter,lowHighStrategy,customStrategy1,customStrategy2FieldConverter,customStrategy2,customStrategy3FieldConverter,customStrategy3,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+16:11:04,187 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+16:11:04,187 [main] INFO  Environment  - Hibernate 3.6.3.Final
+16:11:04,187 [main] INFO  Environment  - hibernate.properties not found
+16:11:04,187 [main] INFO  Environment  - Bytecode provider name : javassist
+16:11:04,203 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+16:11:04,375 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+16:11:04,453 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+16:11:04,469 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+16:11:04,469 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+16:11:04,469 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+16:11:04,484 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+16:11:04,484 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+16:11:04,531 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+16:11:04,531 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+16:11:04,531 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+16:11:05,623 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+16:11:05,671 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+16:11:05,671 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+16:11:05,671 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+16:11:05,671 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:11:05,671 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+16:11:05,671 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Connection release mode: on_close
+16:11:05,671 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+16:11:05,671 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:11:05,671 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+16:11:05,671 [main] INFO  SettingsFactory  - Query language substitutions: {}
+16:11:05,671 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Second-level cache: enabled
+16:11:05,671 [main] INFO  SettingsFactory  - Query cache: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+16:11:05,671 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Statistics: disabled
+16:11:05,671 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+16:11:05,687 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+16:11:05,687 [main] INFO  SettingsFactory  - Named query checking : enabled
+16:11:05,687 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+16:11:05,702 [main] INFO  SessionFactoryImpl  - building session factory
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@834cfb
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@330fb9
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4d5575
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1257687
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@db38a4
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@db38a4
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@63a1ae
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@63a1ae
+16:11:05,702 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@10bc995
+16:11:06,014 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+16:11:06,357 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+16:11:06,467 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+16:11:06,467 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+16:11:06,467 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+16:11:06,498 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+16:11:06,638 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+16:11:06,638 [main] INFO  TransportConnector  - Connector tcp://localhost:61616 Started
+16:11:06,638 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-54311-1353053463657-1:1) started
+16:11:06,998 [main] DEBUG Server  - ScheduleManager initialized
+16:11:06,998 [main] DEBUG Server  - PersistenceManager initialized
+16:11:07,872 [main] DEBUG PersistenceManager  - TextObject Records deleted: 0
+16:11:07,872 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+16:11:07,919 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 0
+16:11:07,935 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+16:11:07,966 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+16:11:07,966 [main] DEBUG Server  - OrderManager initialized
+16:11:07,966 [main] DEBUG Server  - BusinessManager initialized
+16:11:08,013 [main] INFO  StrategyFactory  - Registering strategy SDMA to bean sdmaStrategy
+16:11:08,044 [main] INFO  StrategyFactory  - Registering strategy POV to bean povStrategy
+16:11:08,060 [main] INFO  StrategyFactory  - Registering strategy SNIPER to bean sniperStrategy
+16:11:08,091 [main] INFO  StrategyFactory  - Registering strategy ICEBERG to bean icebergStrategy
+16:11:08,107 [main] INFO  StrategyFactory  - Registering strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+16:11:08,122 [main] INFO  StrategyFactory  - Registering strategy LOW_HIGH to bean lowHighStrategy
+16:11:08,138 [main] INFO  StrategyFactory  - Registering strategy CUSTOM1 to bean customStrategy1
+16:11:08,153 [main] INFO  StrategyFactory  - Registering strategy CUSTOM2 to bean customStrategy2
+16:11:08,169 [main] INFO  StrategyFactory  - Registering strategy CUSTOM3 to bean customStrategy3
+16:11:08,185 [main] DEBUG Server  - OrderGenerator initialized
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Fri Nov 16 00:00:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Fri Nov 16 09:00:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Fri Nov 16 09:15:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Fri Nov 16 09:20:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Fri Nov 16 09:30:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Fri Nov 16 12:00:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Fri Nov 16 13:00:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Fri Nov 16 13:30:00 CST 2012
+16:11:08,185 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Fri Nov 16 16:00:00 CST 2012
+16:11:11,570 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+16:11:11,602 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+16:11:11,602 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+16:11:11,602 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+16:11:11,602 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+16:11:11,649 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+16:11:11,649 [main] INFO  SocketInitiator  - SessionTimer started
+16:11:11,664 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+16:11:11,696 [main] INFO  Server  - Published my node info
+16:11:11,696 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+16:11:11,711 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+16:11:11,711 [main] INFO  SocketAcceptor  - SessionTimer started
+16:11:11,711 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+16:11:11,711 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+16:11:11,711 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+16:11:11,742 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+16:11:11,742 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+16:11:11,742 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+16:11:11,742 [main] INFO  TickDataManager  - Existing tick directory: ticks
+16:11:11,742 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+16:11:11,758 [main] INFO  MarketReplay  - Market replay starts at: Fri Nov 16 16:11:11 CST 2012
+16:11:11,758 [main] INFO  MarketReplay  - Market replay ends at: Fri Nov 16 16:11:11 CST 2012
+16:11:12,745 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+16:11:12,745 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+16:11:12,745 [main] INFO  SocketAcceptor  - SessionTimer started
+16:11:12,745 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+16:11:12,745 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+16:11:12,745 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+16:11:12,776 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+16:11:13,746 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+16:11:15,104 [main] DEBUG Server  - 
+16:11:15,104 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+16:11:15,104 [main] DEBUG Server  - 
+16:11:15,104 [main] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.system.NodeInfoEvent=1, class com.cyanspring.common.server.event.MarketDataReadyEvent=2, class com.cyanspring.common.server.event.ServerShutdownEvent=7}
+16:11:15,760 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+16:11:16,727 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:54326
+16:11:16,727 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:54326, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+16:11:17,118 [main] DEBUG RemoteEventManager  - Closing transport...
+16:11:17,118 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-54311-1353053463657-1:1) is shutting down
+16:11:17,696 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+16:11:17,774 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+16:11:18,867 [main] INFO  TransportConnector  - Connector tcp://localhost:61616 Stopped
+16:11:18,867 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-54311-1353053463657-1:1) stopped

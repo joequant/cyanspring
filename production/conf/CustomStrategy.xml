@@ -1,0 +1,143 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<bean id="customStrategy1" class="com.cyanspring.custom.strategy.CustomStrategy1" scope="prototype">
+        <property name="strategyName" value="CUSTOM1"/>
+		<property name="quantityAnalyzer">
+			<bean class="com.cyanspring.custom.strategy.CustomStrategy1QuantityAnalyzer"></bean>	
+		</property>
+		<property name="priceAnalyzer">
+			<bean class="com.cyanspring.custom.strategy.CustomStrategy1PriceAnalyzer"></bean>	
+		</property>
+		<property name="executionAnalyzer">
+			<ref bean="defaulExecutionAnalyzer"/>
+		</property>
+		<property name="executionManager">
+			<ref bean="defaultExecutionManager"/>
+		</property>
+		<property name="strategyFieldDefs">
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<constructor-arg value="Dis Qty"/>
+            		<constructor-arg value="java.lang.Double"/>
+            		<constructor-arg value="true"/>
+            		<constructor-arg value="true"/>
+            		<constructor-arg value="0"/>
+				</bean>
+	        </list>
+		</property>
+	</bean>
+
+	<bean id="customStrategy2FieldConverter" class="com.cyanspring.strategy.multiinstrument.MultiInstrumentFieldConverter">
+		<property name="dataConverter">
+			<bean class="com.cyanspring.common.business.util.GenericDataConverter"/>
+		</property>
+		<property name="strategyLevelCompulsoryFields">
+			<bean class="java.util.ArrayList">       
+			    <constructor-arg>
+			        <list>
+			            <value>Strategy</value>
+			        </list>
+			    </constructor-arg>
+		    </bean>
+		</property>
+		<property name="instrumentLevelCompulsoryFields">
+			<bean class="java.util.ArrayList">       
+			    <constructor-arg>
+			        <list>
+			            <value>Symbol</value>
+			            <value>Leg</value>
+			            <value>Derivative</value>  
+			            <value>Qty</value>  
+			        </list>
+			    </constructor-arg>
+		    </bean>
+		</property>
+		<property name="typeMap">
+			<bean class="java.util.HashMap">
+			    <constructor-arg>
+			  		<map value-type="java.lang.Class" >
+		        		<entry key="Strategy" value="java.lang.String" />
+		        		<entry key="Symbol" value="java.lang.String" />
+		        		<entry key="Leg" value="java.lang.Integer"/>
+		        		<entry key="Derivative" value="java.lang.Boolean"/>
+		        		<entry key="Qty" value="java.lang.Double"/>
+		       		</map>
+			    </constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="customStrategy2" class="com.cyanspring.custom.strategy.CustomStrategy2" scope="prototype">
+       <property name="strategyName" value="CUSTOM2"/>
+		<property name="fieldConverter">
+			<ref bean="customStrategy2FieldConverter"/>
+		</property>
+		<property name="executionAnalyzer">
+			<ref bean="defaulExecutionAnalyzer"/>
+		</property>
+		<property name="executionManager">
+			<ref bean="defaultExecutionManager"/>
+		</property>
+	</bean>
+
+	<bean id="customStrategy3FieldConverter" class="com.cyanspring.strategy.multiinstrument.MultiInstrumentFieldConverter">
+		<property name="dataConverter">
+			<bean class="com.cyanspring.common.business.util.GenericDataConverter"/>
+		</property>
+		<property name="strategyLevelCompulsoryFields">
+			<bean class="java.util.ArrayList">       
+			    <constructor-arg>
+			        <list>
+			            <value>Strategy</value>
+			            <value>Bin Size</value>
+			        </list>
+			    </constructor-arg>
+		    </bean>
+		</property>
+		<property name="instrumentLevelCompulsoryFields">
+			<bean class="java.util.ArrayList">       
+			    <constructor-arg>
+			        <list>
+			            <value>Symbol</value>
+			            <value>Qty</value>
+			            <value>Exit delta</value>
+			        </list>
+			    </constructor-arg>
+		    </bean>
+		</property>
+		<property name="typeMap">
+			<bean class="java.util.HashMap">
+			    <constructor-arg>
+			  		<map value-type="java.lang.Class" >
+		        		<entry key="Strategy" value="java.lang.String" />
+		        		<entry key="Symbol" value="java.lang.String" />
+		        		<entry key="Bin Size" value="java.lang.Integer"/>
+		        		<entry key="Qty" value="java.lang.Double"/>
+		        		<entry key="Exit delta" value="java.lang.Double"/>
+		       		</map>
+			    </constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="customStrategy3" class="com.cyanspring.custom.strategy.CustomStrategy3" scope="prototype">
+       <property name="strategyName" value="CUSTOM3"/>
+		<property name="fieldConverter">
+			<ref bean="customStrategy3FieldConverter"/>
+		</property>
+		<property name="executionAnalyzer">
+			<ref bean="defaulExecutionAnalyzer"/>
+		</property>
+		<property name="executionManager">
+			<ref bean="defaultExecutionManager"/>
+		</property>
+	</bean>
+
+</beans>

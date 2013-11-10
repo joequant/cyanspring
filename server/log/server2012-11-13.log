@@ -1,0 +1,95 @@
+11:55:32,532 [main] INFO  ClassEnumerator  - Reading JAR file: 'conf/cyanspring-dynamic-1.36.jar'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/MANIFEST.MF'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'com/'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'com/cyanspring/'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'com/cyanspring/dynamic/'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'com/cyanspring/dynamic/strategy/'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'conf/'  =>  class 'null'
+11:55:32,548 [main] DEBUG ClassEnumerator  - JarEntry 'com/cyanspring/dynamic/strategy/CustomStrategy1.class'  =>  class 'com.cyanspring.dynamic.strategy.CustomStrategy1'
+11:55:32,579 [main] DEBUG ClassEnumerator  - JarEntry 'com/cyanspring/dynamic/strategy/CustomStrategy1PriceAnalyzer.class'  =>  class 'com.cyanspring.dynamic.strategy.CustomStrategy1PriceAnalyzer'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'com/cyanspring/dynamic/strategy/CustomStrategy1QuantityAnalyzer.class'  =>  class 'com.cyanspring.dynamic.strategy.CustomStrategy1QuantityAnalyzer'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'conf/CustomStrategy5.xml'  =>  class 'null'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/maven/'  =>  class 'null'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/maven/com.cyanspring.dynamic/'  =>  class 'null'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/maven/com.cyanspring.dynamic/cyanspring-dynamic/'  =>  class 'null'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/maven/com.cyanspring.dynamic/cyanspring-dynamic/pom.xml'  =>  class 'null'
+11:55:32,595 [main] DEBUG ClassEnumerator  - JarEntry 'META-INF/maven/com.cyanspring.dynamic/cyanspring-dynamic/pom.properties'  =>  class 'null'
+11:55:32,657 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@11b9fb1: startup date [Tue Nov 13 11:55:32 CST 2012]; root of context hierarchy
+11:55:32,766 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+11:55:32,938 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+11:55:32,969 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+11:55:33,063 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\strategy.xml]
+11:55:33,078 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\SingleInstrumentStrategy.xml]
+11:55:33,110 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MultiInstrumentStrategy.xml]
+11:55:33,142 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\CustomStrategy.xml]
+11:55:33,157 [main] INFO  DefaultListableBeanFactory  - Overriding bean definition for bean 'customStrategy1': replacing [Generic bean: class [com.cyanspring.custom.strategy.CustomStrategy1]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Projects\algo\server\conf\SingleInstrumentStrategy.xml]] with [Generic bean: class [com.cyanspring.custom.strategy.CustomStrategy1]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Projects\algo\server\conf\CustomStrategy.xml]]
+11:55:33,173 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+11:55:33,188 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+11:55:33,204 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+11:55:33,578 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18c56d: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderDisplayFields,strategyFields,sdmaFields,sniperFields,vwapFields,povFields,icebergFields,custom1Fields,inputFields,amendableFields,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,multiInstrumentStrategyDisplayFields,multiInstrumentStrategyDisplayConfiguration,dollarNeutralDisplayConfig,lowHighDisplayConfig,customStrategy2Config,customStrategy3Config,strategyFactory,globalStrategySettings,sdmaStrategy,povStrategy,sniperStrategy,icebergStrategy,customStrategy1,defaulExecutionAnalyzer,defaultExecutionManager,dollarNeutralStrategyFieldConverter,dollarNeutralStrategy,lowHighStrategyFieldConverter,lowHighStrategy,customStrategy2FieldConverter,customStrategy2,customStrategy3FieldConverter,customStrategy3,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+11:55:34,608 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+11:55:34,624 [main] INFO  Environment  - Hibernate 3.6.3.Final
+11:55:34,624 [main] INFO  Environment  - hibernate.properties not found
+11:55:34,624 [main] INFO  Environment  - Bytecode provider name : javassist
+11:55:34,624 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+11:55:34,812 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+11:55:34,874 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+11:55:34,890 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+11:55:34,890 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+11:55:34,890 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+11:55:34,905 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+11:55:34,921 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+11:55:34,952 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+11:55:34,952 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+11:55:34,952 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+11:55:36,091 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+11:55:36,139 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+11:55:36,139 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+11:55:36,139 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+11:55:36,139 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:55:36,139 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+11:55:36,139 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Connection release mode: on_close
+11:55:36,139 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+11:55:36,139 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:55:36,139 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+11:55:36,139 [main] INFO  SettingsFactory  - Query language substitutions: {}
+11:55:36,139 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Second-level cache: enabled
+11:55:36,139 [main] INFO  SettingsFactory  - Query cache: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+11:55:36,139 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+11:55:36,139 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+11:55:36,154 [main] INFO  SettingsFactory  - Statistics: disabled
+11:55:36,154 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+11:55:36,154 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+11:55:36,154 [main] INFO  SettingsFactory  - Named query checking : enabled
+11:55:36,154 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:55:36,170 [main] INFO  SessionFactoryImpl  - building session factory
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@159ea8e
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@159ea8e
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@3650ed
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1fb050c
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1fb050c
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1088a1b
+11:55:36,170 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1a32ea4
+11:55:36,186 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@4b12d9
+11:55:36,186 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@c28cb7
+11:55:36,482 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+11:55:36,856 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+11:55:36,872 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@c51614: startup date [Tue Nov 13 11:55:36 CST 2012]; root of context hierarchy
+11:55:36,872 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d28dfa: defining beans [customStrategy5,defaulExecutionAnalyzer,defaultExecutionManager]; root of factory hierarchy

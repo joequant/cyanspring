@@ -1,0 +1,63 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+	<bean id="marketSessionManager" class="com.cyanspring.common.marketsession.MarketSessionManager">
+	    <constructor-arg>
+	        <list value-type="com.cyanspring.common.marketsession.MarketSessionTime">
+        		<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>AM_NO_TRADING</value></constructor-arg>
+        		    <constructor-arg><value>00:00:00</value></constructor-arg>
+        		    <constructor-arg><value>09:00:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>AM_OPEN_AUCTION</value></constructor-arg>
+        		    <constructor-arg><value>09:00:00</value></constructor-arg>
+        		    <constructor-arg><value>09:15:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>AM_OPEN_AUCTION_MARKET_TYPE_ONLY</value></constructor-arg>
+        		    <constructor-arg><value>09:15:00</value></constructor-arg>
+        		    <constructor-arg><value>09:20:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>AM_OPEN_AUCTION_BLOCKING</value></constructor-arg>
+        		    <constructor-arg><value>09:20:00</value></constructor-arg>
+        		    <constructor-arg><value>09:30:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>AM_CONTINUOUS_TRADING</value></constructor-arg>
+        		    <constructor-arg><value>09:30:00</value></constructor-arg>
+        		    <constructor-arg><value>12:00:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>LUNCH_BLOCKING</value></constructor-arg>
+        		    <constructor-arg><value>12:00:00</value></constructor-arg>
+        		    <constructor-arg><value>13:00:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>LUNCH_BLOCKING_AMEND_CANCEL_ALLOW</value></constructor-arg>
+        		    <constructor-arg><value>13:00:00</value></constructor-arg>
+        		    <constructor-arg><value>13:30:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>PM_CONTINUOUS_TRADING</value></constructor-arg>
+        		    <constructor-arg><value>13:30:00</value></constructor-arg>
+        		    <constructor-arg><value>16:00:00</value></constructor-arg>
+				</bean>	
+       			<bean class="com.cyanspring.common.marketsession.MarketSessionTime">
+        		    <constructor-arg><value>PM_NO_TRADING</value></constructor-arg>
+        		    <constructor-arg><value>16:00:00</value></constructor-arg>
+        		    <constructor-arg><value>23:59:59</value></constructor-arg>
+				</bean>	
+	        </list>
+	    </constructor-arg>
+	</bean>
+
+</beans>

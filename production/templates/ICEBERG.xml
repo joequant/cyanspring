@@ -1,0 +1,87 @@
+<com.cyanspring.common.event.order.EnterParentOrderEvent>
+  <priority>NORMAL</priority>
+  <fields>
+    <entry>
+      <string>isFIX</string>
+      <boolean>false</boolean>
+    </entry>
+    <entry>
+      <string>Type</string>
+      <com.cyanspring.common.type.OrderType>Market</com.cyanspring.common.type.OrderType>
+    </entry>
+    <entry>
+      <string>Strategy</string>
+      <string>ICEBERG</string>
+    </entry>
+    <entry>
+      <string>End Time</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>Server Id</string>
+      <string>Test.EB.S1</string>
+    </entry>
+    <entry>
+      <string>ClOrderId</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>Source</string>
+      <string>950-PC.USER.20120913-151134-573-0001</string>
+    </entry>
+    <entry>
+      <string>Qty</string>
+      <double>100000.0</double>
+    </entry>
+    <entry>
+      <string>id</string>
+      <string>S1-20120913-153242-208-1364P</string>
+    </entry>
+    <entry>
+      <string>Dis Qty</string>
+      <double>2000.0</double>
+    </entry>
+    <entry>
+      <string>Status</string>
+      <com.cyanspring.common.type.OrdStatus>REPLACED</com.cyanspring.common.type.OrdStatus>
+    </entry>
+    <entry>
+      <string>Created</string>
+      <date>2012-09-13 07:32:42.208 UTC</date>
+    </entry>
+    <entry>
+      <string>State</string>
+      <com.cyanspring.common.type.StrategyState>Running</com.cyanspring.common.type.StrategyState>
+    </entry>
+    <entry>
+      <string>Modified</string>
+      <date>2012-09-13 07:33:22.440 UTC</date>
+    </entry>
+    <entry>
+      <string>Symbol</string>
+      <string>0005.HK</string>
+    </entry>
+    <entry>
+      <string>Side</string>
+      <com.cyanspring.common.type.OrderSide>Sell</com.cyanspring.common.type.OrderSide>
+    </entry>
+    <entry>
+      <string>Price</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>Start Time</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>POV limit</string>
+      <double>40.0</double>
+    </entry>
+    <entry>
+      <string>Seq ID</string>
+      <string>S1-20120913-153322-440-0067</string>
+    </entry>
+  </fields>
+  <txId></txId>
+  <fix>false</fix>
+</com.cyanspring.common.event.order.EnterParentOrderEvent>

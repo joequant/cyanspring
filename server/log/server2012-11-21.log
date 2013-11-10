@@ -1,0 +1,328 @@
+13:27:00,603 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1e4457d: startup date [Wed Nov 21 13:27:00 CST 2012]; root of context hierarchy
+13:27:00,710 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+13:27:00,882 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+13:27:00,926 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+13:27:00,984 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\strategy.xml]
+13:27:01,030 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\SingleInstrumentStrategy.xml]
+13:27:01,062 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MultiInstrumentStrategy.xml]
+13:27:01,099 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+13:27:01,123 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+13:27:01,147 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+13:27:01,514 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15253d5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,sdmaStrategy,povStrategy,sniperStrategy,icebergStrategy,defaulExecutionAnalyzer,defaultExecutionManager,dollarNeutralStrategyFieldDefs,dollarNeutralInstrumentFieldDefs,dollarNeutralStrategy,lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+13:27:02,642 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+13:27:02,650 [main] INFO  Environment  - Hibernate 3.6.3.Final
+13:27:02,652 [main] INFO  Environment  - hibernate.properties not found
+13:27:02,656 [main] INFO  Environment  - Bytecode provider name : javassist
+13:27:02,660 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+13:27:02,865 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+13:27:02,930 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+13:27:02,945 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+13:27:02,946 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+13:27:02,948 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+13:27:02,959 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+13:27:02,968 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+13:27:03,007 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+13:27:03,007 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+13:27:03,011 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+13:27:04,409 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+13:27:04,445 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+13:27:04,445 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+13:27:04,447 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+13:27:04,448 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+13:27:04,448 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+13:27:04,448 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+13:27:04,449 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+13:27:04,449 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+13:27:04,449 [main] INFO  SettingsFactory  - Connection release mode: on_close
+13:27:04,449 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+13:27:04,449 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+13:27:04,450 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+13:27:04,450 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+13:27:04,450 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+13:27:04,452 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+13:27:04,452 [main] INFO  SettingsFactory  - Query language substitutions: {}
+13:27:04,452 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+13:27:04,452 [main] INFO  SettingsFactory  - Second-level cache: enabled
+13:27:04,452 [main] INFO  SettingsFactory  - Query cache: disabled
+13:27:04,452 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+13:27:04,453 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+13:27:04,453 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+13:27:04,458 [main] INFO  SettingsFactory  - Statistics: disabled
+13:27:04,458 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+13:27:04,459 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+13:27:04,459 [main] INFO  SettingsFactory  - Named query checking : enabled
+13:27:04,459 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+13:27:04,480 [main] INFO  SessionFactoryImpl  - building session factory
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1429cb2
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1429cb2
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3da850
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1f51e5c
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1f51e5c
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@19c6163
+13:27:04,487 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@834cfb
+13:27:04,488 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@330fb9
+13:27:04,488 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@4d5575
+13:27:04,791 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+13:27:05,019 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+13:27:05,237 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+13:27:05,238 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+13:27:05,238 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+13:27:05,266 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+13:27:05,402 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+13:27:05,402 [main] INFO  TransportConnector  - Connector tcp://localhost:61616 Started
+13:27:05,404 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-52743-1353475622120-1:1) started
+13:27:05,754 [main] DEBUG Server  - ScheduleManager initialized
+13:27:05,754 [main] DEBUG Server  - PersistenceManager initialized
+13:27:06,443 [main] DEBUG PersistenceManager  - TextObject Records deleted: 0
+13:27:06,451 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+13:27:06,485 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 0
+13:27:06,492 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+13:27:06,515 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+13:27:06,518 [main] DEBUG Server  - OrderManager initialized
+13:27:06,518 [main] DEBUG Server  - BusinessManager initialized
+13:27:06,556 [main] INFO  StrategyFactory  - Registered strategy SDMA to bean sdmaStrategy
+13:27:06,578 [main] INFO  StrategyFactory  - Registered strategy POV to bean povStrategy
+13:27:06,599 [main] INFO  StrategyFactory  - Registered strategy SNIPER to bean sniperStrategy
+13:27:06,621 [main] INFO  StrategyFactory  - Registered strategy ICEBERG to bean icebergStrategy
+13:27:06,636 [main] INFO  StrategyFactory  - Registered strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+13:27:06,646 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+13:27:06,660 [main] DEBUG Server  - OrderGenerator initialized
+13:27:06,661 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Wed Nov 21 00:00:00 CST 2012
+13:27:06,661 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Wed Nov 21 09:00:00 CST 2012
+13:27:06,661 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Wed Nov 21 09:15:00 CST 2012
+13:27:06,661 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Wed Nov 21 09:20:00 CST 2012
+13:27:06,661 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Wed Nov 21 09:30:00 CST 2012
+13:27:06,662 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Wed Nov 21 12:00:00 CST 2012
+13:27:06,662 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Wed Nov 21 13:00:00 CST 2012
+13:27:06,662 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Wed Nov 21 13:30:00 CST 2012
+13:27:06,662 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Wed Nov 21 16:00:00 CST 2012
+13:27:08,420 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+13:27:08,437 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+13:27:08,443 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+13:27:08,443 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+13:27:08,444 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+13:27:08,482 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+13:27:08,486 [main] INFO  SocketInitiator  - SessionTimer started
+13:27:08,488 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+13:27:08,515 [main] INFO  Server  - Published my node info
+13:27:08,521 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+13:27:08,526 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+13:27:08,530 [main] INFO  SocketAcceptor  - SessionTimer started
+13:27:08,536 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+13:27:08,536 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+13:27:08,537 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+13:27:08,563 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+13:27:08,565 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+13:27:08,567 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+13:27:08,567 [main] INFO  TickDataManager  - Existing tick directory: ticks
+13:27:08,569 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+13:27:08,575 [main] INFO  MarketReplay  - Market replay starts at: Wed Nov 21 13:27:08 CST 2012
+13:27:08,581 [main] INFO  MarketReplay  - Market replay ends at: Wed Nov 21 13:27:08 CST 2012
+13:27:09,462 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+13:27:09,466 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+13:27:09,466 [main] INFO  SocketAcceptor  - SessionTimer started
+13:27:09,467 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+13:27:09,467 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+13:27:09,467 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+13:27:09,491 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+13:27:10,569 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+13:27:12,569 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+13:27:14,517 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:52763
+13:27:14,518 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:52763, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+13:27:14,569 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+13:27:15,507 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+13:27:16,639 [Thread-26] INFO  Server  - Executions recovered: 1
+13:27:16,733 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-094141-459-0603S assigned to container SC-0
+13:27:16,734 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20121121-094141-459-0603S] Initialize strategy: S1-20121121-094141-459-0603S
+13:27:16,735 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-101259-642-0121S assigned to container SC-1
+13:27:16,735 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: WBC.AX, null
+13:27:16,735 [Thread-26] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.marketdata.QuoteSubEvent=4, class com.cyanspring.common.server.event.DownStreamReadyEvent=1, class com.cyanspring.common.server.event.MarketDataReadyEvent=2, class com.cyanspring.strategy.event.AddStrategyEvent=2, class com.cyanspring.common.event.system.NodeInfoEvent=1}
+13:27:16,735 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20121121-101259-642-0121S] Initialize strategy: S1-20121121-101259-642-0121S
+13:27:16,736 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: ANZ.AX, null
+13:27:16,736 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: RIO.AX, null
+13:27:16,737 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: BHP.AX, null
+13:27:16,737 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+13:27:16,737 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20121121-094141-459-0603S] QuoteEvent: S1-20121121-132716-735-0382 - WBC.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,737 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+13:27:16,738 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-101410-989-1966P assigned to container SC-2
+13:27:16,738 [Thread-SC-2] DEBUG SingleInstrumentStrategy  - [S1-20121121-101410-989-1966P] Initialize strategy: S1-20121121-101410-989-1966P, 0005.HK, 200000.0
+13:27:16,739 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20121121-101259-642-0121S] QuoteEvent: S1-20121121-132716-737-2287 - 0001.HK : [0.0@0.0,0.0@0.0][][]
+13:27:16,740 [Thread-SC-2] DEBUG SingleInstrumentStrategy  - [S1-20121121-101410-989-1966P] Setting strategy end timer: Wed Nov 21 23:00:00 CST 2012
+13:27:16,740 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+13:27:16,740 [Thread-SC-2] DEBUG SingleInstrumentStrategy  - [S1-20121121-101410-989-1966P] QuoteEvent: S1-20121121-132716-738-1723 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+13:27:16,740 [Thread-SC-2] DEBUG SingleInstrumentStrategy  - [S1-20121121-101410-989-1966P] QuoteReplyEvent: S1-20121121-132716-738-1723 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+13:27:16,743 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20121121-094141-459-0603S] QuoteEvent: S1-20121121-132716-736-2195 - ANZ.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,743 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20121121-101259-642-0121S] QuoteEvent: S1-20121121-132716-738-1723 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+13:27:16,743 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20121121-094141-459-0603S] QuoteEvent: S1-20121121-132716-736-2196 - RIO.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,743 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-131920-198-1775P assigned to container SC-3
+13:27:16,743 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20121121-094141-459-0603S] QuoteEvent: S1-20121121-132716-737-2286 - BHP.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,743 [Thread-SC-3] DEBUG SingleInstrumentStrategy  - [S1-20121121-131920-198-1775P] Initialize strategy: S1-20121121-131920-198-1775P, 0005.HK, 20000.0
+13:27:16,744 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+13:27:16,744 [Thread-SC-3] DEBUG SingleInstrumentStrategy  - [S1-20121121-131920-198-1775P] Setting strategy end timer: Wed Nov 21 23:30:00 CST 2012
+13:27:16,745 [Thread-SC-3] DEBUG SingleInstrumentStrategy  - [S1-20121121-131920-198-1775P] QuoteReplyEvent: S1-20121121-132716-738-1723 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+13:27:16,745 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-132358-319-0564P assigned to container SC-4
+13:27:16,745 [Thread-SC-4] DEBUG SingleInstrumentStrategy  - [S1-20121121-132358-319-0564P] Initialize strategy: S1-20121121-132358-319-0564P, 0005.HK, 20000.0
+13:27:16,745 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+13:27:16,746 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-132552-333-0253P assigned to container SC-5
+13:27:16,746 [Thread-SC-4] DEBUG SingleInstrumentStrategy  - [S1-20121121-132358-319-0564P] QuoteReplyEvent: S1-20121121-132716-738-1723 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+13:27:16,746 [Thread-SC-5] DEBUG SingleInstrumentStrategy  - [S1-20121121-132552-333-0253P] Initialize strategy: S1-20121121-132552-333-0253P, 0005.HK, 2000.0
+13:27:16,746 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+13:27:16,746 [Thread-SC-5] DEBUG SingleInstrumentStrategy  - [S1-20121121-132552-333-0253P] Setting strategy end timer: Wed Nov 21 23:00:00 CST 2012
+13:27:16,746 [Thread-SC-5] DEBUG SingleInstrumentStrategy  - [S1-20121121-132552-333-0253P] QuoteReplyEvent: S1-20121121-132716-738-1723 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+13:27:16,746 [Thread-26] DEBUG BusinessManager  - strategy S1-20121121-132627-689-0616S assigned to container SC-6
+13:27:16,747 [Thread-26] INFO  Server  - Strategies recovered: 10
+13:27:16,747 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20121121-132627-689-0616S] Initialize strategy: S1-20121121-132627-689-0616S
+13:27:16,747 [Thread-26] INFO  Server  - Server ready: true
+13:27:16,747 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: BHP.AX, null
+13:27:16,747 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: RIO.AX, null
+13:27:16,747 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: WBC.AX, null
+13:27:16,747 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: ANZ.AX, null
+13:27:16,748 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20121121-132627-689-0616S] QuoteReplyEvent: S1-20121121-132716-737-2286 - BHP.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,748 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20121121-132627-689-0616S] QuoteReplyEvent: S1-20121121-132716-736-2196 - RIO.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,748 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20121121-132627-689-0616S] QuoteReplyEvent: S1-20121121-132716-735-0382 - WBC.AX : [0.0@0.0,0.0@0.0][][]
+13:27:16,749 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20121121-132627-689-0616S] QuoteReplyEvent: S1-20121121-132716-736-2195 - ANZ.AX : [0.0@0.0,0.0@0.0][][]
+13:30:00,000 [Thread-SC-2] DEBUG SingleInstrumentStrategy  - [S1-20121121-101410-989-1966P] Market session has changed to: PM_CONTINUOUS_TRADING
+13:30:00,000 [Thread-SC-3] DEBUG SingleInstrumentStrategy  - [S1-20121121-131920-198-1775P] Market session has changed to: PM_CONTINUOUS_TRADING
+13:30:00,000 [Thread-SC-4] DEBUG SingleInstrumentStrategy  - [S1-20121121-132358-319-0564P] Market session has changed to: PM_CONTINUOUS_TRADING
+13:30:00,000 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20121121-132627-689-0616S] Market session has changed to: PM_CONTINUOUS_TRADING
+13:30:00,000 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20121121-094141-459-0603S] Market session has changed to: PM_CONTINUOUS_TRADING
+13:30:00,000 [Thread-SC-5] DEBUG SingleInstrumentStrategy  - [S1-20121121-132552-333-0253P] Market session has changed to: PM_CONTINUOUS_TRADING
+13:30:00,000 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20121121-101259-642-0121S] Market session has changed to: PM_CONTINUOUS_TRADING
+13:32:00,403 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 4, 14, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 1, 6, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 980, 0
+13:35:33,235 [Thread-SC-0] DEBUG AsyncPriorityEventThread  - Thread-SC-0 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.marketdata.QuoteEvent, 6, 4, 1
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 994, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:35:33,247 [Thread-SC-6] DEBUG AsyncPriorityEventThread  - Thread-SC-6 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 994, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 0, 4, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:35:34,236 [Thread-SC-1] DEBUG AsyncPriorityEventThread  - Thread-SC-1 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.marketdata.QuoteEvent, 4, 2, 2
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 996, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:35:34,240 [Thread-SC-2] DEBUG AsyncPriorityEventThread  - Thread-SC-2 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 996, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 2, 1, 2
+13:35:34,744 [Thread-SC-3] DEBUG AsyncPriorityEventThread  - Thread-SC-3 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:35:34,745 [Thread-SC-4] DEBUG AsyncPriorityEventThread  - Thread-SC-4 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:35:34,746 [Thread-SC-5] DEBUG AsyncPriorityEventThread  - Thread-SC-5 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 0, 1, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:37:00,403 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 4, 14, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 1, 6, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1980, 0
+13:42:00,403 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 4, 14, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 1, 6, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2980, 0
+13:43:53,235 [Thread-SC-0] DEBUG AsyncPriorityEventThread  - Thread-SC-0 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.marketdata.QuoteEvent, 6, 4, 1
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1994, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:43:53,247 [Thread-SC-6] DEBUG AsyncPriorityEventThread  - Thread-SC-6 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1994, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 0, 4, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:43:54,236 [Thread-SC-1] DEBUG AsyncPriorityEventThread  - Thread-SC-1 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.marketdata.QuoteEvent, 4, 2, 2
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1996, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:43:54,240 [Thread-SC-2] DEBUG AsyncPriorityEventThread  - Thread-SC-2 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1996, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 2, 1, 2
+13:43:54,744 [Thread-SC-3] DEBUG AsyncPriorityEventThread  - Thread-SC-3 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:43:54,745 [Thread-SC-4] DEBUG AsyncPriorityEventThread  - Thread-SC-4 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:43:54,746 [Thread-SC-5] DEBUG AsyncPriorityEventThread  - Thread-SC-5 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 0, 1, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:47:00,403 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 4, 14, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 1, 6, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 3980, 0
+13:52:00,403 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 4, 14, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 1, 6, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 4980, 0
+13:52:13,235 [Thread-SC-0] DEBUG AsyncPriorityEventThread  - Thread-SC-0 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.marketdata.QuoteEvent, 6, 4, 1
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2994, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:52:13,247 [Thread-SC-6] DEBUG AsyncPriorityEventThread  - Thread-SC-6 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2994, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 0, 4, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:52:14,236 [Thread-SC-1] DEBUG AsyncPriorityEventThread  - Thread-SC-1 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.marketdata.QuoteEvent, 4, 2, 2
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2996, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:52:14,240 [Thread-SC-2] DEBUG AsyncPriorityEventThread  - Thread-SC-2 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.marketdata.QuoteEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2996, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 2, 1, 2
+13:52:14,744 [Thread-SC-3] DEBUG AsyncPriorityEventThread  - Thread-SC-3 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+13:52:14,745 [Thread-SC-4] DEBUG AsyncPriorityEventThread  - Thread-SC-4 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 0, 1, 0
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 1, 1, 1
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:52:14,746 [Thread-SC-5] DEBUG AsyncPriorityEventThread  - Thread-SC-5 PerfStat: 
+class com.cyanspring.common.marketsession.MarketSessionEvent, 1, 1, 1
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2997, 0
+class com.cyanspring.common.event.marketdata.QuoteReplyEvent, 0, 1, 0
+class com.cyanspring.strategy.event.AddStrategyEvent, 0, 1, 0
+13:56:53,707 [ActiveMQ ShutdownHook] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-52743-1353475622120-1:1) is shutting down

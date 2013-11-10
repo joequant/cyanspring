@@ -1,0 +1,1263 @@
+18:49:59,549 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd: startup date [Tue Apr 30 18:49:59 CST 2013]; root of context hierarchy
+18:49:59,745 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+18:50:00,223 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+18:50:00,298 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+18:50:00,383 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\strategy.xml]
+18:50:00,459 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\built-in.xml]
+18:50:00,571 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+18:50:00,620 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+18:50:00,656 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+18:50:01,925 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+18:50:04,437 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+18:50:04,470 [main] INFO  Environment  - Hibernate 3.6.3.Final
+18:50:04,473 [main] INFO  Environment  - hibernate.properties not found
+18:50:04,496 [main] INFO  Environment  - Bytecode provider name : javassist
+18:50:04,503 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+18:50:04,848 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+18:50:04,946 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+18:50:04,967 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+18:50:04,968 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+18:50:04,969 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+18:50:04,982 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+18:50:04,992 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+18:50:05,108 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+18:50:05,108 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+18:50:05,112 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:50:07,643 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+18:50:07,705 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+18:50:07,705 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+18:50:07,719 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+18:50:07,721 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:50:07,721 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+18:50:07,721 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+18:50:07,723 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+18:50:07,723 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+18:50:07,723 [main] INFO  SettingsFactory  - Connection release mode: on_close
+18:50:07,723 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+18:50:07,723 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+18:50:07,723 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+18:50:07,723 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+18:50:07,723 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:50:07,727 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+18:50:07,728 [main] INFO  SettingsFactory  - Query language substitutions: {}
+18:50:07,728 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+18:50:07,728 [main] INFO  SettingsFactory  - Second-level cache: enabled
+18:50:07,728 [main] INFO  SettingsFactory  - Query cache: disabled
+18:50:07,728 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+18:50:07,730 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+18:50:07,730 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+18:50:07,737 [main] INFO  SettingsFactory  - Statistics: disabled
+18:50:07,737 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+18:50:07,737 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+18:50:07,737 [main] INFO  SettingsFactory  - Named query checking : enabled
+18:50:07,737 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+18:50:07,781 [main] INFO  SessionFactoryImpl  - building session factory
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1508f31
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1e8fa70
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@91f0de
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@15c929a
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@9cd8db
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1612190
+18:50:07,799 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1612190
+18:50:07,800 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@5585dc
+18:50:07,800 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5585dc
+18:50:08,450 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+18:50:09,118 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+18:50:09,624 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+18:50:09,626 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+18:50:09,626 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+18:50:09,816 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+18:50:10,015 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+18:50:10,015 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Started
+18:50:10,018 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-53553-1367319003185-1:1) started
+18:50:10,548 [main] DEBUG Server  - ScheduleManager initialized
+18:50:10,548 [main] DEBUG Server  - PersistenceManager initialized
+18:50:11,734 [main] DEBUG PersistenceManager  - TextObject Records deleted: 2
+18:50:11,744 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+18:50:11,821 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 15
+18:50:11,829 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+18:50:11,925 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+18:50:11,932 [main] DEBUG Server  - OrderManager initialized
+18:50:11,933 [main] DEBUG Server  - BusinessManager initialized
+18:50:11,997 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-custom-1.53.jar
+18:50:12,015 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-custom-1.53.jar'
+18:50:12,055 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy1
+18:50:12,055 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy1.xml from cyanspring-custom-1.53.jar
+18:50:12,061 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,065 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@c1e4d5: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,066 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@188a387: defining beans [customStrategy1]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,100 [main] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy1
+18:50:12,100 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy2
+18:50:12,101 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy2.xml from cyanspring-custom-1.53.jar
+18:50:12,101 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,106 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@114ef62: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,107 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@41647f: defining beans [customStrategy2FieldDefs,customStrategy2InstrumentFieldDefs,customStrategy2]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,122 [main] INFO  StrategyFactory  - Registered strategy CUSTOM2 to bean customStrategy2
+18:50:12,122 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-goldtree-1.53.jar
+18:50:12,122 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-goldtree-1.53.jar'
+18:50:12,137 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.goldtree.strategy.Basin
+18:50:12,137 [main] INFO  StrategyFactory  - Loading conf/Basin.xml from cyanspring-goldtree-1.53.jar
+18:50:12,139 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,143 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@4391f0: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,145 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e574: defining beans [basinStrategyFieldDefs,basinStrategyInstrumentFieldDefs,basinStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,174 [main] INFO  StrategyFactory  - Registered strategy BASIN to bean basinStrategy
+18:50:12,174 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.goldtree.strategy.Vase
+18:50:12,174 [main] INFO  StrategyFactory  - Loading conf/Vase.xml from cyanspring-goldtree-1.53.jar
+18:50:12,175 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,179 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1cc5312: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,179 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cfa965: defining beans [vaseStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,196 [main] INFO  StrategyFactory  - Registered strategy VASE to bean vaseStrategy
+18:50:12,196 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-sample-1.53.jar
+18:50:12,196 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-sample-1.53.jar'
+18:50:12,488 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.DummyStrategy
+18:50:12,488 [main] INFO  StrategyFactory  - Loading conf/DummyStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,491 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,494 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@fae78f: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,495 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e5a5dc: defining beans [dummyStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,506 [main] INFO  StrategyFactory  - Registered strategy DUMMY to bean dummyStrategy
+18:50:12,506 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.MarketMakingStrategy
+18:50:12,506 [main] INFO  StrategyFactory  - Loading conf/MarketMakingStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,507 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,511 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@d8fd1a: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,512 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3de2df: defining beans [markingMakingStrategyFieldDefs,markingMakingStrategyInstrumentFieldDefs,marketMakingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,525 [main] INFO  StrategyFactory  - Registered strategy MARKET_MAKING to bean marketMakingStrategy
+18:50:12,525 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.TrendingStrategy
+18:50:12,525 [main] INFO  StrategyFactory  - Loading conf/TrendingStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,526 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,530 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@169a1c5: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,531 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@eb9f0d: defining beans [trendingStrategyFieldDefs,trendingStrategyInstrumentFieldDefs,trendingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,543 [main] INFO  StrategyFactory  - Registered strategy TRENDING to bean trendingStrategy
+18:50:12,544 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralStrategy
+18:50:12,544 [main] INFO  StrategyFactory  - Loading conf/DollarNeutralStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,545 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,551 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@178e13f: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,552 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ba5a81: defining beans [dollarNeutralStrategyFieldDefs,dollarNeutralInstrumentFieldDefs,dollarNeutralStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,568 [main] INFO  StrategyFactory  - Registered strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+18:50:12,568 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.lowhigh.LowHighStrategy
+18:50:12,568 [main] INFO  StrategyFactory  - Loading conf/LowHighStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,569 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,574 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1335b86: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,575 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a0b94d: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,589 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+18:50:12,589 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.iceberg.IcebergStrategy
+18:50:12,589 [main] INFO  StrategyFactory  - Loading conf/IcebergStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,590 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,593 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1b2e44d: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,594 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f9cbe5: defining beans [icebergStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,605 [main] INFO  StrategyFactory  - Registered strategy ICEBERG to bean icebergStrategy
+18:50:12,605 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.pov.POVStrategy
+18:50:12,605 [main] INFO  StrategyFactory  - Loading conf/POVStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,606 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,609 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@181bd13: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,609 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1947647: defining beans [povStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,620 [main] INFO  StrategyFactory  - Registered strategy POV to bean povStrategy
+18:50:12,621 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sdma.SDMAStrategy
+18:50:12,621 [main] INFO  StrategyFactory  - Loading conf/SDMAStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,622 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,625 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@15cd9a: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,625 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16b352c: defining beans [sdmaStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,635 [main] INFO  StrategyFactory  - Registered strategy SDMA to bean sdmaStrategy
+18:50:12,635 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sniper.SniperStrategy
+18:50:12,636 [main] INFO  StrategyFactory  - Loading conf/SniperStrategy.xml from cyanspring-sample-1.53.jar
+18:50:12,636 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+18:50:12,639 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@53bbfa: startup date [Tue Apr 30 18:50:12 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@18a7efd
+18:50:12,640 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1004a1a: defining beans [sniperStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18d9850
+18:50:12,650 [main] INFO  StrategyFactory  - Registered strategy SNIPER to bean sniperStrategy
+18:50:12,739 [main] INFO  OrderGenerator  - Initialising OrderGenerator
+18:50:12,739 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Tue Apr 30 00:00:00 CST 2013
+18:50:12,739 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Tue Apr 30 09:00:00 CST 2013
+18:50:12,740 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Tue Apr 30 09:15:00 CST 2013
+18:50:12,740 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Tue Apr 30 09:20:00 CST 2013
+18:50:12,740 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Tue Apr 30 09:30:00 CST 2013
+18:50:12,740 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Tue Apr 30 12:00:00 CST 2013
+18:50:12,740 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Tue Apr 30 13:00:00 CST 2013
+18:50:12,741 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Tue Apr 30 13:30:00 CST 2013
+18:50:12,741 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Tue Apr 30 16:00:00 CST 2013
+18:50:12,741 [main] INFO  RefDataManager  - initialising
+18:50:12,836 [main] INFO  MarketDataManager  - initialising
+18:50:12,837 [main] INFO  DownStreamManager  - initialising
+18:50:12,837 [Server] INFO  Server  - Market data is ready: true
+18:50:12,837 [MarketDataManager] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+18:50:16,029 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+18:50:16,111 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+18:50:16,139 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+18:50:16,139 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+18:50:16,139 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+18:50:16,208 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+18:50:16,244 [main] INFO  SocketInitiator  - SessionTimer started
+18:50:16,264 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+18:50:16,301 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+18:50:16,315 [main] INFO  TickDataManager  - Existing tick directory: ticks
+18:50:16,316 [main] INFO  UpStreamManager  - initialising
+18:50:16,316 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+18:50:16,316 [Server] INFO  Server  - Market data is ready: true
+18:50:16,318 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0002.HK, null
+18:50:16,318 [Server] INFO  Server  - Market data is ready: true
+18:50:16,318 [MarketDataManager] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+18:50:16,351 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+18:50:16,380 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+18:50:16,420 [main] INFO  SocketAcceptor  - SessionTimer started
+18:50:16,426 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+18:50:16,426 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+18:50:16,426 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+18:50:16,447 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+18:50:16,450 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+18:50:16,537 [main] INFO  Server  - Published my node info
+18:50:16,546 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+18:50:16,546 [Server] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+18:50:16,600 [main] INFO  MarketReplay  - Market replay starts at: Tue Apr 30 18:50:16 CST 2013
+18:50:16,626 [main] INFO  MarketReplay  - Market replay ends at: Tue Apr 30 18:50:16 CST 2013
+18:50:18,546 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+18:50:19,710 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+18:50:19,755 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+18:50:19,755 [main] INFO  SocketAcceptor  - SessionTimer started
+18:50:19,756 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+18:50:19,756 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+18:50:19,756 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+18:50:19,769 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+18:50:20,546 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+18:50:21,401 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:53571
+18:50:21,415 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:53571, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+18:50:22,294 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+18:50:22,296 [Server] INFO  Server  - Down stream is ready: true
+18:50:22,637 [Thread-27] INFO  Server  - Executions recovered: 0
+18:50:22,706 [Thread-27] INFO  PersistenceManager  - Deleting 0 terminated items
+18:50:22,706 [Thread-27] INFO  Server  - Strategies recovered: 0
+18:50:22,706 [Thread-27] INFO  Server  - Server is ready: true
+18:50:22,707 [Thread-27] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.server.event.ServerReadyEvent=1, class com.cyanspring.common.event.system.NodeInfoEvent=1, class com.cyanspring.common.event.marketdata.QuoteEvent=2, class com.cyanspring.common.event.marketdata.QuoteSubEvent=2, class com.cyanspring.common.server.event.MarketDataReadyEvent=3, class com.cyanspring.common.server.event.DownStreamReadyEvent=1}
+19:17:12,783 [Server] INFO  Server  - Replied my nodeInfo
+19:17:12,801 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130430-191708-646-0001
+19:17:57,894 [BusinessManager] DEBUG BusinessManager  - Enter order failed: Required field [Side] is empty
+20:32:34,504 [QFJ Timer] DEBUG ExchangeFixManager  - logout: FIX.4.2:SIMULATOR->Algo
+20:32:34,505 [QFJ Timer] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+20:32:34,561 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 199
+20:32:45,817 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 4500
+20:32:35,508 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:53898, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+20:32:45,818 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 4400
+20:32:45,818 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 4300
+20:32:35,505 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:53898
+20:32:45,819 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 4200
+20:32:45,819 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 4100
+20:32:45,819 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 4000
+20:32:45,819 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3900
+20:32:45,820 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3800
+20:32:45,820 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3700
+20:32:45,820 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3600
+20:32:45,824 [Server] INFO  Server  - Down stream is ready: true
+20:32:45,823 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+20:32:45,866 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3600
+20:32:45,866 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3500
+20:32:45,866 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3400
+20:32:45,866 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3300
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3200
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3100
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 3000
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2900
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2800
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2700
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2600
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2500
+20:32:45,867 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2400
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2300
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2200
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2100
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 2000
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1900
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1800
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1700
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1600
+20:32:45,868 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1500
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1400
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1300
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1200
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1100
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 1000
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 900
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 800
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 700
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 600
+20:32:45,869 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 500
+20:32:45,870 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 400
+20:32:45,870 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 300
+20:32:45,870 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 200
+20:32:45,870 [MarketDataManager] WARN  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high queue size: 100
+20:32:45,870 [MarketDataManager] INFO  AsyncPriorityEventThread  - Slow consumer thread MarketDataManager high back to normal, queue size: 99
+20:35:08,059 [Server] INFO  Server  - Replied my nodeInfo
+20:35:08,067 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130430-203505-246-0001
+20:35:34,938 [BusinessManager] DEBUG BusinessManager  - strategy S1-20130430-203534-936-2406S assigned to container SC-0
+20:35:34,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Initialize strategy: LOW_HIGH, S1-20130430-203534-936-2406S
+20:35:34,938 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+20:35:34,939 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+20:35:34,939 [Server] INFO  Server  - Market data is ready: true
+20:35:34,994 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Strategy started
+20:35:34,999 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteReplyEvent: S1-20130430-185016-318-0701 - 0001.HK : [0.0@0.0,0.0@0.0][][]
+20:35:35,000 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-203534-939-2226 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+20:35:35,498 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+20:35:35,499 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:35:35,499 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: [[0001.HK, Buy, NEW, LIMIT, [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, null], null], [0005.HK, Buy, NEW, LIMIT, [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, null], null], [0005.HK, Sell, NEW, LIMIT, [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, null], null]]
+20:35:35,501 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20130430-203535-500-0876EI, 20:35:35.500, 
+[0001.HK, Buy, NEW, LIMIT, [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, null], null]
+[0005.HK, Buy, NEW, LIMIT, [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, null], null]
+[0005.HK, Sell, NEW, LIMIT, [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, null], null]
+20:35:35,520 [Thread-SC-0] DEBUG DefaultExecutionManager  - Sending new child order: [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, null]; extra fields: null
+20:35:35,590 [Thread-SC-0] DEBUG FixDownStreamConnection  - New FIX order: S1-20130430-203535-470-0627C, S1-20130430-203535-520-1163X
+20:35:35,591 [Thread-SC-0] DEBUG DefaultExecutionManager  - Sending new child order: [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, null]; extra fields: null
+20:35:35,592 [Thread-SC-0] DEBUG FixDownStreamConnection  - New FIX order: S1-20130430-203535-497-1376C, S1-20130430-203535-591-2343X
+20:35:35,592 [Thread-SC-0] DEBUG DefaultExecutionManager  - Sending new child order: [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, null]; extra fields: null
+20:35:35,592 [Thread-SC-0] DEBUG FixDownStreamConnection  - New FIX order: S1-20130430-203535-498-1487C, S1-20130430-203535-592-1525X
+20:35:35,629 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-203535-628-0636 - 0001.HK : [2000.0@87.0,0.0@0.0][[2000.0, 87.0]][]
+20:35:35,632 [OrderManager] DEBUG OrderManager  - Received child order update: NEW - [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:35:35,632 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: NEW - [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:35:35,633 [OrderManager] DEBUG OrderManager  - Received child order update: NEW - [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+20:35:35,633 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Child order new: S1-20130430-203535-470-0627C
+20:35:35,633 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Received child order update: NEW - [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X], message: null
+20:35:35,635 [OrderManager] DEBUG OrderManager  - Received child order update: NEW - [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+20:35:35,636 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-203535-632-0552 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1], [2000.0, 67.9]][[60000.0, 68.3], [20000.0, 68.4]]
+20:35:35,636 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: NEW - [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+20:35:35,636 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Child order new: S1-20130430-203535-497-1376C
+20:35:35,636 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Received child order update: NEW - [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X], message: null
+20:35:35,636 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: NEW - [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+20:35:35,636 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Child order new: S1-20130430-203535-498-1487C
+20:35:35,637 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Received child order update: NEW - [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X], message: null
+20:35:35,637 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Transaction completed: S1-20130430-203535-500-0876EI, true
+20:35:35,637 [MarketDataManager] DEBUG MarketDataManager  - Sending throttle quote: S1-20130430-203535-633-1936 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1], [2000.0, 67.9]][[60000.0, 68.3], [20000.0, 68.4], [2000.0, 68.5]]
+20:35:35,638 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-203535-633-1936 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1], [2000.0, 67.9]][[60000.0, 68.3], [20000.0, 68.4], [2000.0, 68.5]]
+20:35:35,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:35:35,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:35:35,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:35:36,166 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:40,622 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:41,079 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:41,550 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:42,269 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:43,030 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:43,470 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:44,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:35:44,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:35:44,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:35:44,977 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:45,590 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:46,157 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:46,926 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:47,286 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:51,998 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:52,766 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:52,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:35:52,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:35:52,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:35:53,310 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:53,742 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:59,353 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:35:59,814 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:36:01,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:01,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:01,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:36:02,261 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:36:02,661 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:36:03,109 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130430-203505-246-0001 : S1-20130430-203534-936-2406S
+20:36:09,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:09,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:09,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:36:18,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:18,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:18,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:36:26,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:26,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:26,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:36:35,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:35,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:35,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:36:43,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:43,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:43,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:36:52,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:36:52,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:36:52,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:00,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:00,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:00,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:09,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:09,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:09,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:17,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:17,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:17,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:26,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:26,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:26,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:34,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:34,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:34,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:43,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:43,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:43,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:37:51,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:37:51,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:37:51,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:00,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:00,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:00,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:08,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:08,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:08,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:17,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:17,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:17,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:25,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:25,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:25,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:34,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:34,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:34,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:42,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:42,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:42,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:51,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:51,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:51,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:38:59,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:38:59,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:38:59,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:08,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:08,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:08,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:16,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:16,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:16,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:25,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:25,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:25,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:33,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:33,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:33,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:42,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:42,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:42,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:50,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:50,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:50,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:39:59,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:39:59,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:39:59,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:07,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:07,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:07,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:16,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:16,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:16,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:24,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:24,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:24,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:33,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:33,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:33,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:41,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:41,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:41,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:50,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:50,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:50,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:40:58,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:40:58,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:40:58,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:07,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:07,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:07,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:15,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:15,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:15,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:24,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:24,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:24,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:32,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:32,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:32,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:41,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:41,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:41,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:49,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:49,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:49,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:41:58,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:41:58,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:41:58,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:06,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:06,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:06,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:15,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:15,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:15,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:23,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:23,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:23,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:32,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:32,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:32,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:40,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:40,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:40,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:49,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:49,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:49,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:42:57,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:42:57,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:42:57,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:06,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:06,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:06,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:14,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:14,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:14,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:23,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:23,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:23,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:31,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:31,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:31,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:40,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:40,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:40,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:48,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:48,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:48,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:43:57,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:43:57,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:43:57,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:05,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:05,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:05,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:13,939 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:13,939 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:13,939 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:22,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:22,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:22,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:30,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:30,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:30,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:39,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:39,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:39,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:47,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:47,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:47,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:44:56,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:44:56,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:44:56,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:04,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:04,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:04,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:13,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:13,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:13,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:21,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:21,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:21,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:30,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:30,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:30,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:38,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:38,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:38,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:47,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:47,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:47,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:45:55,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:45:55,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:45:55,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:04,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:04,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:04,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:12,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:12,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:12,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:21,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:21,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:21,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:29,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:29,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:29,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:38,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:38,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:38,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:46,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:46,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:46,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:46:55,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:46:55,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:46:55,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:03,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:03,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:03,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:12,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:12,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:12,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:20,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:20,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:20,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:29,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:29,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:29,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:37,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:37,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:37,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:46,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:46,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:46,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:47:54,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:47:54,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:47:54,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:03,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:03,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:03,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:11,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:11,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:11,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:20,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:20,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:20,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:28,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:28,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:28,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:37,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:37,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:37,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:45,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:45,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:45,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:48:54,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:48:54,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:48:54,438 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:49:02,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Open orders: 
+[S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+[S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+[S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:49:02,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] PriceInstruction: 
+[0001.HK, Buy, 87.0, 2000.0, LIMIT]
+[0005.HK, Buy, 67.9, 2000.0, LIMIT]
+[0005.HK, Sell, 68.5, 2000.0, LIMIT]
+20:49:02,938 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: []
+20:49:06,181 [main] DEBUG Server  - 
+20:49:06,181 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+20:49:06,182 [main] DEBUG Server  - 
+20:49:06,182 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Strategy stopping
+20:49:06,183 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] ExecutionInstruction: [[0005.HK, Buy, CANCEL, LIMIT, [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X], null], [0005.HK, Sell, CANCEL, LIMIT, [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X], null], [0001.HK, Buy, CANCEL, LIMIT, [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X], null]]
+20:49:06,185 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20130430-204906-184-1142EI, 20:49:06.184, 
+[0005.HK, Buy, CANCEL, LIMIT, [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X], null]
+[0005.HK, Sell, CANCEL, LIMIT, [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X], null]
+[0001.HK, Buy, CANCEL, LIMIT, [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X], null]
+20:49:06,185 [Thread-SC-0] DEBUG DefaultExecutionManager  - Canceling child order: [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+20:49:06,187 [Thread-SC-0] DEBUG FixDownStreamConnection  - Cancel FIX order: S1-20130430-203535-497-1376C, S1-20130430-203535-591-2343X
+20:49:06,188 [Thread-SC-0] DEBUG DefaultExecutionManager  - Canceling child order: [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+20:49:06,188 [Thread-SC-0] DEBUG FixDownStreamConnection  - Cancel FIX order: S1-20130430-203535-498-1487C, S1-20130430-203535-592-1525X
+20:49:06,189 [Thread-SC-0] DEBUG DefaultExecutionManager  - Canceling child order: [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, NEW, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:49:06,189 [Thread-SC-0] DEBUG FixDownStreamConnection  - Cancel FIX order: S1-20130430-203535-470-0627C, S1-20130430-203535-520-1163X
+20:49:06,196 [QFJ Message Processor] DEBUG ExchangeFixManager  - canceling order: S1-20130430-203535-591-2343X, 0005.HK, BID
+20:49:06,198 [QFJ Message Processor] DEBUG ExchangeFixManager  - canceling order: S1-20130430-203535-592-1525X, 0005.HK, ASK
+20:49:06,198 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-204906-197-1539 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4], [2000.0, 68.5]]
+20:49:06,199 [OrderManager] DEBUG OrderManager  - Received child order update: CANCELED - [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+20:49:06,200 [QFJ Message Processor] DEBUG ExchangeFixManager  - canceling order: S1-20130430-203535-520-1163X, 0001.HK, BID
+20:49:06,202 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: CANCELED - [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X]
+20:49:06,203 [OrderManager] DEBUG OrderManager  - Received child order update: CANCELED - [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+20:49:06,204 [OrderManager] DEBUG OrderManager  - Received child order update: CANCELED - [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:49:06,221 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Received child order update: CANCELED - [S1-20130430-203535-497-1376C, 0005.HK, Buy, 67.9, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-591-2343X], message: null
+20:49:06,221 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-204906-201-0859 - 0001.HK : [0.0@0.0,0.0@0.0][][]
+20:49:06,221 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: CANCELED - [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X]
+20:49:06,221 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Received child order update: CANCELED - [S1-20130430-203535-498-1487C, 0005.HK, Sell, 68.5, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1684P, S1-20130430-203534-936-2406S, S1-20130430-203535-592-1525X], message: null
+20:49:06,221 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: CANCELED - [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X]
+20:49:06,222 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Received child order update: CANCELED - [S1-20130430-203535-470-0627C, 0001.HK, Buy, 87.0, 2000.0, CANCELED, 0.0, 0.0, LIMIT, S1-20130430-203534-937-1682P, S1-20130430-203534-936-2406S, S1-20130430-203535-520-1163X], message: null
+20:49:06,222 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] Transaction completed: S1-20130430-204906-184-1142EI, true
+20:49:06,236 [MarketDataManager] DEBUG MarketDataManager  - Sending throttle quote: S1-20130430-204906-199-2459 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+20:49:06,236 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130430-203534-936-2406S] QuoteEvent: S1-20130430-204906-199-2459 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+20:49:08,182 [main] INFO  Server  - uninitialising server
+20:49:08,182 [main] INFO  UpStreamManager  - uninitialising
+20:49:08,182 [main] INFO  TickDataManager  - uninitialising
+20:49:08,183 [main] INFO  DownStreamManager  - uninitialising
+20:49:08,183 [main] INFO  MarketDataManager  - uninitialising
+20:49:08,183 [main] INFO  RefDataManager  - uninitialising
+20:49:08,184 [main] DEBUG RemoteEventManager  - Closing transport...
+20:49:08,187 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-53553-1367319003185-1:1) is shutting down
+20:49:09,378 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Stopped
+20:49:09,439 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-53553-1367319003185-1:1) stopped

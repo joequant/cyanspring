@@ -1,0 +1,39 @@
+<com.cyanspring.common.event.order.EnterParentOrderEvent>
+  <priority>NORMAL</priority>
+  <fields>
+    <entry>
+      <string>Qty</string>
+      <string>2000</string>
+    </entry>
+    <entry>
+      <string>Type</string>
+      <string>Limit</string>
+    </entry>
+    <entry>
+      <string>Side</string>
+      <string>Buy</string>
+    </entry>
+    <entry>
+      <string>Symbol</string>
+      <string>0005.HK</string>
+    </entry>
+    <entry>
+      <string>Strategy</string>
+      <string>SDMA</string>
+    </entry>
+    <entry>
+      <string>Price</string>
+      <string>68.25</string>
+    </entry>
+    <entry>
+      <string>Alert</string>
+      <com.cyanspring.common.data.AlertType>ALERT0</com.cyanspring.common.data.AlertType>
+    </entry>
+    <entry>
+      <string>Alert msg</string>
+      <string>This is an alert message xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    </entry>
+  </fields>
+  <txId>20120626-130244-249-0001</txId>
+  <fix>false</fix>
+</com.cyanspring.common.event.order.EnterParentOrderEvent>

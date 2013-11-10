@@ -1,0 +1,134 @@
+<list>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1000</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>0001.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1000</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>0004.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>400</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>0005.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1000</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>0016.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1000</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>0017.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1000</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>1398.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1000</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>27130.HK</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>WBC.AX</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>ANZ.AX</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>BHP.AX</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+  <com.cyanspring.common.staticdata.RefData>
+    <fields>
+      <entry>
+        <string>Lot size</string>
+        <int>1</int>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>RIO.AX</string>
+      </entry>
+    </fields>
+  </com.cyanspring.common.staticdata.RefData>
+</list>

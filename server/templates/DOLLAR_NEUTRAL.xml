@@ -1,0 +1,116 @@
+<com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>
+  <priority>NORMAL</priority>
+  <txId>20120626-130244-297-0505T</txId>
+  <strategy>
+    <entry>
+      <string>Low stop</string>
+      <string>-0.05</string>
+    </entry>
+    <entry>
+      <string>High stop</string>
+      <string>0.05</string>
+    </entry>
+    <entry>
+      <string>Value</string>
+      <string>50000</string>
+    </entry>
+    <entry>
+      <string>Low flat</string>
+      <string>-0.01</string>
+    </entry>
+    <entry>
+      <string>High flat</string>
+      <string>0.01</string>
+    </entry>
+    <entry>
+      <string>High take</string>
+      <string>0.02</string>
+    </entry>
+    <entry>
+      <string>Strategy</string>
+      <string>DOLLAR_NEUTRAL</string>
+    </entry>
+    <entry>
+      <string>Low take</string>
+      <string>-0.02</string>
+    </entry>
+    <entry>
+      <string>Allow diff</string>
+      <string>100</string>
+    </entry>
+  </strategy>
+  <instruments>
+    <map>
+      <entry>
+        <string>Leg</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Weight</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Ref price</string>
+        <string>55</string>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>RIO.AX</string>
+      </entry>
+    </map>
+    <map>
+      <entry>
+        <string>Leg</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Weight</string>
+        <string>2</string>
+      </entry>
+      <entry>
+        <string>Ref price</string>
+        <string>20.5</string>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>WBC.AX</string>
+      </entry>
+    </map>
+    <map>
+      <entry>
+        <string>Leg</string>
+        <string>2</string>
+      </entry>
+      <entry>
+        <string>Weight</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Ref price</string>
+        <string>37</string>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>BHP.AX</string>
+      </entry>
+    </map>
+    <map>
+      <entry>
+        <string>Leg</string>
+        <string>2</string>
+      </entry>
+      <entry>
+        <string>Weight</string>
+        <string>2</string>
+      </entry>
+      <entry>
+        <string>Ref price</string>
+        <string>21.6</string>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>ANZ.AX</string>
+      </entry>
+    </map>
+  </instruments>
+</com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>

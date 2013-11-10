@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+
+		<layout class="org.apache.log4j.PatternLayout"> 
+			<param name="ConversionPattern" value="%d{ABSOLUTE} [%t] %-5p %c{1} %x - %m%n" /> 
+		</layout> 
+	</appender>
+
+	<appender name="FILE" class="org.apache.log4j.rolling.RollingFileAppender">
+		<param name="Append" value="false" />
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+		    <param name="fileNamePattern" value="log/server%d.log" />
+		</rollingPolicy>
+		
+		<layout class="org.apache.log4j.PatternLayout"> 
+			<param name="ConversionPattern" value="%d{ABSOLUTE} [%t] %-5p %c{1} %x - %m%n" /> 
+		</layout> 
+	</appender>
+
+	<category name="org.apache.activemq">
+        <priority value="INFO"/>
+    </category>
+    
+	<category name="org.springframework">
+        <priority value="INFO"/>
+    </category>
+	
+	<category name="com.cyanspring.transport">
+        <priority value="INFO"/>
+    </category>
+	
+ 	<category name="org.hibernate">
+        <priority value="INFO"/>
+    </category>
+    
+ 	<category name="quickfix.mina.message">
+        <priority value="INFO"/>
+    </category>
+
+  	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="FILE" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>

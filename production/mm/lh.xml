@@ -1,0 +1,24 @@
+<list>
+  <webcurve.common.MarketMakerData>
+    <stock>0005.HK</stock>
+    <basePrice>68.2</basePrice>
+    <priceVariant>1.0</priceVariant>
+    <stdFactor>3.0</stdFactor>
+    <tradingMinInterval>500</tradingMinInterval>
+    <tradingMaxInterval>2000</tradingMaxInterval>
+    <minQuantity>400</minQuantity>
+    <maxQuantity>40000</maxQuantity>
+    <lotSize>400</lotSize>
+  </webcurve.common.MarketMakerData>
+  <webcurve.common.MarketMakerData>
+    <stock>0001.HK</stock>
+    <basePrice>87.0</basePrice>
+    <priceVariant>3.0</priceVariant>
+    <stdFactor>3.0</stdFactor>
+    <tradingMinInterval>500</tradingMinInterval>
+    <tradingMaxInterval>2000</tradingMaxInterval>
+    <minQuantity>400</minQuantity>
+    <maxQuantity>40000</maxQuantity>
+    <lotSize>400</lotSize>
+  </webcurve.common.MarketMakerData>
+</list>

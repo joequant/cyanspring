@@ -1,0 +1,1017 @@
+15:34:04,930 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@750159: startup date [Sat Feb 09 15:34:04 CST 2013]; root of context hierarchy
+15:34:05,045 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\server.xml]
+15:34:05,233 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\server_sim.xml]
+15:34:05,279 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\business.xml]
+15:34:05,341 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\strategy.xml]
+15:34:05,380 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/goldtree/target/classes/conf/Vase.xml]
+15:34:05,406 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/goldtree/target/classes/conf/Basin.xml]
+15:34:05,446 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\built-in.xml]
+15:34:05,471 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+15:34:05,493 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\MarketSession.xml]
+15:34:05,518 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\persistence.xml]
+15:34:05,882 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64c34e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,vaseStrategy,basinStrategyFieldDefs,basinStrategyInstrumentFieldDefs,basinStrategy,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+15:34:07,163 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+15:34:07,172 [main] INFO  Environment  - Hibernate 3.6.3.Final
+15:34:07,175 [main] INFO  Environment  - hibernate.properties not found
+15:34:07,179 [main] INFO  Environment  - Bytecode provider name : javassist
+15:34:07,184 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+15:34:07,406 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+15:34:07,480 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+15:34:07,497 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+15:34:07,498 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+15:34:07,499 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+15:34:07,514 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+15:34:07,524 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+15:34:07,566 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+15:34:07,566 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+15:34:07,569 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+15:34:09,178 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+15:34:09,223 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+15:34:09,223 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+15:34:09,225 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+15:34:09,230 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+15:34:09,230 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+15:34:09,230 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+15:34:09,230 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+15:34:09,231 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+15:34:09,231 [main] INFO  SettingsFactory  - Connection release mode: on_close
+15:34:09,231 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+15:34:09,231 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+15:34:09,231 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+15:34:09,231 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+15:34:09,231 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+15:34:09,233 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+15:34:09,233 [main] INFO  SettingsFactory  - Query language substitutions: {}
+15:34:09,234 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+15:34:09,234 [main] INFO  SettingsFactory  - Second-level cache: enabled
+15:34:09,234 [main] INFO  SettingsFactory  - Query cache: disabled
+15:34:09,234 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+15:34:09,235 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+15:34:09,235 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+15:34:09,242 [main] INFO  SettingsFactory  - Statistics: disabled
+15:34:09,242 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+15:34:09,242 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+15:34:09,242 [main] INFO  SettingsFactory  - Named query checking : enabled
+15:34:09,242 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+15:34:09,268 [main] INFO  SessionFactoryImpl  - building session factory
+15:34:09,276 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5585dc
+15:34:09,276 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@c736e4
+15:34:09,276 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@e4e358
+15:34:09,276 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@e4e358
+15:34:09,276 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@109dc35
+15:34:09,276 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@58213c
+15:34:09,277 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1ee04fd
+15:34:09,277 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1ee04fd
+15:34:09,277 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1898115
+15:34:09,644 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+15:34:09,853 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+15:34:09,968 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+15:34:09,970 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+15:34:09,970 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+15:34:10,005 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+15:34:10,148 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+15:34:10,148 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Started
+15:34:10,150 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-55561-1360395246335-1:1) started
+15:34:10,518 [main] DEBUG Server  - ScheduleManager initialized
+15:34:10,518 [main] DEBUG Server  - PersistenceManager initialized
+15:34:11,472 [main] DEBUG PersistenceManager  - TextObject Records deleted: 0
+15:34:11,483 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+15:34:11,525 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 0
+15:34:11,534 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+15:34:11,557 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+15:34:11,562 [main] DEBUG Server  - OrderManager initialized
+15:34:11,562 [main] DEBUG Server  - BusinessManager initialized
+15:34:11,598 [main] INFO  StrategyFactory  - Registered strategy VASE to bean vaseStrategy
+15:34:11,613 [main] INFO  StrategyFactory  - Registered strategy BASIN to bean basinStrategy
+15:34:11,631 [main] INFO  OrderGenerator  - Initialising OrderGenerator
+15:34:11,631 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Sat Feb 09 00:00:00 CST 2013
+15:34:11,631 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Sat Feb 09 09:00:00 CST 2013
+15:34:11,631 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Sat Feb 09 09:15:00 CST 2013
+15:34:11,631 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Sat Feb 09 09:20:00 CST 2013
+15:34:11,631 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Sat Feb 09 09:30:00 CST 2013
+15:34:11,632 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Sat Feb 09 12:00:00 CST 2013
+15:34:11,632 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Sat Feb 09 13:00:00 CST 2013
+15:34:11,632 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Sat Feb 09 13:30:00 CST 2013
+15:34:11,632 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Sat Feb 09 16:00:00 CST 2013
+15:34:11,632 [main] INFO  RefDataManager  - initialising
+15:34:12,057 [main] INFO  MarketDataManager  - initialising
+15:34:12,058 [main] INFO  DownStreamManager  - initialising
+15:34:12,058 [MarketDataManager] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+15:34:12,058 [Server] INFO  Server  - Market data is ready: true
+15:34:15,453 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+15:34:15,474 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+15:34:15,483 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+15:34:15,483 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+15:34:15,483 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+15:34:15,533 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+15:34:15,749 [main] INFO  SocketInitiator  - SessionTimer started
+15:34:15,751 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+15:34:15,753 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+15:34:15,753 [main] INFO  TickDataManager  - Existing tick directory: ticks
+15:34:15,754 [main] INFO  UpStreamManager  - initialising
+15:34:15,754 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+15:34:15,756 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0002.HK, null
+15:34:15,756 [MarketDataManager] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+15:34:15,756 [Server] INFO  Server  - Market data is ready: true
+15:34:15,757 [Server] INFO  Server  - Market data is ready: true
+15:34:15,760 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+15:34:15,763 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+15:34:15,768 [main] INFO  SocketAcceptor  - SessionTimer started
+15:34:15,774 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+15:34:15,774 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+15:34:15,774 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+15:34:15,812 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+15:34:15,814 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+15:34:15,850 [main] INFO  Server  - Published my node info
+15:34:15,852 [Server] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+15:34:15,852 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+15:34:15,859 [main] INFO  MarketReplay  - Market replay starts at: Sat Feb 09 15:34:15 CST 2013
+15:34:15,867 [main] INFO  MarketReplay  - Market replay ends at: Sat Feb 09 15:34:15 CST 2013
+15:34:16,912 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+15:34:16,916 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+15:34:16,916 [main] INFO  SocketAcceptor  - SessionTimer started
+15:34:16,917 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+15:34:16,917 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+15:34:16,917 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+15:34:16,945 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+15:34:17,852 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+15:34:19,852 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+15:34:20,789 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:55581
+15:34:20,791 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:55581, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+15:34:21,564 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+15:34:21,567 [Server] INFO  Server  - Down stream is ready: true
+15:34:21,920 [Thread-27] INFO  Server  - Executions recovered: 1
+15:34:22,000 [Thread-27] INFO  PersistenceManager  - Deleting 0 terminated items
+15:34:22,001 [Thread-27] DEBUG BusinessManager  - strategy S1-20130209-150442-621-0737S assigned to container SC-0
+15:34:22,001 [Thread-27] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.strategy.AddStrategyEvent=1, class com.cyanspring.common.server.event.MarketDataReadyEvent=3, class com.cyanspring.common.event.marketdata.QuoteSubEvent=2, class com.cyanspring.common.event.marketdata.QuoteEvent=2, class com.cyanspring.common.server.event.DownStreamReadyEvent=1, class com.cyanspring.common.event.system.NodeInfoEvent=1}
+15:34:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Initialize strategy: BASIN, S1-20130209-150442-621-0737S
+15:34:22,002 [Thread-27] DEBUG BusinessManager  - strategy S1-20130209-151530-131-1961S assigned to container SC-1
+15:34:22,002 [Thread-27] INFO  Server  - Strategies recovered: 2
+15:34:22,002 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Initialize strategy: BASIN, S1-20130209-151530-131-1961S
+15:34:22,002 [Thread-27] INFO  Server  - Server is ready: true
+15:34:22,002 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 5, null
+15:34:22,003 [Server] INFO  Server  - Market data is ready: true
+15:34:22,004 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 5, null
+15:34:22,005 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] QuoteReplyEvent: S1-20130209-153422-003-1942 - 5 : [0.0@0.0,0.0@0.0][][]
+15:34:22,007 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Strategy started
+15:34:22,009 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Strategy started
+15:34:22,011 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] QuoteEvent: S1-20130209-153422-003-1942 - 5 : [0.0@0.0,0.0@0.0][][]
+15:34:22,504 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:34:22,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:34:22,504 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:34:22,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:34:22,504 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:34:22,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:34:26,897 [Server] INFO  Server  - Replied my nodeInfo
+15:34:26,914 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130209-153423-954-0001
+15:34:29,768 [OrderManager] DEBUG OrderManager  - Adding execution subscription: 950-PC.USER.20130209-153423-954-0001 : S1-20130209-151530-131-1961S
+15:34:29,773 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-153423-954-0001 : S1-20130209-151530-131-1961S
+15:34:31,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:34:31,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:34:31,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:34:31,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:34:31,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:34:31,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:34:33,297 [OrderManager] DEBUG OrderManager  - Adding execution subscription: 950-PC.USER.20130209-153423-954-0001 : S1-20130209-151530-131-1961S
+15:34:33,299 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-153423-954-0001 : S1-20130209-151530-131-1961S
+15:34:39,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:34:39,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:34:39,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:34:39,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:34:39,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:34:39,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:34:48,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:34:48,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:34:48,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:34:48,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:34:48,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:34:48,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:34:56,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:34:56,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:34:56,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:34:56,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:34:56,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:34:56,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:05,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:05,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:05,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:05,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:05,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:05,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:13,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:13,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:13,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:13,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:13,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:13,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:22,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:22,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:22,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:30,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:30,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:30,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:30,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:30,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:30,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:39,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:39,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:39,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:39,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:39,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:39,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:47,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:47,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:47,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:47,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:47,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:47,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:35:56,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:35:56,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:35:56,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:35:56,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:35:56,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:35:56,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:04,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:04,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:04,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:04,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:04,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:04,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:13,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:13,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:13,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:13,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:13,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:13,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:21,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:21,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:21,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:21,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:21,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:21,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:30,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:30,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:30,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:30,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:30,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:30,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:38,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:38,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:38,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:38,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:38,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:38,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:47,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:47,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:47,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:47,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:47,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:47,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:36:55,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:36:55,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:36:55,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:36:55,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:36:55,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:36:55,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:04,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:04,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:04,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:04,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:04,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:04,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:12,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:12,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:12,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:12,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:12,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:12,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:21,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:21,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:21,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:21,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:21,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:21,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:29,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:29,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:29,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:29,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:29,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:29,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:38,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:38,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:38,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:38,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:38,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:38,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:46,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:46,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:46,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:46,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:46,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:46,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:37:55,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:37:55,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:37:55,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:37:55,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:37:55,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:37:55,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:03,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:03,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:03,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:03,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:03,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:03,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:12,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:12,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:12,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:12,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:12,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:12,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:20,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:20,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:20,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:20,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:20,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:20,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:29,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:29,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:29,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:29,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:29,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:29,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:37,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:37,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:37,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:37,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:37,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:37,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:44,567 [Server] INFO  Server  - Replied my nodeInfo
+15:38:44,575 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130209-153841-795-0001
+15:38:46,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:46,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:46,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:46,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:46,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:46,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:38:46,523 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-153841-795-0001 : S1-20130209-151530-131-1961S
+15:38:48,165 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-153841-795-0001 : S1-20130209-151530-131-1961S
+15:38:54,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:38:54,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:38:54,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:38:54,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:38:54,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:38:54,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:03,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:03,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:03,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:03,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:03,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:03,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:11,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:11,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:11,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:11,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:11,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:11,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:20,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:20,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:20,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:20,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:20,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:20,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:28,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:28,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:28,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:28,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:28,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:28,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:37,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:37,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:37,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:37,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:37,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:37,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:45,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:45,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:45,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:45,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:45,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:45,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:39:54,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:39:54,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:39:54,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:39:54,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:39:54,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:39:54,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:02,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:02,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:02,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:02,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:02,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:02,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:11,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:11,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:11,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:11,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:11,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:11,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:19,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:19,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:19,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:19,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:19,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:19,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:28,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:28,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:28,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:28,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:28,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:28,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:36,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:36,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:36,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:36,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:36,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:36,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:45,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:45,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:45,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:45,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:45,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:45,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:40:53,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:40:53,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:40:53,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:40:53,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:40:53,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:40:53,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:02,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:02,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:02,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:02,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:02,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:02,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:10,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:10,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:10,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:10,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:10,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:10,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:19,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:19,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:19,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:19,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:19,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:19,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:27,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:27,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:27,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:27,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:27,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:27,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:36,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:36,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:36,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:36,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:36,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:36,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:44,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:44,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:44,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:44,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:44,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:44,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:41:53,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:41:53,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:41:53,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:41:53,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:41:53,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:41:53,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:01,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:01,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:01,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:01,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:01,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:01,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:10,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:10,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:10,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:10,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:10,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:10,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:18,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:18,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:18,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:18,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:18,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:18,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:27,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:27,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:27,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:27,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:27,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:27,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:35,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:35,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:35,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:35,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:35,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:35,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:44,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:44,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:44,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:44,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:44,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:44,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:42:52,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:42:52,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:42:52,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:42:52,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:42:52,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:42:52,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:01,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:01,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:01,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:01,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:01,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:01,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:09,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:09,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:09,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:09,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:09,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:09,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:18,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:18,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:18,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:18,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:18,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:18,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:26,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:26,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:26,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:26,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:26,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:26,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:35,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:35,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:35,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:35,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:35,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:35,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:43,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:43,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:43,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:43,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:43,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:43,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:43:52,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:43:52,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:43:52,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:43:52,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:43:52,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:43:52,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:00,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:00,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:00,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:00,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:00,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:00,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:09,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:09,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:09,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:09,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:09,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:09,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:17,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:17,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:17,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:17,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:17,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:17,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:23,380 [Server] INFO  Server  - Replied my nodeInfo
+15:44:23,388 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130209-154420-687-0001
+15:44:25,766 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-154420-687-0001 : S1-20130209-151530-131-1961S
+15:44:26,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:26,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:26,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:26,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:26,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:26,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:34,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:34,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:34,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:34,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:34,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:34,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:43,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:43,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:43,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:43,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:43,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:43,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:44:51,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:44:51,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:44:51,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:44:51,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:44:51,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:44:51,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:00,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:00,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:00,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:00,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:00,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:00,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:08,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:08,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:08,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:08,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:08,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:08,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:17,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:17,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:17,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:17,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:17,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:17,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:25,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:25,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:25,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:25,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:25,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:25,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:34,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:34,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:34,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:34,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:34,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:34,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:42,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:42,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:42,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:42,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:42,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:42,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:51,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:51,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:51,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:51,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:51,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:51,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:45:59,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:45:59,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:45:59,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:45:59,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:45:59,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:45:59,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:07,503 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:07,503 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:07,503 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:08,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:08,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:08,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:16,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:16,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:16,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:16,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:16,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:16,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:24,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:24,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:24,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:25,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:25,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:25,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:33,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:33,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:33,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:33,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:33,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:33,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:41,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:41,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:41,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:42,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:42,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:42,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:50,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:50,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:50,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:50,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:50,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:50,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:46:58,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:46:58,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:46:58,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:46:59,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:46:59,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:46:59,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:07,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:07,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:07,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:07,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:07,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:07,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:15,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:15,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:15,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:16,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:16,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:16,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:24,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:24,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:24,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:24,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:24,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:24,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:32,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:32,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:32,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:33,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:33,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:33,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:41,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:41,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:41,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:41,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:41,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:41,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:49,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:49,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:49,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:50,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:50,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:50,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:47:58,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:47:58,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:47:58,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:47:58,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:47:58,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:47:58,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:06,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:06,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:06,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:07,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:07,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:07,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:15,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:15,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:15,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:15,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:15,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:15,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:23,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:23,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:23,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:24,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:24,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:24,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:32,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:32,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:32,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:32,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:32,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:32,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:40,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:40,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:40,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:41,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:41,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:41,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:49,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:49,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:49,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:49,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:49,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:49,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:48:57,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:48:57,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:48:57,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:48:58,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:48:58,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:48:58,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:06,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:06,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:06,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:06,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:06,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:06,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:14,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:14,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:14,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:15,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:15,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:15,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:21,429 [Server] INFO  Server  - Replied my nodeInfo
+15:49:21,436 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130209-154918-631-0001
+15:49:23,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:23,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:23,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:23,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:23,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:23,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:24,125 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-154918-631-0001 : S1-20130209-150442-621-0737S
+15:49:31,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:31,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:31,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:32,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:32,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:32,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:39,758 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-154918-631-0001 : S1-20130209-151530-131-1961S
+15:49:40,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:40,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:40,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:40,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:40,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:40,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:40,556 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-154918-631-0001 : S1-20130209-150442-621-0737S
+15:49:42,090 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130209-154918-631-0001 : S1-20130209-150442-621-0737S
+15:49:48,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:48,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:48,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:49,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:49,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:49,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:49:57,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:49:57,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:49:57,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:49:57,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:49:57,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:49:57,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:05,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:05,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:05,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:06,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:06,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:06,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:14,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:14,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:14,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:14,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:14,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:14,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:22,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:22,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:22,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:23,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:23,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:23,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:31,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:31,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:31,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:31,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:31,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:31,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:39,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:39,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:39,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:40,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:40,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:40,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:48,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:48,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:48,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:48,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:48,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:48,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:50:56,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:50:56,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:50:56,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:50:57,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:50:57,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:50:57,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:05,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:05,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:05,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:05,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:05,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:05,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:13,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:13,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:13,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:14,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:14,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:14,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:22,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:22,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:22,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:22,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:30,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:30,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:30,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:31,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:31,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:31,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:39,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:39,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:39,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:39,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:39,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:39,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:47,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:47,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:47,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:48,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:48,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:48,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:51:56,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:51:56,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:51:56,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:51:56,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:51:56,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:51:56,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:04,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:04,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:04,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:05,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:05,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:05,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:13,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:13,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:13,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:13,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:13,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:13,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:21,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:21,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:21,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:22,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:22,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:22,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:30,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:30,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:30,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:30,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:30,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:30,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:38,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:38,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:38,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:39,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:39,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:39,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:47,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:47,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:47,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:47,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:47,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:47,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:52:55,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:52:55,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:52:55,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:52:56,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:52:56,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:52:56,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:53:04,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:53:04,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:53:04,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:53:04,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:53:04,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:53:04,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:53:12,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:53:12,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:53:12,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:53:13,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:53:13,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:53:13,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:53:21,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:53:21,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:53:21,002 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:53:21,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:53:21,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:53:21,504 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:53:29,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Open orders: 
+15:53:29,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] PriceInstruction: 
+15:53:29,502 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] ExecutionInstruction: []
+15:53:30,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Open orders: 
+15:53:30,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] PriceInstruction: 
+15:53:30,004 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] ExecutionInstruction: []
+15:53:34,033 [main] DEBUG Server  - 
+15:53:34,033 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+15:53:34,033 [main] DEBUG Server  - 
+15:53:34,037 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130209-150442-621-0737S] Strategy stopping
+15:53:34,038 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130209-151530-131-1961S] Strategy stopping
+15:53:36,037 [main] INFO  Server  - uninitialising server
+15:53:36,037 [main] INFO  UpStreamManager  - uninitialising
+15:53:36,037 [main] INFO  TickDataManager  - uninitialising
+15:53:36,041 [main] INFO  DownStreamManager  - uninitialising
+15:53:36,041 [main] INFO  MarketDataManager  - uninitialising
+15:53:36,041 [main] INFO  RefDataManager  - uninitialising
+15:53:36,042 [main] DEBUG RemoteEventManager  - Closing transport...
+15:53:36,045 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-55561-1360395246335-1:1) is shutting down
+15:53:36,730 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Stopped
+15:53:36,757 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-55561-1360395246335-1:1) stopped

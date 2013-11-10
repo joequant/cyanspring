@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.cyanspring.algo</groupId>
+		<artifactId>algo</artifactId>
+		<version>1.65</version>
+	</parent>
+	<groupId>com.cyanspring.transport</groupId>
+	<artifactId>cyanspring-transport</artifactId>
+	<packaging>jar</packaging>
+	<name>cyanspring-transport</name>
+	<url>http://www.cyanspring.com</url>
+	<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+  
+  	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+				  <execution>
+				    <id>copy-resources</id>
+				    <phase>install</phase>
+				    <goals>
+				      <goal>copy-resources</goal>
+				    </goals>
+				    <configuration>
+				      <outputDirectory>${basedir}/../CSTWjars</outputDirectory>
+				      <resources>          
+					<resource>
+					  <directory>${basedir}/target</directory>
+					  <filtering>false</filtering>
+					  <includes>
+					    <include>*.jar</include>
+					  </includes>
+					</resource>
+				      </resources>              
+				    </configuration>            
+				  </execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+	</build>
+
+  <dependencies>
+	<dependency>
+		<groupId>org.apache.activemq</groupId>
+		<artifactId>activemq-core</artifactId>
+		<version>5.5.0</version>
+	</dependency>
+	<dependency>
+		<groupId>com.cyanspring.common</groupId>
+		<artifactId>cyanspring-common</artifactId>
+		<version>${project.parent.version}</version>
+	</dependency>
+  </dependencies>
+</project>

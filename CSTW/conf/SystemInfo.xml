@@ -1,0 +1,6 @@
+<com.cyanspring.common.SystemInfo>
+  <env>Test</env>
+  <category>EB</category>
+  <id>CSTW</id>
+  <url>tcp://localhost:61616</url>
+</com.cyanspring.common.SystemInfo>

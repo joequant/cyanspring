@@ -1,0 +1,34 @@
+# File Name: Replay Samples.txt
+# Market replay file format:
+#
+#	ACTION,CLIENT_ORDER_ID,STOCK,SIDE,TYPE,PRICE,QUANTITY,DATE
+#
+# Total 8 fixed fields:
+# ACTION             Valid chars are (N)ew, (A)mend, (C)ancel
+# CLIENT_ORDER_ID    Client order id provided by user. Duplicates are not allowed. 
+#                    It's used by damend and cancel actions		
+# STOCK              Stock code
+# SIDE               (B)uy or (S)ell
+# TYPE               (L)imit or (M)arket
+# PRICE              The order price
+# QUANTITY           The order quantity
+# DATE               java date format of "yyyy.MM.dd HH:mm:ss.SSS" only
+#
+#Notes:
+#   1) Assumes action by each line follows strict time order
+#   2) Out of time order causes the next line being executed immediately after the previous one
+#   3) First line will be executed immediately(assumed it's NOW), 
+#      and the rest will be executed by the time difference.
+#   4) For amend, only quantity or price change is valid. Put value 0 if it is not changed.
+#   5) MarketReplay provides a timeFactor parameter which will either accelerate(positive value)
+#      or decelerate(negative value) the replay speed. 
+#      e.g 4 means 4 times faster and -4 means 4 times slower
+N,CL001,0005.HK,B,L,68.20,8000,2009.05.22 13:05:10.231
+N,CL002,0005.HK,S,L,68.20,400,2009.05.22 13:05:15.531
+N,CL003,0005.HK,S,M,0.0,2000,2009.05.22 13:05:19.000
+N,CL004,0005.HK,S,L,68.30,6000,2009.05.22 13:05:20.000
+N,CL005,0005.HK,B,L,68.10,4000,2009.05.22 13:05:23.000
+N,CL006,0005.HK,S,L,68.40,2000,2009.05.22 13:05:26.000
+C,CL001,0005.HK,B,L,0,0,2009.05.22 13:05:29.327
+A,CL005,0005.HK,B,L,68.15,0,2009.05.22 13:05:32.423
+N,CL007,0005.HK,B,L,68.10,3200,2009.05.22 13:05:35.000

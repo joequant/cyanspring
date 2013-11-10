@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cyanspring.jars</groupId>
+	<artifactId>cyanspring-jars</artifactId>
+	<version>1.65</version>
+	<name>cyanspring-jars</name>
+	<url>http://www.cyanspring.com</url>
+
+  	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install-1</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals> 
+						<configuration>
+							<artifactId>cyanspring-core</artifactId>
+							<groupId>com.cyanspring.core</groupId>
+							<version>${project.version}</version>
+							<file>cyanspring-core-${project.version}.jar</file>
+							<packaging>jar</packaging>
+						</configuration>
+					</execution>
+					<execution>
+						<id>install-2</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals> 
+						<configuration>
+							<artifactId>quickfixj-all</artifactId>
+							<groupId>quickfixj</groupId>
+							<version>1.5.1</version>
+							<file>quickfixj-all-1.5.1.jar</file>
+							<packaging>jar</packaging>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+	    </plugins>
+	</build>
+
+	
+</project>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            icon="icons/Leaves16.png">
+         <run
+               class="com.cyanspring.cstw.gui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.cyanspring.cstw.gui.Perspective"
+            icon="icons/Leaves16.png"
+            id="CSTW.perspective"
+            name="Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="true"
+            class="com.cyanspring.cstw.gui.SingleOrderStrategyView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.ParentOrderView"
+            name="Single Order Strategy"
+            restorable="true">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.ChildOrderView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.ChildOrderView"
+            name="Child Orders"
+            restorable="true">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.PropertyView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.PropertyView"
+            name="Strategy Properties"
+            restorable="true">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.MarketDataView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.MarketDataView"
+            name="Market Data">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.StrategyLogView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.StrategyLogView"
+            name="Strategy Log">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.ExecutionView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.ExecutionView"
+            name="Executions"
+            restorable="true">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.MultiInstrumentStrategyView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.MultiInstrumentStrategyView"
+            name="Multi Instrument Strategy"
+            restorable="true">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.MarketDataView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.MarketDataView2"
+            name="Market Data">
+      </view>
+      <view
+            class="com.cyanspring.cstw.gui.SingleInstrumentStrategyView"
+            icon="icons/Leaves16.png"
+            id="com.cyanspring.cstw.gui.SingleInstrumentStrategyView"
+            name="Single Instrument Strategy"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="CSTW.perspective">
+         <view
+               closeable="false"
+               id="com.cyanspring.cstw.gui.StrategyLogView"
+               minimized="false"
+               relationship="stack">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="CSTW.LoadStrategyCommand"
+                  label="Load strategy"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit">
+            </command>
+         </menu>
+         <menu
+               label="Windows">
+            <command
+                  commandId="CSTW.SingleInstrumentStrategyView"
+                  label="Single Instrument Strategy"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.MultiOrderStrategyView"
+                  label="Multi Instrument Strategy"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.ParentOrderView"
+                  label="Single Order Strategy"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.OrderPropertyView"
+                  label="Strategy Properties"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.ChildOrderView"
+                  label="Child Orders"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.StrategyLogView"
+                  label="Strategy Logs"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.ExecutionView"
+                  label="Executions"
+                  style="push">
+            </command>
+            <command
+                  commandId="CSTW.MarketDataView"
+                  label="Market Data"
+                  style="push">
+            </command>
+            <menu
+                  label="New">
+               <command
+                     commandId="CSTW.new.ParentOrderView"
+                     label="Single Order Strategy"
+                     style="push">
+               </command>
+            </menu>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.cyanspring.cstw.application"
+            name="CSTW">
+         <property
+               name="appName"
+               value="CSTW">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/Leaves16.png,icons/Leaves32.png,icons/Leaves48.png,icons/Leaves64.png,icons/Leaves128.png">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.NewSingleOrderStrategyViewCommand"
+            description="Create a new single order strategy view"
+            id="CSTW.new.ParentOrderView"
+            name="Parent Order View">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.PropertyViewCommand"
+            description="Show strategy property window"
+            id="CSTW.OrderPropertyView"
+            name="Properties">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.SingleOrderStrategyViewCommand"
+            description="Show primary single order strategy view"
+            id="CSTW.ParentOrderView"
+            name="Single Order Strategies">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.ChildOrderViewCommand"
+            description="Show child orders"
+            id="CSTW.ChildOrderView"
+            name="Child Orders">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.StrategyLogViewCommand"
+            description="Show strategy logs"
+            id="CSTW.StrategyLogView"
+            name="Strategy Logs">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.MultiInstrumentStrategyViewCommand"
+            description="Show multi-instrument strategies"
+            id="CSTW.MultiOrderStrategyView"
+            name="Multi-instrument Strategies">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.LoadStrategyCommand"
+            description="Load a strategy from xml file"
+            id="CSTW.LoadStrategyCommand"
+            name="Load strategy">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.ExecutionViewCommand"
+            description="Show executions"
+            id="CSTW.ExecutionView"
+            name="Executions">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.MarketDataViewCommand"
+            description="Show market depth"
+            id="CSTW.MarketDataView"
+            name="Market Depth">
+      </command>
+      <command
+            defaultHandler="com.cyanspring.cstw.gui.command.SingleInstrumentStrategyViewCommand"
+            description="Show single instrument strategy view"
+            id="CSTW.SingleInstrumentStrategyView"
+            name="Single Instrument Strategy">
+      </command>
+   </extension>
+
+</plugin>

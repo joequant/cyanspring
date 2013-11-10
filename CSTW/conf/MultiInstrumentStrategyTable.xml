@@ -1,0 +1,32 @@
+<map>
+  <entry>
+    <string>Multi Order Strategy</string>
+    <list>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>id</title>
+        <width>183</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Strategy</title>
+        <width>60</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Note</title>
+        <width>78</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>State</title>
+        <width>93</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>P/L</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+    </list>
+  </entry>
+</map>

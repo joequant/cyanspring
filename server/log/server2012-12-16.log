@@ -1,0 +1,466 @@
+12:09:29,582 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1abab88: startup date [Sun Dec 16 12:09:29 CST 2012]; root of context hierarchy
+12:09:29,676 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_pt.xml]
+12:09:29,832 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+12:09:29,879 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/strategy/target/classes/conf/strategy.xml]
+12:09:29,926 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\built-in.xml]
+12:09:29,957 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+12:09:29,972 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+12:09:29,989 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+12:09:30,020 [main] INFO  DefaultListableBeanFactory  - Overriding bean definition for bean 'globalStrategySettings': replacing [Generic bean: class [com.cyanspring.common.strategy.GlobalStrategySettings]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [file:/C:/Projects/algo/strategy/target/classes/conf/strategy.xml]] with [Generic bean: class [com.cyanspring.common.strategy.GlobalStrategySettings]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Projects\algo\server\conf\server_pt.xml]]
+12:09:30,254 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,exchangePT]; root of factory hierarchy
+12:09:31,331 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+12:09:31,346 [main] INFO  Environment  - Hibernate 3.6.3.Final
+12:09:31,346 [main] INFO  Environment  - hibernate.properties not found
+12:09:31,346 [main] INFO  Environment  - Bytecode provider name : javassist
+12:09:31,346 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+12:09:31,519 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+12:09:31,581 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+12:09:31,597 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+12:09:31,597 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+12:09:31,597 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+12:09:31,612 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+12:09:31,628 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:09:31,659 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+12:09:31,659 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+12:09:31,659 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+12:09:32,814 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+12:09:32,861 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+12:09:32,861 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+12:09:32,861 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+12:09:32,861 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:09:32,861 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+12:09:32,861 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Connection release mode: on_close
+12:09:32,861 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+12:09:32,861 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:09:32,861 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+12:09:32,861 [main] INFO  SettingsFactory  - Query language substitutions: {}
+12:09:32,861 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Second-level cache: enabled
+12:09:32,861 [main] INFO  SettingsFactory  - Query cache: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:09:32,861 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Statistics: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+12:09:32,861 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+12:09:32,861 [main] INFO  SettingsFactory  - Named query checking : enabled
+12:09:32,861 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:09:32,893 [main] INFO  SessionFactoryImpl  - building session factory
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@7e5130
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7e5130
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1042fcc
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1de0c09
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@e85825
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1f2f70a
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@38d460
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@6bd9e0
+12:09:32,893 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6bd9e0
+12:09:33,173 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+12:09:33,407 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+12:09:33,532 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+12:09:33,532 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+12:09:33,532 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+12:09:33,563 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+12:09:33,704 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+12:09:33,704 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Started
+12:09:33,719 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-49998-1355630970644-1:1) started
+12:09:34,094 [main] DEBUG Server  - ScheduleManager initialized
+12:09:34,094 [main] DEBUG Server  - PersistenceManager initialized
+12:09:35,000 [main] DEBUG PersistenceManager  - TextObject Records deleted: 0
+12:09:35,015 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+12:09:35,062 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 0
+12:09:35,062 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+12:09:35,093 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+12:09:35,093 [main] DEBUG Server  - OrderManager initialized
+12:09:35,093 [main] DEBUG Server  - BusinessManager initialized
+12:09:35,093 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-custom-1.53.jar
+12:09:35,093 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-custom-1.53.jar'
+12:09:35,109 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy1
+12:09:35,109 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy1.xml from cyanspring-custom-1.53.jar
+12:09:35,109 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,109 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@537d55: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,109 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e5056: defining beans [customStrategy1]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,141 [main] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy1
+12:09:35,141 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy2
+12:09:35,141 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy2.xml from cyanspring-custom-1.53.jar
+12:09:35,141 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,141 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@fe087b: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,141 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15e0638: defining beans [customStrategy2FieldDefs,customStrategy2InstrumentFieldDefs,customStrategy2]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,157 [main] INFO  StrategyFactory  - Registered strategy CUSTOM2 to bean customStrategy2
+12:09:35,157 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-sample-1.53.jar
+12:09:35,157 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-sample-1.53.jar'
+12:09:35,172 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.DummyStrategy
+12:09:35,172 [main] INFO  StrategyFactory  - Loading conf/DummyStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,188 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,188 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1dd1752: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,188 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e4bece: defining beans [dummyStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,188 [main] INFO  StrategyFactory  - Registered strategy DUMMY to bean dummyStrategy
+12:09:35,188 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.MarketMakingStrategy
+12:09:35,188 [main] INFO  StrategyFactory  - Loading conf/MarketMakingStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,188 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,203 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1ae717f: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,203 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@14c352e: defining beans [markingMakingStrategyFieldDefs,markingMakingStrategyInstrumentFieldDefs,marketMakingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,219 [main] INFO  StrategyFactory  - Registered strategy MARKET_MAKING to bean marketMakingStrategy
+12:09:35,219 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.TrendingStrategy
+12:09:35,219 [main] INFO  StrategyFactory  - Loading conf/TrendingStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,219 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,219 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@56d149: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,219 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d39c9f: defining beans [trendingStrategyFieldDefs,trendingStrategyInstrumentFieldDefs,trendingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,235 [main] INFO  StrategyFactory  - Registered strategy TRENDING to bean trendingStrategy
+12:09:35,235 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralStrategy
+12:09:35,235 [main] INFO  StrategyFactory  - Loading conf/DollarNeutralStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,235 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,235 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1980c26: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,235 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18b4ccb: defining beans [dollarNeutralStrategyFieldDefs,dollarNeutralInstrumentFieldDefs,dollarNeutralStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,250 [main] INFO  StrategyFactory  - Registered strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+12:09:35,250 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.lowhigh.LowHighStrategy
+12:09:35,250 [main] INFO  StrategyFactory  - Loading conf/LowHighStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,250 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,266 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@3ce725: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,266 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ed65e0: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,266 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+12:09:35,266 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.iceberg.IcebergStrategy
+12:09:35,266 [main] INFO  StrategyFactory  - Loading conf/IcebergStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,266 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,281 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@10c276: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,281 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12ce574: defining beans [icebergStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,281 [main] INFO  StrategyFactory  - Registered strategy ICEBERG to bean icebergStrategy
+12:09:35,281 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.pov.POVStrategy
+12:09:35,281 [main] INFO  StrategyFactory  - Loading conf/POVStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,281 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,297 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@146ee9c: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,297 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@304648: defining beans [povStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,297 [main] INFO  StrategyFactory  - Registered strategy POV to bean povStrategy
+12:09:35,297 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sdma.SDMAStrategy
+12:09:35,297 [main] INFO  StrategyFactory  - Loading conf/SDMAStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,297 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,297 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@6c9f0f: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,297 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5dc268: defining beans [sdmaStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,313 [main] INFO  StrategyFactory  - Registered strategy SDMA to bean sdmaStrategy
+12:09:35,313 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sniper.SniperStrategy
+12:09:35,313 [main] INFO  StrategyFactory  - Loading conf/SniperStrategy.xml from cyanspring-sample-1.53.jar
+12:09:35,313 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+12:09:35,313 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@ac2d3c: startup date [Sun Dec 16 12:09:35 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@1abab88
+12:09:35,313 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ceebfa: defining beans [sniperStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+12:09:35,328 [main] INFO  StrategyFactory  - Registered strategy SNIPER to bean sniperStrategy
+12:09:35,344 [main] INFO  OrderGenerator  - Initialising OrderGenerator
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Sun Dec 16 00:00:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Sun Dec 16 09:00:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Sun Dec 16 09:15:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Sun Dec 16 09:20:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Sun Dec 16 09:30:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Sun Dec 16 12:00:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Sun Dec 16 13:00:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Sun Dec 16 13:30:00 CST 2012
+12:09:35,344 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Sun Dec 16 16:00:00 CST 2012
+12:09:35,344 [main] INFO  RefDataManager  - initialising
+12:09:35,391 [main] INFO  MarketDataManager  - initialising
+12:09:35,391 [main] INFO  ExchangePT  - initialising...
+12:09:35,391 [MarketDataManager] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+12:09:35,391 [main] INFO  DownStreamManager  - initialising
+12:09:35,391 [Server] INFO  Server  - Market data is ready: true
+12:09:35,391 [main] INFO  ExchangePT  - initialising...
+12:09:35,391 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+12:09:35,391 [Server] INFO  Server  - Down stream is ready: true
+12:09:35,391 [main] INFO  TickDataManager  - Existing tick directory: ticks
+12:09:35,391 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+12:09:35,391 [Server] INFO  Server  - Market data is ready: true
+12:09:35,391 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0002.HK, null
+12:09:35,391 [Server] INFO  Server  - Market data is ready: true
+12:09:35,391 [MarketDataManager] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+12:09:35,422 [main] INFO  Server  - Published my node info
+12:09:35,422 [Server] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+12:09:35,422 [main] INFO  MarketReplay  - Market replay starts at: Sun Dec 16 12:09:35 CST 2012
+12:09:35,438 [main] INFO  MarketReplay  - Market replay ends at: Sun Dec 16 12:09:35 CST 2012
+12:09:35,500 [Thread-24] INFO  Server  - Executions recovered: 1
+12:09:35,562 [Thread-24] DEBUG BusinessManager  - strategy S1-20121216-111701-285-2330P assigned to container SC-0
+12:09:35,562 [Thread-24] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.marketdata.QuoteEvent=2, class com.cyanspring.common.server.event.MarketDataReadyEvent=3, class com.cyanspring.common.event.strategy.AddStrategyEvent=1, class com.cyanspring.common.event.marketdata.QuoteSubEvent=2, class com.cyanspring.common.server.event.DownStreamReadyEvent=1, class com.cyanspring.common.event.system.NodeInfoEvent=1}
+12:09:35,562 [Thread-24] INFO  Server  - Strategies recovered: 1
+12:09:35,562 [Thread-24] INFO  Server  - Server is ready: true
+12:09:35,562 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Initialize strategy: POV, S1-20121216-111701-285-2330P, 0005.HK, 200000.0
+12:09:35,562 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+12:09:35,562 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Setting strategy end timer: Sun Dec 16 23:00:00 CST 2012
+12:09:35,562 [Server] INFO  Server  - Market data is ready: true
+12:09:35,562 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuoteEvent: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:09:52,444 [Server] INFO  Server  - Replied my nodeInfo
+12:09:52,459 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20121216-120950-227-0001
+12:09:58,639 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20121216-120950-227-0001 : S1-20121216-111701-285-2330P
+12:09:59,279 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20121216-120950-227-0001 : S1-20121216-111701-285-2330P
+12:10:00,933 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Strategy started
+12:10:00,933 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 0.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:00,933 [OrderManager] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 400.0, 68.2]
+12:10:00,933 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {}
+12:10:00,933 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:00,949 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:00,949 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 3200.0 to 3200.0
+12:10:00,949 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 400.0
+12:10:00,949 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: []
+12:10:00,949 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:00,949 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:00,949 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 3200.0]
+12:10:00,949 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 3200.0, LIMIT]
+12:10:00,964 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: [[0005.HK, Buy, NEW, LIMIT, [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]]
+12:10:00,965 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20121216-121000-964-1418EI, 12:10:00.964, 
+[0005.HK, Buy, NEW, LIMIT, [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]
+12:10:00,965 [Thread-SC-0] DEBUG DefaultExecutionManager  - Sending new child order: [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]; extra fields: null
+12:10:00,982 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: NEW - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:00,982 [OrderManager] DEBUG OrderManager  - Received child order update: NEW - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:00,982 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Child order new: S1-20121216-121000-949-0536C
+12:10:00,982 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: NEW - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:00,982 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Transaction completed: S1-20121216-121000-964-1418EI, true
+12:10:01,575 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 0.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:01,575 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 3200.0 to 3200.0
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 400.0
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 3200.0]
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 3200.0, LIMIT]
+12:10:01,575 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:10,077 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 0.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:10,077 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:10,077 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:10,077 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 3200.0 to 3200.0
+12:10:10,077 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 400.0
+12:10:10,077 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:10,092 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:10,092 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:10,092 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 3200.0]
+12:10:10,092 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 3200.0, LIMIT]
+12:10:10,092 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:18,564 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 0.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:18,564 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:18,564 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:18,564 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 3200.0 to 3200.0
+12:10:18,564 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 400.0
+12:10:18,564 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:18,580 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:18,580 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:18,580 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 3200.0]
+12:10:18,580 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 3200.0, LIMIT]
+12:10:18,580 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:26,568 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 0.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:26,568 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:26,568 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:26,568 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 3200.0 to 3200.0
+12:10:26,568 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 400.0
+12:10:26,568 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:26,583 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:26,583 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:26,583 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 3200.0]
+12:10:26,583 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 3200.0, LIMIT]
+12:10:26,583 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:34,572 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 0.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:34,572 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:34,572 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:34,572 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 3200.0 to 3200.0
+12:10:34,572 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 400.0
+12:10:34,572 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:34,587 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:34,587 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:34,587 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 3200.0]
+12:10:34,587 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 3200.0, LIMIT]
+12:10:34,587 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:38,519 [AWT-EventQueue-0] DEBUG ExchangeBT  - cumtQty, avgPx: 400.0, 68.2
+12:10:38,519 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: PARTIALLY_FILLED - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:38,519 [OrderManager] DEBUG OrderManager  - Received child order update: PARTIALLY_FILLED - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:38,519 [MarketDataManager] INFO  AsyncEventProcessor  - processTradeEvent added in method map
+12:10:38,519 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: PARTIALLY_FILLED - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:38,535 [Thread-SC-0] DEBUG ParentOrder  - cumtQty, avgPx: 800.0, 68.2
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 400.0, otMarketVol: 0.0, otVWAP: 0.0, ]
+12:10:38,535 [OrderManager] DEBUG OrderManager  - Received parent order update: PARTIALLY_FILLED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 800.0, 68.2]
+12:10:38,535 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {Modified=Sun Dec 16 12:10:38 CST 2012, CumQty=800.0, Seq ID=S1-20121216-121038-535-0370}
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 0.00
+12:10:38,535 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:38,535 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 2400.0 to 2400.0
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 800.0
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-120935-562-0380 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:38,535 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 2400.0]
+12:10:38,551 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.2, 2400.0, LIMIT]
+12:10:38,552 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: [[0005.HK, Buy, AMEND, LIMIT, [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], {Qty=2800.0}]]
+12:10:38,552 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuoteEvent: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,60000.0@68.3][[4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:38,552 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] TradeEvent: 7600.0, 68.2
+12:10:38,552 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20121216-121038-552-0178EI, 12:10:38.552, 
+[0005.HK, Buy, AMEND, LIMIT, [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], {Qty=2800.0}]
+12:10:38,552 [Thread-SC-0] DEBUG DefaultExecutionManager  - Amending child order: [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 3200.0, PARTIALLY_FILLED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]; Field chaning: {Qty=2800.0}
+12:10:38,567 [OrderManager] DEBUG OrderManager  - Received child order update: REPLACE - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:38,567 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: REPLACE - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:38,567 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: REPLACE - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:38,567 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Transaction completed: S1-20121216-121038-552-0178EI, true
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 400.0, otMarketVol: 7600.0, otVWAP: 68.2, ]
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 5.26
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 2400.0 to 2400.0
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 1600.0 to 1600.0
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 800.0
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,60000.0@68.3][[4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,60000.0@68.3][[4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [2400.0, 1600.0]
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.3, 2400.0, LIMIT]
+[0005.HK, Buy, 68.1, 1600.0, LIMIT]
+12:10:39,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: [[0005.HK, Buy, CANCEL, LIMIT, [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null], [0005.HK, Buy, NEW, LIMIT, [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null], [0005.HK, Buy, NEW, LIMIT, [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]]
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20121216-121039-067-0372EI, 12:10:39.067, 
+[0005.HK, Buy, CANCEL, LIMIT, [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]
+[0005.HK, Buy, NEW, LIMIT, [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]
+[0005.HK, Buy, NEW, LIMIT, [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Canceling child order: [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, REPLACED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: CANCELED - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, CANCELED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Sending new child order: [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]; extra fields: null
+12:10:39,067 [Thread-SC-0] DEBUG ExchangeBT  - cumtQty, avgPx: 2400.0, 68.3
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Sending new child order: [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, PENDING_NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]; extra fields: null
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: CANCELED - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, CANCELED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: NEW - [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Child order new: S1-20121216-121039-067-0368C
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: NEW - [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: FILLED - [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, FILLED, 2400.0, 68.3, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: FILLED - [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, FILLED, 2400.0, 68.3, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:39,067 [Thread-SC-0] DEBUG ParentOrder  - cumtQty, avgPx: 3200.0, 68.275
+12:10:39,067 [OrderManager] DEBUG OrderManager  - Received child order update: CANCELED - [S1-20121216-121000-949-0536C, 0005.HK, Buy, 68.2, 2800.0, CANCELED, 400.0, 68.2, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,067 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: NEW - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Child order new: S1-20121216-121039-067-0370C
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: NEW - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:39,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Transaction completed: S1-20121216-121039-067-0372EI, true
+12:10:39,083 [OrderManager] DEBUG OrderManager  - Received child order update: NEW - [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,083 [OrderManager] DEBUG OrderManager  - Received child order update: FILLED - [S1-20121216-121039-067-0368C, 0005.HK, Buy, 68.3, 2400.0, FILLED, 2400.0, 68.3, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,083 [OrderManager] DEBUG OrderManager  - Received child order update: NEW - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,083 [OrderManager] DEBUG OrderManager  - Received parent order update: PARTIALLY_FILLED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 3200.0, 68.275]
+12:10:39,083 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {LastPx=68.3, AvgPx=68.275, Modified=Sun Dec 16 12:10:39 CST 2012, CumQty=3200.0, Seq ID=S1-20121216-121039-067-0383, LastShares=2400.0}
+12:10:39,567 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 2800.0, otMarketVol: 7600.0, otVWAP: 68.2, ]
+12:10:39,567 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 36.84
+12:10:39,567 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:39,567 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 800.0 to 800.0
+12:10:39,567 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 3200.0
+12:10:39,567 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:39,582 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:39,582 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:39,582 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 800.0]
+12:10:39,582 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.1, 800.0, LIMIT]
+12:10:39,582 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: [[0005.HK, Buy, AMEND, LIMIT, [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], {Qty=800.0}]]
+12:10:39,582 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20121216-121039-582-2159EI, 12:10:39.582, 
+[0005.HK, Buy, AMEND, LIMIT, [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], {Qty=800.0}]
+12:10:39,582 [Thread-SC-0] DEBUG DefaultExecutionManager  - Amending child order: [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 1600.0, NEW, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]; Field chaning: {Qty=800.0}
+12:10:39,582 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: REPLACE - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:39,582 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: REPLACE - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:10:39,582 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Transaction completed: S1-20121216-121039-582-2159EI, true
+12:10:39,582 [OrderManager] DEBUG OrderManager  - Received child order update: REPLACE - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:10:40,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 2800.0, otMarketVol: 7600.0, otVWAP: 68.2, ]
+12:10:40,067 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 36.84
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 800.0 to 800.0
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 3200.0
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 800.0]
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.1, 800.0, LIMIT]
+12:10:40,067 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:48,070 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 2800.0, otMarketVol: 7600.0, otVWAP: 68.2, ]
+12:10:48,070 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 36.84
+12:10:48,070 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:48,070 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 800.0 to 800.0
+12:10:48,070 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 3200.0
+12:10:48,070 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:48,085 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:48,085 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:48,085 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 800.0]
+12:10:48,085 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.1, 800.0, LIMIT]
+12:10:48,085 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:10:56,073 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 2800.0, otMarketVol: 7600.0, otVWAP: 68.2, ]
+12:10:56,073 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 36.84
+12:10:56,073 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:10:56,073 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 800.0 to 800.0
+12:10:56,073 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 3200.0
+12:10:56,073 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:10:56,089 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:56,089 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:10:56,089 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 800.0]
+12:10:56,089 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.1, 800.0, LIMIT]
+12:10:56,089 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:11:04,576 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] MktStat: [otMyVol: 2800.0, otMarketVol: 7600.0, otVWAP: 68.2, ]
+12:11:04,576 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Running POV: 36.84
+12:11:04,576 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round aggressive qty from 0.0 to 0.0
+12:11:04,576 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Round passive qty from 800.0 to 800.0
+12:11:04,576 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Parent order: Qty: 200000.0, Cum: 3200.0
+12:11:04,576 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Open orders: [[S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, REPLACED, 0.0, 0.0, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]]
+12:11:04,592 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Quote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:11:04,592 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] AdjQuote: S1-20121216-121038-519-0227 - 0005.HK : [4000.0@68.1,57600.0@68.3][[4000.0, 68.1]][[57600.0, 68.3], [20000.0, 68.4]]
+12:11:04,592 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuantityInstruction: [0.0, 800.0]
+12:11:04,592 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] PriceInstruction: 
+[0005.HK, Buy, 68.1, 800.0, LIMIT]
+12:11:04,592 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: []
+12:11:09,601 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20121216-120950-227-0001 : S1-20121216-111701-285-2330P
+12:11:10,912 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - received PauseStrategyEvent
+12:11:10,912 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Strategy paused
+12:11:10,912 [OrderManager] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 3200.0, 68.275]
+12:11:10,912 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {State=Paused, Modified=Sun Dec 16 12:10:39 CST 2012, Seq ID=S1-20121216-121039-067-0383}
+12:11:48,838 [AWT-EventQueue-0] INFO  OrderBook  - price amending: 68.2, 68.15
+12:11:48,838 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuoteEvent: S1-20121216-121148-838-1613 - 0005.HK : [4000.0@68.1,400.0@68.15][[4000.0, 68.1]][[400.0, 68.15], [60000.0, 68.3], [20000.0, 68.4]]
+12:12:18,354 [AWT-EventQueue-0] INFO  OrderBook  - price amending: 68.15, 68.1
+12:12:18,354 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuoteEvent: S1-20121216-121218-354-1583 - 0005.HK : [3600.0@68.1,60000.0@68.3][[3600.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+12:12:18,354 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] TradeEvent: 400.0, 68.1
+12:12:39,446 [AWT-EventQueue-0] INFO  OrderBook  - price amending: 68.1, 68.0
+12:12:39,446 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuoteEvent: S1-20121216-121239-446-1128 - 0005.HK : [3600.0@68.0,60000.0@68.3][[3600.0, 68.0]][[60000.0, 68.3], [20000.0, 68.4]]
+12:12:52,146 [AWT-EventQueue-0] DEBUG ExchangeBT  - cumtQty, avgPx: 400.0, 68.1
+12:12:52,146 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: PARTIALLY_FILLED - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, PARTIALLY_FILLED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:12:52,146 [OrderManager] DEBUG OrderManager  - Received child order update: PARTIALLY_FILLED - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, PARTIALLY_FILLED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:12:52,146 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: PARTIALLY_FILLED - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, PARTIALLY_FILLED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:12:52,161 [Thread-SC-0] DEBUG ParentOrder  - cumtQty, avgPx: 3600.0, 68.25555555555556
+12:12:52,161 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] QuoteEvent: S1-20121216-121252-146-2217 - 0005.HK : [3600.0@68.0,60000.0@68.3][[3600.0, 68.0]][[60000.0, 68.3], [20000.0, 68.4]]
+12:12:52,161 [OrderManager] DEBUG OrderManager  - Received parent order update: PARTIALLY_FILLED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 3600.0, 68.25555555555556]
+12:12:52,161 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {LastPx=68.1, AvgPx=68.25555555555556, Modified=Sun Dec 16 12:12:52 CST 2012, CumQty=3600.0, Seq ID=S1-20121216-121252-161-2423, LastShares=400.0}
+12:38:54,156 [main] DEBUG Server  - 
+12:38:54,156 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+12:38:54,156 [main] DEBUG Server  - 
+12:38:54,156 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Strategy stopping
+12:38:54,156 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] ExecutionInstruction: [[0005.HK, Buy, CANCEL, LIMIT, [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, PARTIALLY_FILLED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]]
+12:38:54,156 [OrderManager] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 3600.0, 68.25555555555556]
+12:38:54,172 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {State=Stopping, Seq ID=S1-20121216-121252-161-2423}
+12:38:54,172 [Thread-SC-0] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: S1-20121216-123854-172-2151EI, 12:38:54.172, 
+[0005.HK, Buy, CANCEL, LIMIT, [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, PARTIALLY_FILLED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], null]
+12:38:54,172 [Thread-SC-0] DEBUG DefaultExecutionManager  - Canceling child order: [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, PARTIALLY_FILLED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:38:54,172 [Thread-SC-0] DEBUG DefaultExecutionManager  - Received child order update: CANCELED - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, CANCELED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:38:54,172 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Received child order update: CANCELED - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, CANCELED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null], message: 
+12:38:54,172 [OrderManager] DEBUG OrderManager  - Received child order update: CANCELED - [S1-20121216-121039-067-0370C, 0005.HK, Buy, 68.1, 800.0, CANCELED, 400.0, 68.1, LIMIT, S1-20121216-111701-285-2330P, S1-20121216-111701-285-2330P, null]
+12:38:54,172 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121216-111701-285-2330P] Transaction completed: S1-20121216-123854-172-2151EI, true
+12:38:54,563 [OrderManager] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121216-111701-285-2330P, 0005.HK, Buy, 0.0, 200000.0, PARTIALLY_FILLED, 3600.0, 68.25555555555556]
+12:38:54,563 [OrderManager] DEBUG OrderManager  - UpdateParentOrderEvent difference: {State=Stopped, Modified=Sun Dec 16 12:12:52 CST 2012, Seq ID=S1-20121216-121252-161-2423}
+12:38:56,169 [main] INFO  Server  - uninitialising server
+12:38:56,169 [main] INFO  TickDataManager  - uninitialising
+12:38:56,169 [main] INFO  DownStreamManager  - uninitialising
+12:38:56,169 [main] INFO  MarketDataManager  - uninitialising
+12:38:56,169 [main] INFO  RefDataManager  - uninitialising
+12:38:56,169 [main] DEBUG RemoteEventManager  - Closing transport...
+12:38:56,169 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-49998-1355630970644-1:1) is shutting down
+12:38:57,075 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Stopped
+12:38:57,091 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-49998-1355630970644-1:1) stopped

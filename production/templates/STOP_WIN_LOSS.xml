@@ -1,0 +1,58 @@
+<com.cyanspring.common.event.strategy.NewSingleInstrumentStrategyEvent>
+  <priority>NORMAL</priority>
+  <txId></txId>
+  <instrument>
+    <entry>
+      <string>Strategy</string>
+      <string>STOP_WIN_LOSS</string>
+    </entry>
+    <entry>
+      <string>Server Id</string>
+      <string>Test.EB.S1</string>
+    </entry>
+    <entry>
+      <string>Low fall</string>
+      <double>3.0</double>
+    </entry>
+    <entry>
+      <string>Min win</string>
+      <double>3.0</double>
+    </entry>
+    <entry>
+      <string>Pos Px</string>
+      <double>68.3</double>
+    </entry>
+    <entry>
+      <string>id</string>
+      <string>S1-20130517-093043-825-0595S</string>
+    </entry>
+    <entry>
+      <string>State</string>
+      <com.cyanspring.common.type.StrategyState>Running</com.cyanspring.common.type.StrategyState>
+    </entry>
+    <entry>
+      <string>AH</string>
+      <double>68.2</double>
+    </entry>
+    <entry>
+      <string>Symbol</string>
+      <string>0005.HK</string>
+    </entry>
+    <entry>
+      <string>AL</string>
+      <double>68.2</double>
+    </entry>
+    <entry>
+      <string>Position</string>
+      <double>2000.0</double>
+    </entry>
+    <entry>
+      <string>High fall</string>
+      <double>1.0</double>
+    </entry>
+    <entry>
+      <string>P/L</string>
+      <double>0.0</double>
+    </entry>
+  </instrument>
+</com.cyanspring.common.event.strategy.NewSingleInstrumentStrategyEvent>

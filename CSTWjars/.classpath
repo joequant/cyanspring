@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="cyanspring-core-1.65.jar"/>
+	<classpathentry exported="true" kind="lib" path="cyanspring-transport-1.65.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="spring-beans-3.0.5.RELEASE.jar" sourcepath="C:/Users/USER/.m2/repository/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="spring-context-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="spring-core-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="common"/>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry exported="true" kind="lib" path="kxml2-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="log4j-1.2.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="slf4j-api-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="xstream-1.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="activemq-core-5.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="bin" sourcepath="bin"/>
+	<classpathentry exported="true" kind="lib" path="geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="apache-log4j-extras-1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

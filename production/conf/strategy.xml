@@ -1,0 +1,223 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+	<import resource="classpath*:conf/Vase.xml" />
+	<import resource="classpath*:conf/Basin.xml" />
+
+	<bean id="strategyFactory" class="com.cyanspring.core.strategy.StrategyFactory">
+	</bean>
+	
+	<bean id="globalStrategySettings" class="com.cyanspring.common.strategy.GlobalStrategySettings">
+		<property name="singleOrderCommonDisplayFields" ref="singleOrderCommonDisplayFields"/>
+		<property name="multiInstrumentCommonDisplayFields" ref="multiInstrumentCommonDisplayFields"/>
+		<property name="singleOrderCommonFieldDefs" ref="singleOrderCommonFieldDefs"/>
+		<property name="multiInstrumentCommonFieldDefs" ref="multiInstrumentCommonFieldDefs"/>
+		<property name="validateQuote" value="false"/>
+	</bean>
+
+	<bean id="singleOrderCommonDisplayFields" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+	            <value>Symbol</value>
+	            <value>Desc</value>
+	            <value>Side</value>  
+	            <value>Strategy</value>  
+	            <value>Type</value>  
+	            <value>Price</value>  
+	            <value>Qty</value>  
+	            <value>AvgPx</value>  
+	            <value>CumQty</value>  
+	            <value>State</value>  
+	            <value>Status</value>  
+	            <value>id</value>  
+	            <value>Alert</value>  
+	            <value>BSD</value>  
+	            <value>BSD Delta</value>  
+	            <value>Last</value>  
+	            <value>Chg</value>  
+	            <value>Chg%</value>  
+	            <value>Label</value>  
+	        </list>
+	    </constructor-arg>
+	</bean> 
+	
+	<bean id="multiInstrumentCommonDisplayFields" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+	            <value>id</value>
+	            <value>Strategy</value>  
+	            <value>Note</value>  
+	            <value>State</value>  
+	            <value>P/L</value>  
+	        </list>
+	    </constructor-arg>
+	</bean> 
+	
+	<bean id="multiInstrumentCommonInstrumentDisplayFields" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+	            <value>id</value>
+	            <value>Symbol</value>  
+	            <value>Position</value>  
+	            <value>Pos Px</value>  
+	            <value>Pos Value</value>  
+	            <value>P/L</value>  
+	        </list>
+	    </constructor-arg>
+	</bean> 
+
+	<bean id="singleOrderCommonFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Symbol"/>
+            		<property name="type" value="java.lang.String"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Side"/>
+            		<property name="type" value="com.cyanspring.common.type.OrderSide"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Price"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Qty"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Type"/>
+            		<property name="type" value="com.cyanspring.common.type.OrderType"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Strategy"/>
+            		<property name="type" value="java.lang.String"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Start Time"/>
+            		<property name="type" value="java.util.Date"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="End Time"/>
+            		<property name="type" value="java.util.Date"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="ClientID"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="ClOrderId"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Server Id"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="id"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Seq ID"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Source"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Alert msg"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Label"/>
+            		<property name="type" value="java.lang.String"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+
+	<bean id="multiInstrumentCommonFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="id"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Strategy"/>
+            		<property name="type" value="java.lang.String"/>
+            		<property name="input" value="true"/>
+				</bean>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+
+	<bean id="multiInstrumentCommonInstrumentFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="id"/>
+            		<property name="type" value="java.lang.String"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Symbol"/>
+            		<property name="type" value="java.lang.String"/>
+            		<property name="input" value="true"/>
+				</bean>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="staticMethod" value="com.cyanspring.strategy.singleorder.SingleOrderStrategy.setCommonFieldDefs"/>
+        <property name="arguments">
+            <list>
+                <ref bean="singleOrderCommonFieldDefs"/>
+            </list>
+       </property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="staticMethod" value="com.cyanspring.strategy.multiinstrument.MultiInstrumentStrategy.setCommonFieldDefs"/>
+        <property name="arguments">
+            <list>
+                <ref bean="multiInstrumentCommonFieldDefs"/>
+            </list>
+       </property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="staticMethod" value="com.cyanspring.strategy.multiinstrument.MultiInstrumentStrategy.setCommonInstrumentFieldDefs"/>
+        <property name="arguments">
+            <list>
+                <ref bean="multiInstrumentCommonInstrumentFieldDefs"/>
+            </list>
+       </property>
+    </bean>
+
+	<bean id="defaultExecutionAnalyzer" class="com.cyanspring.core.strategy.DefaultExecutionAnalyzer" scope="prototype">
+	</bean>
+
+	<bean id="defaultExecutionManager" class="com.cyanspring.core.strategy.DefaultExecutionManager" scope="prototype">
+	</bean>
+	
+
+</beans>

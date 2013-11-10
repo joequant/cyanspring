@@ -1,0 +1,130 @@
+21:21:46,370 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@506411: startup date [Mon Dec 10 21:21:46 CST 2012]; root of context hierarchy
+21:21:46,480 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\back_test.xml]
+21:21:46,660 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/strategy/target/classes/conf/strategy.xml]
+21:21:46,720 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\built-in.xml]
+21:21:46,750 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+21:21:46,780 [main] INFO  DefaultListableBeanFactory  - Overriding bean definition for bean 'globalStrategySettings': replacing [Generic bean: class [com.cyanspring.common.strategy.GlobalStrategySettings]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [file:/C:/Projects/algo/strategy/target/classes/conf/strategy.xml]] with [Generic bean: class [com.cyanspring.common.strategy.GlobalStrategySettings]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Projects\algo\server\conf\back_test.xml]]
+21:21:47,011 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,backTest,eventManager,mdManager,exchangeBT,strategyContainer,scheduleManager,tickTable,tickTableManager,refDataManager,downStreamManager,businessManager]; root of factory hierarchy
+21:21:47,291 [main] INFO  RefDataManager  - initialising
+21:21:47,691 [main] INFO  DownStreamManager  - initialising
+21:21:47,711 [main] INFO  MarketDataManager  - initialising
+21:21:47,721 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-custom-1.53.jar
+21:21:47,721 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-custom-1.53.jar'
+21:21:47,731 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy1
+21:21:47,731 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy1.xml from cyanspring-custom-1.53.jar
+21:21:47,731 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,741 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1bbd7b2: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,741 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8ff4cf: defining beans [customStrategy1]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,761 [main] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy1
+21:21:47,761 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy2
+21:21:47,761 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy2.xml from cyanspring-custom-1.53.jar
+21:21:47,761 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,761 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@12b6c89: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,761 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e53220: defining beans [customStrategy2FieldDefs,customStrategy2InstrumentFieldDefs,customStrategy2]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,781 [main] INFO  StrategyFactory  - Registered strategy CUSTOM2 to bean customStrategy2
+21:21:47,781 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-sample-1.53.jar
+21:21:47,781 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-sample-1.53.jar'
+21:21:47,811 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.DummyStrategy
+21:21:47,821 [main] INFO  StrategyFactory  - Loading conf/DummyStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,821 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,821 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@d507e9: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,821 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9444d1: defining beans [dummyStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,832 [main] INFO  StrategyFactory  - Registered strategy DUMMY to bean dummyStrategy
+21:21:47,832 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.MarketMakingStrategy
+21:21:47,832 [main] INFO  StrategyFactory  - Loading conf/MarketMakingStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,832 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,832 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1efb4be: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,832 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f4e571: defining beans [markingMakingStrategyFieldDefs,markingMakingStrategyInstrumentFieldDefs,marketMakingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,842 [main] INFO  StrategyFactory  - Registered strategy MARKET_MAKING to bean marketMakingStrategy
+21:21:47,842 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.TrendingStrategy
+21:21:47,842 [main] INFO  StrategyFactory  - Loading conf/TrendingStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,842 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,852 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1ee148b: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,852 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8b5a: defining beans [trendingStrategyFieldDefs,trendingStrategyInstrumentFieldDefs,trendingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,862 [main] INFO  StrategyFactory  - Registered strategy TRENDING to bean trendingStrategy
+21:21:47,862 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralStrategy
+21:21:47,862 [main] INFO  StrategyFactory  - Loading conf/DollarNeutralStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,862 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,862 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@be41ec: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,862 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1860038: defining beans [dollarNeutralStrategyFieldDefs,dollarNeutralInstrumentFieldDefs,dollarNeutralStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,882 [main] INFO  StrategyFactory  - Registered strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+21:21:47,882 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.lowhigh.LowHighStrategy
+21:21:47,882 [main] INFO  StrategyFactory  - Loading conf/LowHighStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,882 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,892 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@12c3327: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,892 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@179953c: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,902 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+21:21:47,902 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.iceberg.IcebergStrategy
+21:21:47,902 [main] INFO  StrategyFactory  - Loading conf/IcebergStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,902 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,912 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@afa68a: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,912 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d16fc1: defining beans [icebergStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,912 [main] INFO  StrategyFactory  - Registered strategy ICEBERG to bean icebergStrategy
+21:21:47,912 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.pov.POVStrategy
+21:21:47,912 [main] INFO  StrategyFactory  - Loading conf/POVStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,912 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,922 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@4ac216: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,922 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11756a4: defining beans [povStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,932 [main] INFO  StrategyFactory  - Registered strategy POV to bean povStrategy
+21:21:47,932 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sdma.SDMAStrategy
+21:21:47,932 [main] INFO  StrategyFactory  - Loading conf/SDMAStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,932 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,932 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@b301f2: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,932 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4be2cc: defining beans [sdmaStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,942 [main] INFO  StrategyFactory  - Registered strategy SDMA to bean sdmaStrategy
+21:21:47,942 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sniper.SniperStrategy
+21:21:47,942 [main] INFO  StrategyFactory  - Loading conf/SniperStrategy.xml from cyanspring-sample-1.53.jar
+21:21:47,942 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+21:21:47,942 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@908881: startup date [Mon Dec 10 21:21:47 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@506411
+21:21:47,942 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@31f2a7: defining beans [sniperStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c695a6
+21:21:47,952 [main] INFO  StrategyFactory  - Registered strategy SNIPER to bean sniperStrategy
+21:21:47,972 [main] INFO  BackTest  - GlobalStrategySettings - checkAdjQuote: false
+21:21:47,982 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] Strategy started
+21:21:47,992 [main] INFO  ExchangeBT  - Tick file loaded: backtest/ticks/ANZ.AX.txt
+21:21:47,992 [main] INFO  ExchangeBT  - Tick file loaded: backtest/ticks/WBC.AX.txt
+21:21:48,002 [main] INFO  ExchangeBT  - Tick file loaded: backtest/ticks/BHP.AX.txt
+21:21:48,002 [main] INFO  ExchangeBT  - Tick file loaded: backtest/ticks/RIO.AX.txt
+21:21:48,002 [main] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+21:21:48,032 [main] INFO  AsyncEventProcessor  - processTradeEvent added in method map
+21:21:48,222 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] short1Long2Ratio: 0.026216000000000204
+21:21:48,222 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] long1Short2Ratio: 0.0
+21:21:48,222 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] >>>>>>>> High Take Opportunity <<<<<<<<<<
+21:21:48,232 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] Open orders: 
+21:21:48,232 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] PriceInstruction: 
+[WBC.AX, Sell, 21.05, 1626.0, LIMIT]
+[BHP.AX, Buy, 36.95, 450.0, LIMIT]
+[ANZ.AX, Buy, 21.2, 1543.0, LIMIT]
+[RIO.AX, Sell, 54.2, 303.0, LIMIT]
+21:21:48,232 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] ExecutionInstruction: [[WBC.AX, Sell, NEW, LIMIT, [20120917-124438-288-1829C, WBC.AX, Sell, 21.05, 1626.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0004P, 19700101-080000-000-0001S, null], null], [BHP.AX, Buy, NEW, LIMIT, [20120917-124438-288-1831C, BHP.AX, Buy, 36.95, 450.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0006P, 19700101-080000-000-0001S, null], null], [ANZ.AX, Buy, NEW, LIMIT, [20120917-124438-288-1833C, ANZ.AX, Buy, 21.2, 1543.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0008P, 19700101-080000-000-0001S, null], null], [RIO.AX, Sell, NEW, LIMIT, [20120917-124438-288-1835C, RIO.AX, Sell, 54.2, 303.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0002P, 19700101-080000-000-0001S, null], null]]
+21:21:48,272 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] short1Long2Ratio: -0.002627000000000117
+21:21:48,272 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] long1Short2Ratio: 0.009492000000000115
+21:21:48,272 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] >>>>>>>> High Flat Opportunity <<<<<<<<<<
+21:21:48,272 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] Open orders: 
+21:21:48,272 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] PriceInstruction: 
+[WBC.AX, Buy, 20.25, 1626.0, LIMIT]
+[BHP.AX, Sell, 37.25, 450.0, LIMIT]
+[ANZ.AX, Sell, 21.15, 1543.0, LIMIT]
+[RIO.AX, Buy, 55.95, 303.0, LIMIT]
+21:21:48,272 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] ExecutionInstruction: [[WBC.AX, Buy, NEW, LIMIT, [20120917-124504-410-0423C, WBC.AX, Buy, 20.25, 1626.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0004P, 19700101-080000-000-0001S, null], null], [BHP.AX, Sell, NEW, LIMIT, [20120917-124504-410-0425C, BHP.AX, Sell, 37.25, 450.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0006P, 19700101-080000-000-0001S, null], null], [ANZ.AX, Sell, NEW, LIMIT, [20120917-124504-410-0427C, ANZ.AX, Sell, 21.15, 1543.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0008P, 19700101-080000-000-0001S, null], null], [RIO.AX, Buy, NEW, LIMIT, [20120917-124504-410-0429C, RIO.AX, Buy, 55.95, 303.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0002P, 19700101-080000-000-0001S, null], null]]
+21:21:48,342 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] short1Long2Ratio: 0.027141999999999826
+21:21:48,342 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] long1Short2Ratio: 0.040392000000000115
+21:21:48,342 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] >>>>>>>> High Take Opportunity <<<<<<<<<<
+21:21:48,352 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] Open orders: 
+21:21:48,352 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] PriceInstruction: 
+[WBC.AX, Sell, 20.65, 1626.0, LIMIT]
+[BHP.AX, Buy, 36.45, 450.0, LIMIT]
+[ANZ.AX, Buy, 21.5, 1543.0, LIMIT]
+[RIO.AX, Sell, 56.0, 303.0, LIMIT]
+21:21:48,352 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] ExecutionInstruction: [[WBC.AX, Sell, NEW, LIMIT, [20120917-124622-288-0998C, WBC.AX, Sell, 20.65, 1626.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0004P, 19700101-080000-000-0001S, null], null], [BHP.AX, Buy, NEW, LIMIT, [20120917-124622-288-1000C, BHP.AX, Buy, 36.45, 450.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0006P, 19700101-080000-000-0001S, null], null], [ANZ.AX, Buy, NEW, LIMIT, [20120917-124622-288-1002C, ANZ.AX, Buy, 21.5, 1543.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0008P, 19700101-080000-000-0001S, null], null], [RIO.AX, Sell, NEW, LIMIT, [20120917-124622-288-1004C, RIO.AX, Sell, 56.0, 303.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0002P, 19700101-080000-000-0001S, null], null]]
+21:21:48,372 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] short1Long2Ratio: -0.001235
+21:21:48,372 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] long1Short2Ratio: 0.009700999999999913
+21:21:48,372 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] >>>>>>>> High Flat Opportunity <<<<<<<<<<
+21:21:48,372 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] Open orders: 
+21:21:48,372 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] PriceInstruction: 
+[WBC.AX, Buy, 20.55, 1626.0, LIMIT]
+[BHP.AX, Sell, 36.55, 450.0, LIMIT]
+[ANZ.AX, Sell, 21.3, 1543.0, LIMIT]
+[RIO.AX, Buy, 54.3, 303.0, LIMIT]
+21:21:48,372 [main] INFO  MultiInstrumentStrategy  - [19700101-080000-000-0001S] ExecutionInstruction: [[WBC.AX, Buy, NEW, LIMIT, [20120917-124642-254-0851C, WBC.AX, Buy, 20.55, 1626.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0004P, 19700101-080000-000-0001S, null], null], [BHP.AX, Sell, NEW, LIMIT, [20120917-124642-254-0853C, BHP.AX, Sell, 36.55, 450.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0006P, 19700101-080000-000-0001S, null], null], [ANZ.AX, Sell, NEW, LIMIT, [20120917-124642-254-0855C, ANZ.AX, Sell, 21.3, 1543.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0008P, 19700101-080000-000-0001S, null], null], [RIO.AX, Buy, NEW, LIMIT, [20120917-124642-254-0857C, RIO.AX, Buy, 54.3, 303.0, PENDING_NEW, 0.0, 0.0, LIMIT, 19700101-080000-000-0002P, 19700101-080000-000-0001S, null], null]]
+21:21:48,382 [main] INFO  ExchangeBT  - Finished replay of tick files
+21:21:48,402 [main] INFO  BackTest  - Strategy back test result is saved as: backtest/out/DOLLAR_NEUTRAL.out.xml

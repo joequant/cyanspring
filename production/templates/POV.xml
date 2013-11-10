@@ -1,0 +1,39 @@
+<com.cyanspring.common.event.order.EnterParentOrderEvent>
+  <priority>NORMAL</priority>
+  <fields>
+    <entry>
+      <string>Qty</string>
+      <string>80000</string>
+    </entry>
+    <entry>
+      <string>Type</string>
+      <string>Limit</string>
+    </entry>
+    <entry>
+      <string>Side</string>
+      <string>Buy</string>
+    </entry>
+    <entry>
+      <string>Symbol</string>
+      <string>0005.HK</string>
+    </entry>
+    <entry>
+      <string>Strategy</string>
+      <string>POV</string>
+    </entry>
+    <entry>
+      <string>Price</string>
+      <string>70.4</string>
+    </entry>
+    <entry>
+      <string>POV limit</string>
+      <string>30</string>
+    </entry>
+    <entry>
+      <string>POV</string>
+      <string>30</string>
+    </entry>
+  </fields>
+  <txId>20120626-130244-288-1831</txId>
+  <fix>false</fix>
+</com.cyanspring.common.event.order.EnterParentOrderEvent>

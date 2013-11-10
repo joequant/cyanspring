@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>algo</artifactId>
+		<groupId>com.cyanspring.algo</groupId>
+		<version>1.61</version>
+	</parent>
+	<groupId>com.cyanspring.custom</groupId>
+	<artifactId>cyanspring-custom</artifactId>
+	<name>cyanspring-custom</name>
+	<url>http://www.cyanspring.com</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+  	<build>
+		<resources>
+			<resource>
+				<directory>${basedir}</directory>
+				<includes>
+					<include>conf/**</include>
+				</includes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+				  <execution>
+				    <id>copy-resources</id>
+				    <!-- here the phase you need -->
+				    <phase>install</phase>
+				    <goals>
+				      <goal>copy-resources</goal>
+				    </goals>
+				    <configuration>
+				      <outputDirectory>${basedir}/../server/strategies</outputDirectory>
+				      <resources>          
+					<resource>
+					  <directory>${basedir}/target</directory>
+					  <filtering>false</filtering>
+					  <includes>
+					    <include>*.jar</include>
+					  </includes>
+					</resource>
+				      </resources>              
+				    </configuration>            
+				  </execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.cyanspring.common</groupId>
+			<artifactId>cyanspring-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cyanspring.strategy</groupId>
+			<artifactId>cyanspring-strategy</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	</dependencies>
+	
+</project>

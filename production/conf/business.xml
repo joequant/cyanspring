@@ -1,0 +1,125 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+
+	<bean id="parentOrderValidator" class="com.cyanspring.server.validation.ParentOrderValidator">       
+	    <constructor-arg>
+	        <list>
+				<ref bean="orderFieldValidator"/>
+				<ref bean="strategyOrderValidator"/>
+	        </list>
+	    </constructor-arg>
+	</bean>	
+	
+	<!-- field specific validation -->
+	<bean id="orderFieldValidator" class="com.cyanspring.server.validation.OrderFieldValidator">       
+	    <property name="fieldValidators">
+	  		<map>
+	  			<entry key="Strategy">
+					<bean class="com.cyanspring.server.validation.StrategyFieldValidator"/>
+				</entry>
+	  			<entry key="POV">
+					<bean class="com.cyanspring.server.validation.PovValidator"/>
+				</entry>
+	  			<entry key="POV limit">
+					<bean class="com.cyanspring.server.validation.PovValidator"/>
+				</entry>
+	  			<entry key="Symbol">
+					<bean class="com.cyanspring.server.validation.InstrumentValidator"/>
+				</entry>
+	  			<entry key="Qty">
+					<bean class="com.cyanspring.server.validation.OrderQuantityValidator"/>
+				</entry>
+	  			<entry key="Dis Qty">
+					<bean class="com.cyanspring.server.validation.OrderQuantityValidator"/>
+				</entry>
+	  			<entry key="Qty">
+					<bean class="com.cyanspring.server.validation.OrderQuantityValidator"/>
+				</entry>
+	  			<entry key="Start Time">
+					<bean class="com.cyanspring.server.validation.StartTimeValidator"/>
+				</entry>
+	  			<entry key="End Time">
+					<bean class="com.cyanspring.server.validation.EndTimeValidator"/>
+				</entry>
+       		</map>
+        </property>
+	</bean>	
+	
+	<!-- strategy specific validation -->
+	<bean id="strategyOrderValidator" class="com.cyanspring.server.validation.StrategyOrderValidator">       
+	    <property name="strategyValidators">
+	  		<map>
+	  			<entry key="SNIPER">
+			  		<bean class="com.cyanspring.server.validation.SniperValidator"/>
+				</entry>
+	  			<entry key="ICEBERG">
+			  		<bean class="com.cyanspring.server.validation.IcebergValidator"/>
+				</entry>
+       		</map>
+        </property>
+	</bean>	
+	
+	<bean id="parentOrderPreCheck" class="com.cyanspring.server.validation.ParentOrderPreCheck">       
+	</bean>	
+	
+	<bean id="fixToOrderMap" class="com.cyanspring.common.util.DualMap">
+	    <constructor-arg>
+           	<map key-type="java.lang.Integer" value-type="java.lang.String">
+            	<entry key="6001" value="Strategy"/>
+            	<entry key="6002" value="Start Time"/>
+            	<entry key="6003" value="End Time"/>
+            	<entry key="6010" value="POV"/>
+        	</map>
+	    </constructor-arg>
+	</bean>
+	
+	<bean id="fixParentOrderConverter" class="com.cyanspring.server.fix.FixParentOrderConverter">       
+	</bean>
+
+	<bean id="fixDataConverter" class="com.cyanspring.common.business.util.GenericDataConverter">
+	    <property name="fieldMap">
+	  		<map>
+            	<entry key="Start Time" value-ref="utcTimeOnlyConverter" />
+            	<entry key="End Time" value-ref="utcTimeOnlyConverter" />
+       		</map>
+        </property>
+	</bean>
+	
+	<bean id="utcTimeOnlyConverter" class="com.cyanspring.server.fix.UTCTimeOnlyConverter">
+	</bean>
+	
+	<bean id="parentOrderDefaultValueFiller" class="com.cyanspring.server.validation.ParentOrderDefaultValueFiller">       
+	    <constructor-arg>
+	  		<map>
+	  			<entry>
+	  				<!-- conditions -->
+	  				<key> 
+	  					<map key-type="java.lang.String" value-type="java.lang.String">
+	  						
+	  					</map>
+	  				</key>
+	  				<!-- fields to default -->
+  					<map key-type="java.lang.String" value-type="java.lang.String">
+       					<entry key="Strategy" value="SDMA"/>
+       					<entry key="POV limit" value="40"/>
+  					</map>
+	  			</entry>
+       		</map>
+	    </constructor-arg>
+	</bean>
+
+	<bean id="defaultStartEndTime" class="com.cyanspring.common.marketsession.DefaultStartEndTime">
+		<constructor-arg><value>01:00:00</value></constructor-arg>
+     	<constructor-arg><value>23:00:00</value></constructor-arg>
+	</bean>
+
+
+</beans>

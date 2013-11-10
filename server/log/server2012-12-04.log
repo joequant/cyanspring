@@ -1,0 +1,102 @@
+15:39:09,787 [main] INFO  ExchangeBT  - Tick file loaded: src/test/resources/ticks/ANZ.AX.txt
+15:39:09,787 [main] INFO  ExchangeBT  - Tick file loaded: src/test/resources/ticks/BHP.AX.txt
+15:39:09,787 [main] INFO  ExchangeBT  - Tick file loaded: src/test/resources/ticks/RIO.AX.txt
+15:39:09,787 [main] INFO  ExchangeBT  - Tick file loaded: src/test/resources/ticks/WBC.AX.txt
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:56:49.647
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:56:49.647
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:56:49.647
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:56:49.648
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:05.392
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:05.392
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:05.393
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:05.393
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:06.299
+15:39:09,787 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:06.403
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:06.830
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:06.852
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:06.971
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:07.025
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:07.469
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:07.592
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:08.255
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:08.448
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:08.614
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:09.054
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:09.415
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:09.456
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:10.045
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:10.159
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:10.526
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:10.946
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:11.167
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:11.537
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:11.678
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:12.190
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:12.651
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:12.664
+15:39:09,803 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:12.990
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:13.099
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:13.690
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:14.175
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:14.484
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: WBC.AX, 20.45, 937.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:14.680
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:15.236
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:15.331
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 54.7, 3005.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:15.514
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:16.229
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:16.582
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:16.955
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:16.999
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: BHP.AX, 36.85, 1619.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:17.261
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: WBC.AX, 20.55, 3126.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:17.538
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: ANZ.AX, 21.55, 3427.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:17.797
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: BHP.AX, 36.85, 2117.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:18.037
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:18.253
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 54.6, 238.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:18.695
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: ANZ.AX, 21.55, 709.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:19.548
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:19.577
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:20.010
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 55.0, 474.0
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:20.228
+15:39:09,819 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:20.531
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:21.040
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: WBC.AX, 20.2, 3642.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:21.281
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: BHP.AX, 36.45, 2094.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:21.291
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: ANZ.AX, 21.7, 497.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:21.595
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 55.0, 2257.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:22.389
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 54.5, 1064.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:22.454
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: WBC.AX, 20.2, 1920.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:22.633
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: BHP.AX, 36.45, 528.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:23.042
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:23.183
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 54.45, 604.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: ANZ.AX, 2012-08-27 14:57:23.211
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: ANZ.AX, 21.95, 1633.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: WBC.AX, 2012-08-27 14:57:23.799
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: WBC.AX, 20.2, 913.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: RIO.AX, 2012-08-27 14:57:24.043
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Trade: RIO.AX, 54.45, 209.0
+15:39:09,834 [main] INFO  ExchangeBtLoadTickTest  - Quote: BHP.AX, 2012-08-27 14:57:24.049
+15:39:09,834 [main] INFO  ExchangeBT  - Finished replay of tick files
+15:39:09,850 [Thread-4] INFO  GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@121b59a: startup date [Tue Dec 04 15:39:03 CST 2012]; root of context hierarchy
+15:39:09,897 [Thread-3] INFO  GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@d251a3: startup date [Tue Dec 04 15:39:01 CST 2012]; root of context hierarchy
+15:39:09,897 [Thread-4] INFO  DefaultListableBeanFactory  - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dcc2a3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,aceptorSettings1,initiatorSettings1]; root of factory hierarchy
+15:39:09,897 [Thread-10] INFO  GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@c954e: startup date [Tue Dec 04 15:39:06 CST 2012]; root of context hierarchy
+15:39:09,897 [Thread-3] INFO  DefaultListableBeanFactory  - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@530cf2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,eventManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,scheduleManager,tickTable,tickTableManager,refDataManager,downStreamManager,simDownStreamAdaptor]; root of factory hierarchy
+15:39:09,897 [Thread-10] INFO  DefaultListableBeanFactory  - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15200be: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,setDerbyLog]; root of factory hierarchy
+15:39:09,897 [Thread-10] INFO  LocalSessionFactoryBean  - Closing Hibernate SessionFactory
+15:39:09,897 [Thread-10] INFO  SessionFactoryImpl  - closing

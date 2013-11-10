@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+  <class name="com.cyanspring.common.business.Execution" table="ANYONE.EXECUTIONS"> 
+    <id 	  column="OBJECT_ID" 		name="id" type="java.lang.String"/> 
+    <property column="SYMBOL" 			name="symbol" type="java.lang.String"/>
+	<property column="SIDE" 			name="side" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.OrderSide</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="QUANTITY" 		name="quantity" type="java.lang.Double"/>
+	<property column="PRICE" 			name="price" type="java.lang.Double"/>
+	<property column="ORDER_ID" 		name="orderId" type="java.lang.String"/>
+	<property column="PARENT_ID" 		name="parentOrderId" type="java.lang.String"/>
+	<property column="STRATEGY_ID" 		name="strategyId" type="java.lang.String"/>
+	<property column="EXEC_ID" 			name="execId" type="java.lang.String"/>
+	<property column="MODIFIED" 		name="modified" type="java.util.Date"/>
+	<property column="CREATED" 			name="created" type="java.util.Date"/>
+	<property column="SEQ_ID" 			name="seqId" type="java.lang.String"/>
+	<property column="SERVER_ID" 		name="serverId" type="java.lang.String"/>
+  </class> 
+  
+  <class name="com.cyanspring.common.business.ChildOrder" table="ANYONE.ACTIVE_CHILD_ORDERS"> 
+    <id 	  column="OBJECT_ID" 		name="id" type="java.lang.String"/> 
+    <property column="SYMBOL" 			name="symbol" type="java.lang.String"/>
+	<property column="SIDE" 			name="side" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.OrderSide</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="QUANTITY" 		name="quantity" type="java.lang.Double"/>
+	<property column="PRICE" 			name="price" type="java.lang.Double"/>
+	<property column="CUM_QTY" 			name="cumQty" type="java.lang.Double"/>
+	<property column="AVG_PX" 			name="avgPx" type="java.lang.Double"/>
+	<property column="ORDER_TYPE" 		name="type" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.ExchangeOrderType</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="ORD_STATUS" 	name="ordStatus" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.OrdStatus</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="PARENT_ID" 		name="parentOrderId" type="java.lang.String"/>
+	<property column="STRATEGY_ID" 		name="strategyId" type="java.lang.String"/>
+	<property column="MODIFIED" 		name="modified" type="java.util.Date"/>
+	<property column="CREATED" 			name="created" type="java.util.Date"/>
+	<property column="SEQ_ID" 			name="seqId" type="java.lang.String"/>
+	<property column="CLORDER_ID"		name="clOrderId" type="java.lang.String"/>
+	<property column="SERVER_ID" 		name="serverId" type="java.lang.String"/>
+  </class> 
+  
+  <class name="com.cyanspring.server.persistence.ChildOrderAudit" table="ANYONE.CHILD_ORDER_AUDIT"> 
+    <id 	  column="AUDIT_ID" 		name="auditId" type="java.lang.String"/> 
+    <property column="OBJECT_ID" 		name="id" type="java.lang.String"/> 
+	<property column="EXEC_TYPE" 		name="execType" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.ExecType</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+    <property column="SYMBOL" 			name="symbol" type="java.lang.String"/>
+	<property column="SIDE" 			name="side" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.OrderSide</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="QUANTITY" 		name="quantity" type="java.lang.Double"/>
+	<property column="PRICE" 			name="price" type="java.lang.Double"/>
+	<property column="CUM_QTY" 			name="cumQty" type="java.lang.Double"/>
+	<property column="AVG_PX" 			name="avgPx" type="java.lang.Double"/>
+	<property column="ORDER_TYPE" 		name="type" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.ExchangeOrderType</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="ORD_STATUS" 	name="ordStatus" length="30">
+   		<type name="org.hibernate.type.EnumType">
+   			<param name="enumClass">com.cyanspring.common.type.OrdStatus</param>   
+       		<param name="type">12</param>
+   		</type>
+	</property>
+	<property column="PARENT_ID" 		name="parentOrderId" type="java.lang.String"/>
+	<property column="STRATEGY_ID" 		name="strategyId" type="java.lang.String"/>
+	<property column="MODIFIED" 		name="modified" type="java.util.Date"/>
+	<property column="CREATED" 			name="created" type="java.util.Date"/>
+	<property column="SEQ_ID" 			name="seqId" type="java.lang.String"/>
+	<property column="CLORDER_ID"		name="clOrderId" type="java.lang.String"/>
+	<property column="SERVER_ID" 		name="serverId" type="java.lang.String"/>
+  </class> 
+  
+  <class name="com.cyanspring.server.persistence.TextObject" table="ANYONE.STRATEGIES"> 
+  	<composite-id>
+	    <key-property 	column="OBJECT_ID" 		name="id" type="java.lang.String"/> 
+		<key-property 	column="LINE_NO" 		name="line" type="java.lang.Integer"/>
+  	</composite-id> 
+	<property column="TIME_STAMP" 		name="timeStamp" type="java.util.Date"/>
+	<property column="XML_TEXT" 		name="xml" type="java.lang.String"/>
+	<property column="SERVER_ID" 		name="serverId" type="java.lang.String"/>
+  </class> 
+</hibernate-mapping> 

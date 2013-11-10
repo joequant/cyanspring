@@ -1,0 +1,38 @@
+<com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>
+  <priority>NORMAL</priority>
+  <txId>20130209-150436-890-0001T</txId>
+  <strategy>
+    <entry>
+      <string>Strategy</string>
+      <string>BASIN</string>
+    </entry>
+  </strategy>
+  <instruments>
+    <map>
+      <entry>
+        <string>Low fall%</string>
+        <double>10.0</double>
+      </entry>
+      <entry>
+        <string>Min win%</string>
+        <double>5.0</double>
+      </entry>
+      <entry>
+        <string>High fall%</string>
+        <double>2.0</double>
+      </entry>
+      <entry>
+        <string>Symbol</string>
+        <string>13</string>
+      </entry>
+      <entry>
+        <string>Position</string>
+        <double>1000.0</double>
+      </entry>
+      <entry>
+        <string>Pos Px</string>
+        <double>85.85</double>
+      </entry>
+    </map>
+  </instruments>
+</com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>

@@ -1,0 +1,75 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+
+	<bean id="refDataBuilder" class="com.cyanspring.ymd.HkRefDataBuilder">
+		<property name="symbolFile">
+			<value>conf/symbols.txt</value>
+		</property>
+		<property name="tickProcessors">
+	        <list value-type="com.cyanspring.analytical.common.ITickProcessor">
+				<ref bean="singleMA"/>
+				<ref bean="shortMA"/>
+				<ref bean="midMA"/>
+				<ref bean="longMA"/>
+	        </list>
+		</property>    
+	</bean>
+
+	<bean id="refDataGetter" class="com.cyanspring.ymd.business.AARefDataGetter">
+	</bean>
+
+	<bean id="singleMA" class="com.cyanspring.analytical.SMAProcessor">
+		<property name="count" value="1"/>
+		<property name="valueGetter">
+			<ref bean="valueGetter"/>
+		</property>    
+		<property name="timeGetter">
+			<ref bean="timeGetter"/>
+		</property>    
+	</bean>
+
+	<bean id="shortMA" class="com.cyanspring.analytical.SMAProcessor">
+		<property name="count" value="3"/>
+		<property name="valueGetter">
+			<ref bean="valueGetter"/>
+		</property>    
+		<property name="timeGetter">
+			<ref bean="timeGetter"/>
+		</property>    
+	</bean>
+
+	<bean id="midMA" class="com.cyanspring.analytical.SMAProcessor">
+		<property name="count" value="10"/>
+		<property name="valueGetter">
+			<ref bean="valueGetter"/>
+		</property>    
+		<property name="timeGetter">
+			<ref bean="timeGetter"/>
+		</property>    
+	</bean>
+
+	<bean id="longMA" class="com.cyanspring.analytical.SMAProcessor">
+		<property name="count" value="20"/>
+		<property name="valueGetter">
+			<ref bean="valueGetter"/>
+		</property>    
+		<property name="timeGetter">
+			<ref bean="timeGetter"/>
+		</property>    
+	</bean>
+
+	<bean id="timeGetter" class="com.cyanspring.ymd.business.TimeStockGetter">
+	</bean>
+
+	<bean id="valueGetter" class="com.cyanspring.ymd.business.ValueStockGetter">
+	</bean>
+
+</beans>

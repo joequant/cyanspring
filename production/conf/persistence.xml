@@ -1,0 +1,56 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	 <!-- Embedded mode -->
+	  <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+	  <property name="url" value="jdbc:derby:database;create=true"/>
+	 <!-- Client mode -->
+	 <!--
+	  <property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>
+	  <property name="url" value="jdbc:derby://localhost:1527/database;create=false"/>
+	  -->
+	  <property name="username" value="user"/>
+	  <property name="password" value="pass"/>
+	</bean>
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	  <property name="dataSource" ref="dataSource"/>
+	  <property name="mappingResources">
+	    <list>
+	      <value>conf/object.hbm.xml</value>
+	    </list>
+	  </property>
+	  <property name="hibernateProperties">
+      	<props>
+         <prop key="hibernate.dialect">org.hibernate.dialect.DerbyDialect</prop>
+         <prop key="hibernate.show_sql">false</prop>
+         <prop key="hibernate.format_sql">false</prop>
+         <prop key="hibernate.connection.autocommit">false</prop>
+       	</props>
+       </property>
+	</bean>
+
+	<bean id="setDerbyLog" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">   
+		<property name="targetClass">
+			<value>java.lang.System</value>
+		</property>
+		<property name="targetMethod">
+			<value>setProperty</value>
+		</property>
+		<property name="arguments">
+		     <list>       
+		     	<value>derby.stream.error.file</value>       
+		     	<value>log/derby.log</value>     
+		     </list>   
+		</property> 
+	</bean> 
+</beans>

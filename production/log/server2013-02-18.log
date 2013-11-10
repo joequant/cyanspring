@@ -1,0 +1,320 @@
+12:59:02,705 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@750159: startup date [Mon Feb 18 12:59:02 CST 2013]; root of context hierarchy
+12:59:02,818 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\server.xml]
+12:59:02,986 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\server_sim.xml]
+12:59:03,025 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\business.xml]
+12:59:03,076 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\strategy.xml]
+12:59:03,110 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/goldtree/target/classes/conf/Vase.xml]
+12:59:03,132 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/goldtree/target/classes/conf/Basin.xml]
+12:59:03,166 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\built-in.xml]
+12:59:03,188 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+12:59:03,207 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\MarketSession.xml]
+12:59:03,228 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\production\conf\persistence.xml]
+12:59:03,599 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64c34e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,vaseStrategy,basinStrategyFieldDefs,basinStrategyInstrumentFieldDefs,basinStrategy,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+12:59:04,851 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+12:59:04,860 [main] INFO  Environment  - Hibernate 3.6.3.Final
+12:59:04,863 [main] INFO  Environment  - hibernate.properties not found
+12:59:04,867 [main] INFO  Environment  - Bytecode provider name : javassist
+12:59:04,872 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+12:59:05,065 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+12:59:05,129 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+12:59:05,144 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+12:59:05,145 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+12:59:05,146 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+12:59:05,160 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+12:59:05,171 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:59:05,212 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+12:59:05,212 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+12:59:05,215 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+12:59:07,825 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+12:59:07,869 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+12:59:07,869 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+12:59:07,871 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+12:59:07,873 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:59:07,873 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+12:59:07,873 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+12:59:07,874 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+12:59:07,874 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+12:59:07,874 [main] INFO  SettingsFactory  - Connection release mode: on_close
+12:59:07,874 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+12:59:07,874 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+12:59:07,874 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+12:59:07,874 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+12:59:07,874 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:59:07,877 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+12:59:07,877 [main] INFO  SettingsFactory  - Query language substitutions: {}
+12:59:07,877 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+12:59:07,877 [main] INFO  SettingsFactory  - Second-level cache: enabled
+12:59:07,877 [main] INFO  SettingsFactory  - Query cache: disabled
+12:59:07,877 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:59:07,878 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+12:59:07,878 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+12:59:07,885 [main] INFO  SettingsFactory  - Statistics: disabled
+12:59:07,885 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+12:59:07,885 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+12:59:07,885 [main] INFO  SettingsFactory  - Named query checking : enabled
+12:59:07,885 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:59:07,910 [main] INFO  SessionFactoryImpl  - building session factory
+12:59:07,918 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1dd7736
+12:59:07,918 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1dd7736
+12:59:07,918 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@bd93cd
+12:59:07,918 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@3299f6
+12:59:07,919 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@3299f6
+12:59:07,919 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@19fc25
+12:59:07,919 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1f8f8c8
+12:59:07,919 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@952905
+12:59:07,919 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@b83be0
+12:59:08,339 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+12:59:08,605 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+12:59:08,738 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+12:59:08,740 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+12:59:08,740 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+12:59:08,780 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+12:59:08,968 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://950-PC:61616
+12:59:08,969 [main] INFO  TransportConnector  - Connector tcp://0.0.0.0:61616 Started
+12:59:08,973 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-50573-1361163544032-1:1) started
+12:59:09,430 [main] INFO  StrategyFactory  - Registered strategy VASE to bean vaseStrategy
+12:59:09,445 [main] INFO  StrategyFactory  - Registered strategy BASIN to bean basinStrategy
+12:59:09,464 [main] INFO  OrderGenerator  - Initialising OrderGenerator
+12:59:09,465 [main] INFO  RefDataManager  - initialising
+12:59:09,785 [main] INFO  MarketDataManager  - initialising
+12:59:09,786 [main] INFO  DownStreamManager  - initialising
+12:59:09,786 [MarketDataManager] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+12:59:09,786 [Server] INFO  Server  - Market data is ready: true
+12:59:13,108 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+12:59:13,140 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+12:59:13,140 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+12:59:13,140 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+12:59:13,191 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+12:59:13,196 [main] INFO  SocketInitiator  - SessionTimer started
+12:59:13,198 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+12:59:13,200 [main] INFO  TickDataManager  - Existing tick directory: ticks
+12:59:13,201 [main] INFO  UpStreamManager  - initialising
+12:59:13,201 [Server] INFO  Server  - Market data is ready: true
+12:59:13,202 [Server] INFO  Server  - Market data is ready: true
+12:59:13,202 [MarketDataManager] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+12:59:13,206 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+12:59:13,214 [main] INFO  SocketAcceptor  - SessionTimer started
+12:59:13,221 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+12:59:13,221 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+12:59:13,221 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+12:59:13,260 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+12:59:13,262 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+12:59:13,464 [main] INFO  Server  - Published my node info
+12:59:13,466 [Server] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+12:59:13,474 [main] INFO  MarketReplay  - Market replay starts at: Mon Feb 18 12:59:13 CST 2013
+12:59:13,481 [main] INFO  MarketReplay  - Market replay ends at: Mon Feb 18 12:59:13 CST 2013
+12:59:14,587 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+12:59:14,591 [main] INFO  SocketAcceptor  - SessionTimer started
+12:59:14,592 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+12:59:14,592 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+12:59:14,592 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+12:59:14,621 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+12:59:18,238 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:50588
+12:59:18,240 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:50588, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+12:59:19,222 [Server] INFO  Server  - Down stream is ready: true
+12:59:20,044 [Thread-27] INFO  Server  - Executions recovered: 1
+12:59:20,432 [Thread-27] INFO  PersistenceManager  - Deleting 0 terminated items
+12:59:20,434 [Server] INFO  Server  - Market data is ready: true
+12:59:20,438 [Server] INFO  Server  - Market data is ready: true
+12:59:20,438 [Server] INFO  Server  - Market data is ready: true
+12:59:20,444 [Server] INFO  Server  - Market data is ready: true
+12:59:20,449 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-685-1414P] Strategy started
+12:59:20,449 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-669-2317P] Strategy started
+12:59:20,453 [Thread-SC-4] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-687-0636P] Strategy started
+12:59:20,454 [Thread-SC-4] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-691-2388P] Strategy started
+12:59:20,454 [Thread-SC-4] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-713-1726P] Strategy started
+12:59:20,457 [Server] INFO  Server  - Market data is ready: true
+12:59:20,458 [Server] INFO  Server  - Market data is ready: true
+12:59:20,458 [Server] INFO  Server  - Market data is ready: true
+12:59:20,458 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-675-2213P] Strategy started
+12:59:20,458 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-678-0629P] Strategy started
+12:59:20,459 [Server] INFO  Server  - Market data is ready: true
+12:59:20,460 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-755-1729P] Strategy started
+12:59:20,460 [Server] INFO  Server  - Market data is ready: true
+12:59:20,460 [Server] INFO  Server  - Market data is ready: true
+12:59:20,461 [Thread-SC-5] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-732-0457P] Strategy started
+12:59:20,471 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-763-0224P] Strategy started
+12:59:20,474 [Thread-SC-8] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-795-0537P] Strategy started
+12:59:20,476 [Server] INFO  Server  - Market data is ready: true
+12:59:20,483 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-822-1267P] Strategy started
+12:59:20,484 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-845-0700P] Strategy started
+12:59:20,485 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-859-1623P] Strategy started
+12:59:20,485 [Server] INFO  Server  - Market data is ready: true
+12:59:20,487 [Server] INFO  Server  - Market data is ready: true
+12:59:20,487 [Server] INFO  Server  - Market data is ready: true
+12:59:20,489 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-861-1376P] Strategy started
+12:59:20,489 [Server] INFO  Server  - Market data is ready: true
+12:59:20,493 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-863-2278P] Strategy started
+12:59:20,501 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-870-2230P] Strategy started
+12:59:20,502 [Server] INFO  Server  - Market data is ready: true
+12:59:20,502 [Server] INFO  Server  - Market data is ready: true
+12:59:20,504 [Thread-SC-5] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-886-0341P] Strategy started
+12:59:20,505 [Server] INFO  Server  - Market data is ready: true
+12:59:20,505 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-890-0292P] Strategy started
+12:59:20,506 [Server] INFO  Server  - Market data is ready: true
+12:59:20,509 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-920-1837P] Strategy started
+12:59:20,509 [Server] INFO  Server  - Market data is ready: true
+12:59:20,516 [Thread-SC-8] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-927-2001P] Strategy started
+12:59:20,517 [Thread-SC-8] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-933-0401P] Strategy started
+12:59:20,518 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-935-1463P] Strategy started
+12:59:20,519 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-936-0552P] Strategy started
+12:59:20,520 [Server] INFO  Server  - Market data is ready: true
+12:59:20,520 [Server] INFO  Server  - Market data is ready: true
+12:59:20,520 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-938-1210P] Strategy started
+12:59:20,521 [Server] INFO  Server  - Market data is ready: true
+12:59:20,521 [Server] INFO  Server  - Market data is ready: true
+12:59:20,529 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-939-0714P] Strategy started
+12:59:20,530 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-941-0382P] Strategy started
+12:59:20,521 [Server] INFO  Server  - Market data is ready: true
+12:59:20,535 [Thread-SC-5] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-942-0559P] Strategy started
+12:59:20,535 [Server] INFO  Server  - Market data is ready: true
+12:59:20,543 [Server] INFO  Server  - Market data is ready: true
+12:59:20,543 [Server] INFO  Server  - Market data is ready: true
+12:59:20,544 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-943-1592P] Strategy started
+12:59:20,545 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-959-0527P] Strategy started
+12:59:20,548 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-019-1698P] Strategy started
+12:59:20,548 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-020-0872P] Strategy started
+12:59:20,548 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,549 [Server] INFO  Server  - Market data is ready: true
+12:59:20,550 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-062-0573P] Strategy started
+12:59:20,550 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-051-1009P] Strategy started
+12:59:20,551 [Server] INFO  Server  - Market data is ready: true
+12:59:20,551 [Server] INFO  Server  - Market data is ready: true
+12:59:20,551 [Server] INFO  Server  - Market data is ready: true
+12:59:20,551 [Server] INFO  Server  - Market data is ready: true
+12:59:20,551 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Server] INFO  Server  - Market data is ready: true
+12:59:20,552 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-026-1678P] Strategy started
+12:59:20,553 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-028-0897P] Strategy started
+12:59:20,554 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-973-0547P] Strategy started
+12:59:20,555 [Server] INFO  Server  - Market data is ready: true
+12:59:20,555 [Server] INFO  Server  - Market data is ready: true
+12:59:20,555 [Server] INFO  Server  - Market data is ready: true
+12:59:20,555 [Server] INFO  Server  - Market data is ready: true
+12:59:20,555 [Server] INFO  Server  - Market data is ready: true
+12:59:20,555 [Server] INFO  Server  - Market data is ready: true
+12:59:20,555 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-069-0734P] Strategy started
+12:59:20,556 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-070-1995P] Strategy started
+12:59:20,556 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-035-0378P] Strategy started
+12:59:20,556 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-036-1010P] Strategy started
+12:59:20,557 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-053-2076P] Strategy started
+12:59:20,556 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-072-2299P] Strategy started
+12:59:20,558 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-073-0583P] Strategy started
+12:59:20,558 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-074-1999P] Strategy started
+12:59:20,561 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-975-2466P] Strategy started
+12:59:20,562 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-977-0432P] Strategy started
+12:59:20,562 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-979-1159P] Strategy started
+12:59:20,563 [Thread-27] INFO  Server  - Strategies recovered: 58
+12:59:20,563 [Thread-27] INFO  Server  - Server is ready: true
+12:59:20,563 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-982-1032P] Strategy started
+12:59:20,564 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-984-2342P] Strategy started
+12:59:20,564 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-077-1307P] Strategy started
+12:59:20,564 [Server] INFO  Server  - Market data is ready: true
+12:59:20,565 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-076-1001P] Strategy started
+12:59:20,566 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-058-2473P] Strategy started
+12:59:20,567 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-060-1245P] Strategy started
+12:59:20,568 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-014-2121P] Strategy started
+12:59:20,569 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-061-0974P] Strategy started
+12:59:20,573 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-016-0174P] Strategy started
+12:59:20,574 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-018-1416P] Strategy started
+12:59:20,654 [PersistenceManager] WARN  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal queue size: 172
+12:59:20,904 [PersistenceManager] WARN  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal queue size: 100
+12:59:20,907 [PersistenceManager] INFO  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal back to normal, queue size: 99
+12:59:25,896 [Server] INFO  Server  - Replied my nodeInfo
+12:59:59,423 [MarketDataManager] INFO  AsyncEventProcessor  - processTradeEvent added in method map
+13:03:56,082 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-685-1414P] Strategy stopping
+13:03:56,082 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-062-0573P] Strategy stopping
+13:03:56,083 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-076-1001P] Strategy stopping
+13:03:56,083 [Thread-SC-4] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-691-2388P] Strategy stopping
+13:03:56,083 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-077-1307P] Strategy stopping
+13:03:56,083 [Thread-SC-5] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-942-0559P] Strategy stopping
+13:03:56,083 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-755-1729P] Strategy stopping
+13:03:56,084 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-941-0382P] Strategy stopping
+13:03:56,084 [Thread-SC-8] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-927-2001P] Strategy stopping
+13:03:56,084 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-845-0700P] Strategy stopping
+13:03:56,084 [Thread-SC-8] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-933-0401P] Strategy stopping
+13:03:56,085 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-982-1032P] Strategy stopping
+13:03:56,085 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-822-1267P] Strategy stopping
+13:03:56,085 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-920-1837P] Strategy stopping
+13:03:56,085 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-890-0292P] Strategy stopping
+13:03:56,086 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-975-2466P] Strategy stopping
+13:03:56,086 [Thread-SC-5] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-886-0341P] Strategy stopping
+13:03:56,086 [Thread-SC-4] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-687-0636P] Strategy stopping
+13:03:56,087 [Thread-SC-4] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-713-1726P] Strategy stopping
+13:03:56,088 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-074-1999P] Strategy stopping
+13:03:56,088 [Thread-SC-5] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-732-0457P] Strategy stopping
+13:03:56,088 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-959-0527P] Strategy stopping
+13:03:56,089 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-979-1159P] Strategy stopping
+13:03:56,089 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-943-1592P] Strategy stopping
+13:03:56,090 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-977-0432P] Strategy stopping
+13:03:56,090 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-973-0547P] Strategy stopping
+13:03:56,091 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-014-2121P] Strategy stopping
+13:03:56,093 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-016-0174P] Strategy stopping
+13:03:56,093 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-984-2342P] Strategy stopping
+13:03:56,094 [Thread-SC-6] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-018-1416P] Strategy stopping
+13:03:56,096 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-763-0224P] Strategy stopping
+13:03:56,096 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-036-1010P] Strategy stopping
+13:03:56,097 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-020-0872P] Strategy stopping
+13:03:56,097 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-035-0378P] Strategy stopping
+13:03:56,098 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-026-1678P] Strategy stopping
+13:03:56,098 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-060-1245P] Strategy stopping
+13:03:56,099 [Thread-SC-8] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-795-0537P] Strategy stopping
+13:03:56,099 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-870-2230P] Strategy stopping
+13:03:56,100 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-935-1463P] Strategy stopping
+13:03:56,100 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-669-2317P] Strategy stopping
+13:03:56,101 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-859-1623P] Strategy stopping
+13:03:56,105 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-678-0629P] Strategy stopping
+13:03:56,108 [Thread-SC-3] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-939-0714P] Strategy stopping
+13:03:56,110 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-051-1009P] Strategy stopping
+13:03:56,111 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-019-1698P] Strategy stopping
+13:03:56,111 [Thread-SC-7] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-028-0897P] Strategy stopping
+13:03:56,112 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-070-1995P] Strategy stopping
+13:03:56,113 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-073-0583P] Strategy stopping
+13:03:56,113 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-675-2213P] Strategy stopping
+13:03:56,114 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-069-0734P] Strategy stopping
+13:03:56,114 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-072-2299P] Strategy stopping
+13:03:56,115 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-061-0974P] Strategy stopping
+13:03:56,116 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-053-2076P] Strategy stopping
+13:03:56,116 [Thread-SC-9] INFO  SingleInstrumentStrategy  - [S1-20130218-125550-058-2473P] Strategy stopping
+13:03:56,120 [PersistenceManager] WARN  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal queue size: 102
+13:03:56,122 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-938-1210P] Strategy stopping
+13:03:56,125 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-936-0552P] Strategy stopping
+13:03:56,125 [Thread-SC-2] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-863-2278P] Strategy stopping
+13:03:56,125 [Thread-SC-1] INFO  SingleInstrumentStrategy  - [S1-20130218-125549-861-1376P] Strategy stopping
+13:03:56,126 [OrderManager] WARN  AsyncPriorityEventThread  - Slow consumer thread OrderManager normal queue size: 106
+13:03:56,134 [OrderManager] WARN  AsyncPriorityEventThread  - Slow consumer thread OrderManager normal queue size: 100
+13:03:56,135 [OrderManager] INFO  AsyncPriorityEventThread  - Slow consumer thread OrderManager normal back to normal, queue size: 99
+13:03:56,177 [PersistenceManager] WARN  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal queue size: 100
+13:03:56,180 [PersistenceManager] INFO  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal back to normal, queue size: 99
+13:03:58,084 [main] INFO  Server  - uninitialising server
+13:03:58,084 [main] INFO  UpStreamManager  - uninitialising
+13:03:58,084 [main] INFO  TickDataManager  - uninitialising
+13:03:58,149 [main] INFO  DownStreamManager  - uninitialising
+13:03:58,149 [main] INFO  MarketDataManager  - uninitialising
+13:03:58,149 [main] INFO  RefDataManager  - uninitialising
+13:03:58,163 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-50573-1361163544032-1:1) is shutting down
+13:03:59,225 [main] INFO  TransportConnector  - Connector tcp://0.0.0.0:61616 Stopped
+13:03:59,252 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-50573-1361163544032-1:1) stopped

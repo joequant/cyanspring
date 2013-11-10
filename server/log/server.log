@@ -1,0 +1,75 @@
+16:40:57,100 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Initialize strategy: 20120927-164057-099-0622P, 0005.HK, 200000.0
+16:40:57,101 [main] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+16:40:57,101 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164057-099-0628 - 0005.HK : [20000.0@68.1,40000.0@68.3][[20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,101 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Strategy started
+16:40:57,101 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164057-099-0629 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,101 [main] DEBUG StrategyTest  - Setting clock to: 20120927-16:41:07.099
+16:40:57,101 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Round aggressive qty from 10000.0 to 10000.0
+16:40:57,101 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Round passive qty from 0.0 to 0.0
+16:40:57,101 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Parent order: Qty: 200000.0, Cum: 0.0
+16:40:57,101 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Open orders: []
+16:40:57,101 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Quote: 20120927-164057-099-0629 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,101 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] AdjQuote: 20120927-164057-099-0629 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,102 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuantityInstruction: [10000.0, 0.0]
+16:40:57,102 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] PriceInstruction: 
+[0005.HK, Sell, 68.2, 10000.0, LIMIT]
+16:40:57,102 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] ExecutionInstruction: [[0005.HK, Sell, NEW, LIMIT, [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, PENDING_NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], null]]
+16:40:57,103 [main] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: 20120927-164107-099-0991EI, 16:41:07.099, 
+[0005.HK, Sell, NEW, LIMIT, [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, PENDING_NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], null]
+16:40:57,103 [main] DEBUG DefaultExecutionManager  - Sending new child order: [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, PENDING_NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]; extra fields: null
+16:40:57,104 [main] DEBUG DefaultExecutionManager  - Received child order update: NEW - [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]
+16:40:57,104 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Child order new: 20120927-164107-099-0989C
+16:40:57,104 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Transaction completed: 20120927-164107-099-0991EI, true
+16:40:57,104 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Received child order update: NEW - [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], message: null
+16:40:57,104 [main] DEBUG DefaultExecutionManager  - Received child order update: FILLED - [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, FILLED, 10000.0, 68.25, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]
+16:40:57,105 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Received child order update: FILLED - [20120927-164107-099-0989C, 0005.HK, Sell, 68.2, 10000.0, FILLED, 10000.0, 68.25, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], message: null
+16:40:57,105 [main] DEBUG ParentOrder  - cumtQty, avgPx: 10000.0, 68.25
+16:40:57,105 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164107-099-1000 - 0005.HK : [20000.0@68.1,40000.0@68.3][[20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,106 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164107-099-1001 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,106 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164107-099-1002 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.2], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,106 [main] DEBUG StrategyTest  - Setting clock to: 20120927-16:41:17.099
+16:40:57,106 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Round aggressive qty from 30000.0 to 30000.0
+16:40:57,106 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Round passive qty from 0.0 to 0.0
+16:40:57,106 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Parent order: Qty: 200000.0, Cum: 10000.0
+16:40:57,106 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Open orders: []
+16:40:57,107 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Quote: 20120927-164107-099-1002 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.2], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,107 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] AdjQuote: 20120927-164107-099-1002 - 0005.HK : [10000.0@68.25,40000.0@68.3][[10000.0, 68.25], [20000.0, 68.2], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,107 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuantityInstruction: [30000.0, 0.0]
+16:40:57,108 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] PriceInstruction: 
+[0005.HK, Sell, 68.2, 30000.0, LIMIT]
+16:40:57,108 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] ExecutionInstruction: [[0005.HK, Sell, NEW, LIMIT, [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, PENDING_NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], null]]
+16:40:57,108 [main] DEBUG DefaultExecutionManager  - Receiving ExecutionInstructionEvent: 20120927-164117-099-0813EI, 16:41:17.099, 
+[0005.HK, Sell, NEW, LIMIT, [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, PENDING_NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], null]
+16:40:57,108 [main] DEBUG DefaultExecutionManager  - Sending new child order: [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, PENDING_NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]; extra fields: null
+16:40:57,108 [main] DEBUG DefaultExecutionManager  - Received child order update: NEW - [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]
+16:40:57,108 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Child order new: 20120927-164117-099-0811C
+16:40:57,109 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Transaction completed: 20120927-164117-099-0813EI, true
+16:40:57,109 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Received child order update: NEW - [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, NEW, 0.0, 0.0, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], message: null
+16:40:57,110 [main] DEBUG DefaultExecutionManager  - Received child order update: PARTIALLY_FILLED - [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, PARTIALLY_FILLED, 10000.0, 68.25, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]
+16:40:57,110 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Received child order update: PARTIALLY_FILLED - [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, PARTIALLY_FILLED, 10000.0, 68.25, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], message: null
+16:40:57,110 [main] DEBUG ParentOrder  - cumtQty, avgPx: 20000.0, 68.25
+16:40:57,110 [main] DEBUG DefaultExecutionManager  - Received child order update: FILLED - [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, FILLED, 30000.0, 68.21666666666667, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null]
+16:40:57,111 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Received child order update: FILLED - [20120927-164117-099-0811C, 0005.HK, Sell, 68.2, 30000.0, FILLED, 30000.0, 68.21666666666667, LIMIT, 20120927-164057-099-0622P, 20120927-164057-099-0622P, null], message: null
+16:40:57,111 [main] DEBUG ParentOrder  - cumtQty, avgPx: 40000.0, 68.225
+16:40:57,111 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164117-099-0828 - 0005.HK : [20000.0@68.1,40000.0@68.3][[20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuoteEvent: 20120927-164117-099-0829 - 0005.HK : [10000.0@68.15,40000.0@68.3][[10000.0, 68.15], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,112 [main] DEBUG StrategyTest  - Setting clock to: 20120927-16:41:27.099
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Round aggressive qty from 0.0 to 0.0
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Round passive qty from 0.0 to 0.0
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Parent order: Qty: 200000.0, Cum: 40000.0
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Open orders: []
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] Quote: 20120927-164117-099-0829 - 0005.HK : [10000.0@68.15,40000.0@68.3][[10000.0, 68.15], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,112 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] AdjQuote: 20120927-164117-099-0829 - 0005.HK : [10000.0@68.15,40000.0@68.3][[10000.0, 68.15], [20000.0, 68.1]][[40000.0, 68.3]]
+16:40:57,113 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] QuantityInstruction: [0.0, 0.0]
+16:40:57,113 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] PriceInstruction: 
+[0005.HK, Sell, 68.2, 0.0, LIMIT]
+16:40:57,113 [main] DEBUG SingleInstrumentStrategy  - [20120927-164057-099-0622P] ExecutionInstruction: []
+16:40:57,114 [main] INFO  SingleInstrumentStrategy  - [20120927-164057-099-0622P] Strategy stopping
+16:40:57,120 [Thread-1] INFO  GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@18d9850: startup date [Thu Sep 27 16:40:44 CST 2012]; root of context hierarchy
+16:40:57,124 [Thread-7] INFO  GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@1b493c6: startup date [Thu Sep 27 16:40:49 CST 2012]; root of context hierarchy
+16:40:57,123 [Thread-10] INFO  GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@1d7e64f: startup date [Thu Sep 27 16:40:55 CST 2012]; root of context hierarchy
+16:40:57,124 [Thread-1] INFO  DefaultListableBeanFactory  - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1aae94f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,aceptorSettings1,initiatorSettings1]; root of factory hierarchy
+16:40:57,124 [Thread-10] INFO  DefaultListableBeanFactory  - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@def14f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,strategyFactory,globalStrategySettings,sdmaStrategy,povStrategy,sniperStrategy,icebergStrategy,customStrategy1,defaulExecutionAnalyzer,defaultExecutionManager,dollarNeutralStrategyFieldConverter,dollarNeutralStrategy,lowHighStrategyFieldConverter,lowHighStrategy,customStrategy2FieldConverter,customStrategy2,customStrategy3FieldConverter,customStrategy3,eventManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,scheduleManager,tickTable,tickTableManager,refDataManager,downStreamManager,simDownStreamAdaptor]; root of factory hierarchy
+16:40:57,124 [Thread-7] INFO  DefaultListableBeanFactory  - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1275a34: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,setDerbyLog]; root of factory hierarchy
+16:40:57,126 [Thread-7] INFO  LocalSessionFactoryBean  - Closing Hibernate SessionFactory
+16:40:57,126 [Thread-7] INFO  SessionFactoryImpl  - closing

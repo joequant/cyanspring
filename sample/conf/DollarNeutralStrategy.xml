@@ -1,0 +1,109 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+	<bean id="dollarNeutralStrategyFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Value"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Allow diff"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="High stop"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="High take"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="High flat"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Low flat"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Low take"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Low stop"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+	
+	<bean id="dollarNeutralInstrumentFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Leg"/>
+            		<property name="type" value="java.lang.Integer"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Weight"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Ref price"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+				</bean>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+	
+	<bean id="dollarNeutralStrategy" class="com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralStrategy" scope="prototype">
+		<property name="strategyName" value="DOLLAR_NEUTRAL"/>
+		<property name="analyzer">
+			<bean class="com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralAnalyzer"/>
+		</property>
+		<property name="executionAnalyzer">
+			<ref bean="defaultExecutionAnalyzer"/>
+		</property>
+		<property name="executionManager">
+			<ref bean="defaultExecutionManager"/>
+		</property>
+<!--
+		<property name="eventExecuteTiming">
+	  		<map key-type="java.lang.Class" value-type="com.cyanspring.strategy.ExecuteTiming">
+		        <entry key="com.cyanspring.common.event.marketdata.QuoteEvent" value="NOW" />
+		    </map>
+		</property>
+-->				
+		<property name="strategyFieldDefs" ref="dollarNeutralStrategyFieldDefs"/>
+		<property name="instrumentFieldDefs" ref="dollarNeutralInstrumentFieldDefs"/>
+		
+	</bean>
+	
+</beans>

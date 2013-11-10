@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>algo</artifactId>
+		<groupId>com.cyanspring.algo</groupId>
+		<version>1.65</version>
+	</parent>
+
+	<groupId>com.cyanspring.adaptor</groupId>
+	<artifactId>cyanspring-adaptor</artifactId>
+	<packaging>jar</packaging>
+
+	<name>cyanspring-adaptor</name>
+	<url>http://www.cyanspring.com</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+  	<build>
+	  	<resources>
+	      <resource>
+        	<directory>${basedir}/src/main/resource</directory>
+	        <includes>
+	          <include>**</include>
+	        </includes>
+	      </resource>
+	    </resources>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.cyanspring.common</groupId>
+			<artifactId>cyanspring-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	</dependencies>
+</project>

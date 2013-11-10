@@ -1,0 +1,53 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+	<bean id="markingMakingStrategyFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+	
+	<bean id="markingMakingStrategyInstrumentFieldDefs" class="java.util.ArrayList">       
+	    <constructor-arg>
+	        <list>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Derivative"/>
+            		<property name="type" value="java.lang.Boolean"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Leg"/>
+            		<property name="type" value="java.lang.Integer"/>
+            		<property name="input" value="true"/>
+				</bean>
+            	<bean class="com.cyanspring.common.business.FieldDef">
+            		<property name="name" value="Qty"/>
+            		<property name="type" value="java.lang.Double"/>
+            		<property name="input" value="true"/>
+            		<property name="amendable" value="true"/>
+				</bean>
+	        </list>
+	    </constructor-arg>
+	</bean> 
+
+	<bean id="marketMakingStrategy" class="com.cyanspring.sample.custom.MarketMakingStrategy" scope="prototype">
+		<property name="strategyName" value="MARKET_MAKING"/>
+		<property name="executionAnalyzer">
+			<ref bean="defaultExecutionAnalyzer"/>
+		</property>
+		<property name="executionManager">
+			<ref bean="defaultExecutionManager"/>
+		</property>
+		<property name="strategyFieldDefs" ref="markingMakingStrategyFieldDefs"/>
+		<property name="instrumentFieldDefs" ref="markingMakingStrategyInstrumentFieldDefs"/>
+	</bean>
+	
+</beans>

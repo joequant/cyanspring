@@ -1,0 +1,227 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+
+	<import resource="business.xml" />
+	<import resource="strategy.xml" />
+	<import resource="built-in.xml" />
+	<import resource="classpath*:conf/common.xml" />
+	<import resource="MarketSession.xml" />
+	<import resource="persistence.xml" />
+
+	<bean id="server" class="com.cyanspring.server.Server">
+		<property name="simulatorMode">
+			<value>true</value>
+		</property>
+		<property name = "plugins">
+	        <list>
+            	<ref bean="orderGenerator"/>
+            	<ref bean="marketSessionManager"/>
+            	<ref bean="refDataManager"/>
+            	<ref bean="mdManager"/>
+            	<ref bean="downStreamManager"/>
+            	<ref bean="tickDataManager"/>
+            	<ref bean="upStreamManager"/>
+	        </list>
+		</property>
+	</bean>
+
+	<bean id="systemInfo" class="com.cyanspring.common.SystemInfo">
+		<property name="env">
+			<value>Test</value>
+		</property>
+		<property name="category">
+			<value>EB</value>
+		</property>
+		<property name="id">
+			<value>S1</value>
+		</property>
+	</bean>	
+	
+	<bean id="transportService" class="com.cyanspring.transport.ActiveMQObjectService">
+		<property name="url" value="tcp://0.0.0.0:61616"></property>
+	</bean>
+	
+	<bean id="eventManager" class="com.cyanspring.core.event.RemoteEventManager">
+	    <constructor-arg>
+	    	<ref bean="transportService"/>
+	    </constructor-arg>
+		<property name="embedBroker" value="true"></property>
+	</bean>
+	
+	<bean id="persistenceManager" class="com.cyanspring.server.persistence.PersistenceManager">
+		<property name="textSize" value="4000"></property>
+		<property name="cleanStart" value="false"></property>
+		<property name="todayOnly" value="false"></property>
+	</bean>
+
+	<bean id="mdManager" class="com.cyanspring.server.marketdata.MarketDataManager">
+		    <constructor-arg>
+		    	<ref bean="simMarketDataAdaptor"/>
+		    </constructor-arg>
+	</bean>
+
+	<bean id="simMarketDataAdaptor" class="com.cyanspring.server.sim.SimMarketDataAdaptor">
+		    <constructor-arg>
+		    	<ref bean="simExchange"/>
+		    </constructor-arg>
+	</bean>
+
+	<bean id="simExchange" class="webcurve.exchange.Exchange">
+	</bean>
+
+	<bean id="strategyContainer" class="com.cyanspring.core.strategy.AsyncStrategyContainer" scope="prototype">
+	</bean>
+	
+	<bean id="orderManager" class="com.cyanspring.server.OrderManager">
+	</bean>
+	
+	<bean id="scheduleManager" class="com.cyanspring.common.event.ScheduleManager">
+	</bean>
+	
+	<bean id="tickTable" class="com.cyanspring.common.staticdata.HKexTickTable">
+	</bean>
+
+	<bean id="tickTableManager" class="com.cyanspring.common.staticdata.TickTableManager">
+	</bean>
+	
+	<bean id="businessManager" class="com.cyanspring.server.BusinessManager">
+		<property name="noOfContainers">
+			<value>10</value>
+		</property>
+		<property name="autoStartStrategy">
+			<value>true</value>
+		</property>
+	</bean>
+
+	<bean id="orderGenerator" class="com.cyanspring.server.OrderGenerator">
+	</bean>
+	
+	<bean id="tickDataManager" class="com.cyanspring.server.marketdata.TickDataManager">
+		<property name="directory">
+			<value>ticks</value>
+		</property>
+		<property name="tickDataWriter">
+			<ref bean="tickDataWriter"/>
+		</property>
+		<property name="newFile">
+			<value>false</value>
+		</property>
+		<property name="symbolList">
+			<list>
+	            <value>0001.HK</value>
+	            <value>0002.HK</value>
+	        </list>    
+		</property>
+	</bean>
+		
+	<bean id="tickDataWriter" class="com.cyanspring.common.marketdata.QuoteDataWriter">
+	</bean>
+		
+	<bean id="refDataManager" class="com.cyanspring.common.staticdata.RefDataManager">
+		<property name="refDataFile">
+			<value>refdata/refData.xml</value>
+		</property>
+	</bean>
+	
+	<bean id="downStreamManager" class="com.cyanspring.common.downstream.DownStreamManager">
+	    <constructor-arg>
+	        <list>
+		    	<ref bean="fixDownStreamAdaptor"/>
+	        </list>
+	    </constructor-arg>
+	    <constructor-arg>
+	        <list>
+	        </list>
+	    </constructor-arg>
+	</bean>
+	
+	<bean id="simDownStreamAdaptor" class="com.cyanspring.server.sim.SimDownStreamAdaptor">
+		    <constructor-arg>
+		    	<ref bean="simExchange"/>
+		    </constructor-arg>
+	</bean>
+
+	<bean id="upStreamManager" class="com.cyanspring.server.upstream.UpStreamManager">
+	    <constructor-arg>
+	        <list>
+				<ref bean="fixUpStreamAdaptor"/>
+	        </list>
+	    </constructor-arg>
+	</bean>
+ 			
+	<bean id="fixUpStreamAdaptor" class="com.cyanspring.server.upstream.fix.FixUpStreamAdaptor">
+       	<constructor-arg type="String"><value><![CDATA[
+[DEFAULT]
+PersistMessages=N
+FileLogPath=target/test/log/upstream
+FileStorePath=target/test/store
+ConnectionType=acceptor
+StartTime=00:00:00
+EndTime=23:00:00
+HeartBtInt=30
+SenderCompID=ACCEPTOR1
+SocketAcceptPort=13678
+UseDataDictionary=N
+ValidateUserDefinedFields=N
+
+[SESSION]
+BeginString=FIX.4.2
+TargetCompID=INITIATOR1
+		]]></value></constructor-arg>
+	    <constructor-arg>
+	    	<ref bean="fixParentOrderConverter"/>
+	    </constructor-arg>
+	</bean>
+
+	<bean id="fixDownStreamAdaptor" class="com.cyanspring.server.downstream.fix.FixDownStreamAdaptor">
+       	<constructor-arg type="String"><value><![CDATA[
+[default]
+PersistMessages=N
+FileLogPath=target/test/log/downstream
+ConnectionType=initiator
+SenderCompID=Algo
+TargetCompID=SIMULATOR
+SocketConnectHost=localhost
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=300
+ReconnectInterval=5
+ResetOnLogon=Y
+UseDataDictionary=N
+
+[session]
+BeginString=FIX.4.2
+SocketConnectPort=13679
+		]]></value></constructor-arg>
+	</bean>
+
+    <bean id="simExchangeFixSettings" class="java.lang.String">
+       	<constructor-arg type="String"><value><![CDATA[
+[default]
+PersistMessages=N
+FileLogPath=target/test/log/simulator
+FileStorePath=target/test/store
+ConnectionType=acceptor
+SocketAcceptPort=13679
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=300
+ValidOrderTypes=1,2
+SenderCompID=SIMULATOR
+ValidateUserDefinedFields=N
+
+[session]
+BeginString=FIX.4.2
+TargetCompID=Algo
+		]]></value></constructor-arg>
+	</bean>
+
+</beans>

@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Sat Jun 15 11:57:28 CST 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013f-45fb-0c27-00001848fdd0 
+on database directory C:\java\releases\algo1.65a\cyanspring-src-1.65a\algo\server\database  with class loader sun.misc.Launcher$AppClassLoader@11b86e7 
+Loaded from file:/C:/Users/USER/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_24-b07
+user.dir=C:\java\releases\algo1.65a\cyanspring-src-1.65a\algo\server
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

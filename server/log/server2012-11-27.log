@@ -1,0 +1,1259 @@
+10:56:14,803 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1e4457d: startup date [Tue Nov 27 10:56:14 CST 2012]; root of context hierarchy
+10:56:14,907 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+10:56:15,060 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+10:56:15,100 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+10:56:15,152 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\strategy.xml]
+10:56:15,196 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+10:56:15,219 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+10:56:15,243 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+10:56:15,610 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1342ba4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+10:56:16,785 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+10:56:16,792 [main] INFO  Environment  - Hibernate 3.6.3.Final
+10:56:16,795 [main] INFO  Environment  - hibernate.properties not found
+10:56:16,799 [main] INFO  Environment  - Bytecode provider name : javassist
+10:56:16,802 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+10:56:16,996 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+10:56:17,062 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+10:56:17,100 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+10:56:17,102 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+10:56:17,104 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+10:56:17,114 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+10:56:17,123 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+10:56:17,164 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+10:56:17,164 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+10:56:17,167 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+10:56:18,540 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+10:56:18,576 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+10:56:18,576 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+10:56:18,578 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+10:56:18,579 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+10:56:18,579 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+10:56:18,579 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+10:56:18,580 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+10:56:18,580 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+10:56:18,580 [main] INFO  SettingsFactory  - Connection release mode: on_close
+10:56:18,580 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+10:56:18,581 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+10:56:18,581 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+10:56:18,581 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+10:56:18,581 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+10:56:18,583 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+10:56:18,583 [main] INFO  SettingsFactory  - Query language substitutions: {}
+10:56:18,583 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+10:56:18,583 [main] INFO  SettingsFactory  - Second-level cache: enabled
+10:56:18,583 [main] INFO  SettingsFactory  - Query cache: disabled
+10:56:18,583 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+10:56:18,584 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+10:56:18,584 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+10:56:18,589 [main] INFO  SettingsFactory  - Statistics: disabled
+10:56:18,590 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+10:56:18,590 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+10:56:18,590 [main] INFO  SettingsFactory  - Named query checking : enabled
+10:56:18,590 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+10:56:18,611 [main] INFO  SessionFactoryImpl  - building session factory
+10:56:18,618 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@76f2e8
+10:56:18,618 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1458dcb
+10:56:18,618 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1603522
+10:56:18,618 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1603522
+10:56:18,618 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1408a75
+10:56:18,618 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1408a75
+10:56:18,619 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@423d4f
+10:56:18,619 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1e6696c
+10:56:18,619 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@135133
+10:56:18,917 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+10:56:19,189 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+10:56:19,407 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+10:56:19,408 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+10:56:19,408 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+10:56:19,451 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+10:56:19,571 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+10:56:19,572 [main] INFO  TransportConnector  - Connector tcp://localhost:61616 Started
+10:56:19,574 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-51852-1353984976078-1:1) started
+10:56:19,973 [main] DEBUG Server  - ScheduleManager initialized
+10:56:19,973 [main] DEBUG Server  - PersistenceManager initialized
+10:56:20,681 [main] DEBUG PersistenceManager  - TextObject Records deleted: 4
+10:56:20,689 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+10:56:20,740 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 6
+10:56:20,751 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+10:56:20,777 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+10:56:20,781 [main] DEBUG Server  - OrderManager initialized
+10:56:20,782 [main] DEBUG Server  - BusinessManager initialized
+10:56:20,786 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-dynamic-1.36.jar
+10:56:20,817 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-dynamic-1.36.jar'
+10:56:20,880 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.dynamic.strategy.CustomStrategy1
+10:56:20,885 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+10:56:20,889 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1930611: startup date [Tue Nov 27 10:56:20 CST 2012]; root of context hierarchy
+10:56:20,890 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18b4ccb: defining beans [customStrategy5]; root of factory hierarchy
+10:56:20,921 [main] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy5
+10:56:20,921 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.dynamic.strategy.CustomStrategy2
+10:56:20,922 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+10:56:20,928 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@377e2a: startup date [Tue Nov 27 10:56:20 CST 2012]; root of context hierarchy
+10:56:20,951 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9a6bbb: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; root of factory hierarchy
+10:56:20,966 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+10:56:20,966 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.dynamic.strategy.CustomStrategy3
+10:56:20,967 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+10:56:20,970 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@8c02cc: startup date [Tue Nov 27 10:56:20 CST 2012]; root of context hierarchy
+10:56:20,971 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c9f0f: defining beans [customStrategy3]; root of factory hierarchy
+10:56:20,972 [main] INFO  StrategyFactory  - Registered strategy CUSTOM3 to bean customStrategy3
+10:56:21,024 [main] DEBUG Server  - OrderGenerator initialized
+10:56:21,024 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Tue Nov 27 00:00:00 CST 2012
+10:56:21,025 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Tue Nov 27 09:00:00 CST 2012
+10:56:21,025 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Tue Nov 27 09:15:00 CST 2012
+10:56:21,025 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Tue Nov 27 09:20:00 CST 2012
+10:56:21,025 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Tue Nov 27 09:30:00 CST 2012
+10:56:21,025 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Tue Nov 27 12:00:00 CST 2012
+10:56:21,026 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Tue Nov 27 13:00:00 CST 2012
+10:56:21,026 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Tue Nov 27 13:30:00 CST 2012
+10:56:21,026 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Tue Nov 27 16:00:00 CST 2012
+10:56:26,233 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+10:56:26,263 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+10:56:26,331 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+10:56:26,331 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+10:56:26,331 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+10:56:26,398 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+10:56:26,403 [main] INFO  SocketInitiator  - SessionTimer started
+10:56:26,417 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+10:56:26,477 [main] INFO  Server  - Published my node info
+10:56:26,485 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+10:56:26,506 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+10:56:26,540 [main] INFO  SocketAcceptor  - SessionTimer started
+10:56:26,547 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+10:56:26,547 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+10:56:26,547 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+10:56:26,572 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+10:56:26,586 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+10:56:26,594 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+10:56:26,594 [main] INFO  TickDataManager  - Existing tick directory: ticks
+10:56:26,595 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+10:56:26,607 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+10:56:26,625 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0002.HK, null
+10:56:26,656 [main] INFO  MarketReplay  - Market replay starts at: Tue Nov 27 10:56:26 CST 2012
+10:56:26,697 [main] INFO  MarketReplay  - Market replay ends at: Tue Nov 27 10:56:26 CST 2012
+10:56:28,607 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+10:56:28,666 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+10:56:28,683 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+10:56:28,683 [main] INFO  SocketAcceptor  - SessionTimer started
+10:56:28,684 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+10:56:28,684 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+10:56:28,684 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+10:56:28,708 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+10:56:30,607 [Thread-26] DEBUG Server  - waiting for down stream ready before recovery...
+10:56:31,511 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:51886
+10:56:31,529 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:51886, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+10:56:32,559 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+10:56:32,561 [QFJ Message Processor] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.marketdata.QuoteEvent=2, class com.cyanspring.common.server.event.DownStreamReadyEvent=1, class com.cyanspring.common.event.system.NodeInfoEvent=1, class com.cyanspring.common.server.event.MarketDataReadyEvent=4, class com.cyanspring.common.event.marketdata.QuoteSubEvent=2}
+10:56:32,680 [Thread-26] INFO  Server  - Executions recovered: 0
+10:56:32,756 [Thread-26] INFO  Server  - Strategies recovered: 0
+10:56:32,756 [Thread-26] INFO  Server  - Server ready: true
+10:58:49,963 [ActiveMQ Session Task-2] INFO  Server  - Replied my nodeInfo
+10:58:49,979 [BusinessManager-Thread] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20121127-105846-126-0001
+11:01:19,611 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteEvent, 0, 2, 0
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 30, 2, 15
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 996, 0
+11:03:25,973 [Timer-0] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-dynamic-1.36.jar
+11:03:25,974 [Timer-0] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-dynamic-1.36.jar'
+11:03:25,983 [Timer-0] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.dynamic.strategy.CustomStrategy1
+11:03:25,986 [Timer-0] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+11:03:25,989 [Timer-0] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1b2cb9: startup date [Tue Nov 27 11:03:25 CST 2012]; root of context hierarchy
+11:03:25,990 [Timer-0] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1677979: defining beans [customStrategy5]; root of factory hierarchy
+11:03:26,001 [Timer-0] WARN  StrategyFactory  - Strategy CUSTOM1 being overriden
+11:03:26,002 [Timer-0] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy5
+11:03:26,006 [Timer-0] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.dynamic.strategy.CustomStrategy2
+11:03:26,007 [Timer-0] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+11:03:26,010 [Timer-0] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@a53e68: startup date [Tue Nov 27 11:03:26 CST 2012]; root of context hierarchy
+11:03:26,011 [Timer-0] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9e4dc0: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; root of factory hierarchy
+11:03:26,018 [Timer-0] WARN  StrategyFactory  - Strategy LOW_HIGH being overriden
+11:03:26,018 [Timer-0] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+11:03:26,022 [Timer-0] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.dynamic.strategy.CustomStrategy3
+11:03:26,023 [Timer-0] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+11:03:26,026 [Timer-0] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@ffb35e: startup date [Tue Nov 27 11:03:26 CST 2012]; root of context hierarchy
+11:03:26,027 [Timer-0] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29d838: defining beans [customStrategy3]; root of factory hierarchy
+11:03:26,028 [Timer-0] WARN  StrategyFactory  - Strategy CUSTOM3 being overriden
+11:03:26,028 [Timer-0] INFO  StrategyFactory  - Registered strategy CUSTOM3 to bean customStrategy3
+11:03:46,257 [BusinessManager-Thread] DEBUG BusinessManager  - Ignore field not defined in input fields: POV limit
+11:03:46,263 [OrderManager-Thread] DEBUG OrderManager  - Received parent order update: NEW, [S1-20121127-110346-258-2263P, 0005.HK, Buy, 0.0, 2000.0, NEW, 0.0, 0.0]
+11:03:46,265 [BusinessManager-Thread] DEBUG BusinessManager  - strategy S1-20121127-110346-258-2263P assigned to container SC-0
+11:03:46,266 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Initialize strategy: S1-20121127-110346-258-2263P, 0005.HK, 2000.0
+11:03:46,267 [MarketDataManager-Thread] DEBUG MarketDataManager  - QuoteSubEvent: 0005.HK, null
+11:03:46,267 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Setting strategy end timer: Tue Nov 27 23:00:00 CST 2012
+11:03:46,352 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Strategy started
+11:03:46,377 [OrderManager-Thread] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121127-110346-258-2263P, 0005.HK, Buy, 0.0, 2000.0, NEW, 0.0, 0.0]
+11:03:46,377 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] not doing anything since we haven't recieved any quote yet
+11:03:46,378 [OrderManager-Thread] DEBUG OrderManager  - UpdateParentOrderEvent difference: {State=Running, Modified=Tue Nov 27 11:03:46 CST 2012, Seq ID=S1-20121127-110346-258-2264}
+11:03:46,378 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuoteEvent: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:03:46,378 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:03:46,379 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:03:46,382 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:03:46,383 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:03:46,383 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:03:46,383 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:03:46,383 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:03:47,632 [OrderManager-Thread] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20121127-105846-126-0001 : S1-20121127-110346-258-2263P
+11:03:54,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:03:54,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:03:54,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:03:54,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:03:54,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:03:54,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:03:54,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:03:54,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:03:54,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:03:54,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:03:54,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:03:54,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:03:54,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:03,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:03,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:03,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:03,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:03,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:03,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:03,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:03,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:03,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:03,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:03,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:03,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:03,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:11,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:11,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:11,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:11,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:11,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:11,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:11,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:11,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:11,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:11,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:11,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:11,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:11,771 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:20,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:20,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:20,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:20,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:20,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:20,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:20,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:20,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:20,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:20,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:20,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:20,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:20,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:28,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:28,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:28,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:28,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:28,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:28,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:28,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:28,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:28,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:28,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:28,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:28,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:28,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:37,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:37,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:37,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:37,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:37,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:37,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:37,271 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:45,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:45,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:45,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:45,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:45,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:45,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:45,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:04:54,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:04:54,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:04:54,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:04:54,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:04:54,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:04:54,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:04:54,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:04:54,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:04:54,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:54,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:04:54,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:04:54,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:04:54,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:02,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:02,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:02,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:02,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:02,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:02,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:02,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:02,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:02,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:02,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:02,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:02,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:02,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:11,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:11,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:11,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:11,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:11,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:11,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:11,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:11,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:11,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:11,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:11,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:11,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:11,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:19,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:19,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:19,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:19,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:19,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:19,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:19,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:28,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:28,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:28,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:28,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:28,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:28,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:28,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:36,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:36,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:36,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:36,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:36,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:36,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:36,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:36,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:36,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:36,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:36,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:36,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:36,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:45,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:45,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:45,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:45,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:45,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:45,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:45,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:05:53,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:05:53,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:05:53,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:05:53,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:05:53,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:05:53,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:05:53,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:05:53,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:05:53,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:53,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:05:53,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:05:53,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:05:53,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:02,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:02,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:02,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:02,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:02,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:02,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:02,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:10,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:10,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:10,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:10,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:10,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:10,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:19,011 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteEvent, 0, 3, 0
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 30, 3, 10
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 1994, 0
+11:06:19,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:19,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:19,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:19,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:19,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:19,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:19,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:19,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:19,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:19,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:19,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:19,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:19,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:27,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:27,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:27,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:27,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:27,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:27,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:27,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:36,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:36,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:36,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:36,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:36,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:36,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:44,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:44,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:44,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:44,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:44,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:44,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:44,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:06:53,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:06:53,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:06:53,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:06:53,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:06:53,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:01,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:01,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:01,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:01,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:01,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:01,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:01,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:01,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:01,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:01,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:01,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:01,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:01,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:10,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:10,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:10,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:10,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:10,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:10,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:10,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:18,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:18,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:18,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:18,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:18,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:18,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:18,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:18,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:18,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:18,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:18,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:18,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:18,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:27,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:27,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:27,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:27,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:27,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:27,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:35,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:35,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:35,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:35,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:35,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:35,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:35,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:44,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:44,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:44,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:44,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:44,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:44,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:44,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:07:52,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:07:52,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:52,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:07:52,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:07:52,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:07:52,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:01,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:01,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:01,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:01,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:01,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:01,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:09,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:09,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:09,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:09,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:09,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:18,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:18,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:18,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:18,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:18,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:18,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:26,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:26,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:26,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:26,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:26,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:26,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:35,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:35,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:35,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:35,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:35,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:35,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:43,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:43,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:43,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:43,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:43,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:43,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:43,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:08:52,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:08:52,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:52,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:08:52,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:08:52,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:08:52,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:00,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:00,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:00,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:00,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:09,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:09,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:09,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:09,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:09,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:09,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:17,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:17,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:17,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:17,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:17,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:17,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:17,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:17,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:17,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:17,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:17,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:17,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:17,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:26,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:26,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:26,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:26,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:26,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:26,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:26,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:34,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:34,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:34,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:34,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:34,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:34,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:34,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:43,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:43,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:43,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:43,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:09:51,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:09:51,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:09:51,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:09:51,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:09:51,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:09:51,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:09:51,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:00,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:00,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:00,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:00,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:00,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:08,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:08,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:08,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:08,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:08,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:08,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:08,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:08,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:08,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:08,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:08,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:08,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:08,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:17,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:17,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:17,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:17,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:17,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:17,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:17,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:17,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:17,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:17,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:17,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:17,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:17,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:25,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:25,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:25,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:25,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:25,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:34,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:34,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:34,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:34,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:34,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:34,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:42,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:42,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:42,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:42,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:42,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:51,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:51,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:51,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:51,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:51,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:51,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:51,282 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:10:59,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:10:59,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:10:59,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:10:59,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:10:59,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:10:59,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:10:59,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:10:59,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:10:59,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:59,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:10:59,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:10:59,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:10:59,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:08,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:08,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:08,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:08,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:08,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:08,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:16,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:16,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:16,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:16,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:16,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:16,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:16,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:16,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:16,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:16,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:16,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:16,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:16,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:19,011 [MarketDataManager-Thread] DEBUG AsyncPriorityEventThread  - MarketDataManager-Thread PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteEvent, 0, 3, 0
+class com.cyanspring.common.event.marketdata.QuoteSubEvent, 30, 3, 10
+class com.cyanspring.common.event.AsyncTimerEvent, 0, 2994, 0
+11:11:25,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:25,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:25,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:25,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:25,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:25,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:33,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:33,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:33,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:33,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:33,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:33,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:33,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:33,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:33,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:33,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:33,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:33,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:33,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:42,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:42,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:42,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:42,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:42,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:50,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:50,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:50,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:50,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:50,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:50,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:50,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:50,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:50,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:50,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:50,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:50,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:50,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:11:59,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:11:59,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:11:59,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:11:59,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:11:59,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:11:59,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:11:59,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:11:59,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:11:59,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:59,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:11:59,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:11:59,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:11:59,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:04,267 [Thread-SC-0] DEBUG AsyncPriorityEventThread  - Thread-SC-0 PerfStat: 
+class com.cyanspring.common.event.marketdata.QuoteEvent, 5, 1, 5
+class com.cyanspring.strategy.event.AddStrategyEvent, 1, 1, 1
+class com.cyanspring.common.event.strategy.StartStrategyEvent, 111, 1, 111
+class com.cyanspring.common.event.AsyncTimerEvent, 179, 997, 0
+11:12:07,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:07,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:07,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:07,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:07,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:07,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:07,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:16,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:16,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:16,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:16,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:16,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:24,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:24,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:24,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:24,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:24,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:24,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:33,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:33,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:33,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:33,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:33,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:33,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:41,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:41,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:41,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:41,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:41,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:41,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:41,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:41,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:41,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:41,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:41,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:41,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:41,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:50,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:50,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:50,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:50,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:12:58,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:12:58,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:12:58,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:12:58,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:12:58,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:12:58,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:12:58,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:07,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:07,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:07,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:07,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:07,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:07,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:15,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:15,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:15,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:15,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:15,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:24,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:24,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:24,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:24,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:32,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:32,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:32,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:32,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:32,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:32,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:32,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:32,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:32,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:32,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:32,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:32,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:32,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:41,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:41,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:41,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:41,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:41,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:41,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:41,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:41,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:41,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:41,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:41,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:41,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:41,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:49,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:49,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:49,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:49,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:49,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:49,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:49,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:49,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:49,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:49,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:49,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:49,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:49,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:13:58,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:13:58,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:13:58,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:13:58,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:06,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:06,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:06,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:06,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:06,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:06,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:06,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:15,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:15,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:15,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:15,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:15,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:15,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:15,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:23,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:23,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:23,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:23,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:23,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:23,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:23,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:23,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:23,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:23,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:23,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:23,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:23,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:32,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:32,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:32,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:32,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:32,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:32,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:40,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:40,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:40,768 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:40,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:40,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:49,267 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:49,268 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:49,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:49,268 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:49,269 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:49,270 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:14:57,767 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] accessing local class: a value
+11:14:57,768 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic quantity analyzer
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Capping passive quantity to: 0.0
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round aggressive qty from 2000.0 to 2000.0
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Round passive qty from 0.0 to 0.0
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Dynamic price analyzer
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Parent order: Qty: 2000.0, Cum: 0.0
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Open orders: []
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Quote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] AdjQuote: S1-20121127-110346-267-0528 - 0005.HK : [7600.0@68.2,60000.0@68.3][[7600.0, 68.2], [4000.0, 68.1]][[60000.0, 68.3], [20000.0, 68.4]]
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] QuantityInstruction: [2000.0, 0.0]
+11:14:57,769 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] PriceInstruction: null
+11:14:57,770 [Thread-SC-0] DEBUG SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] ExecutionInstruction: null
+11:15:04,682 [main] DEBUG Server  - 
+11:15:04,682 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+11:15:04,682 [main] DEBUG Server  - 
+11:15:04,683 [Thread-SC-0] INFO  SingleInstrumentStrategy  - [S1-20121127-110346-258-2263P] Strategy stopping
+11:15:04,684 [OrderManager-Thread] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121127-110346-258-2263P, 0005.HK, Buy, 0.0, 2000.0, NEW, 0.0, 0.0]
+11:15:04,684 [OrderManager-Thread] DEBUG OrderManager  - UpdateParentOrderEvent difference: {State=Stopping, Modified=Tue Nov 27 11:03:46 CST 2012, Seq ID=S1-20121127-110346-258-2264}
+11:15:04,686 [OrderManager-Thread] DEBUG OrderManager  - Received parent order update: RESTATED, [S1-20121127-110346-258-2263P, 0005.HK, Buy, 0.0, 2000.0, NEW, 0.0, 0.0]
+11:15:04,686 [OrderManager-Thread] DEBUG OrderManager  - UpdateParentOrderEvent difference: {State=Stopped, Modified=Tue Nov 27 11:03:46 CST 2012, Seq ID=S1-20121127-110346-258-2264}
+11:15:06,683 [main] DEBUG RemoteEventManager  - Closing transport...
+11:15:06,687 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-51852-1353984976078-1:1) is shutting down
+11:15:08,543 [main] INFO  TransportConnector  - Connector tcp://localhost:61616 Stopped
+11:15:08,599 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-51852-1353984976078-1:1) stopped

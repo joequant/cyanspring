@@ -1,0 +1,302 @@
+<list>
+  <com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>
+    <priority>NORMAL</priority>
+    <txId>20120917-124652-011-0649T</txId>
+    <strategy>
+      <entry>
+        <string>leg2RefValue</string>
+        <double>49978.8</double>
+      </entry>
+      <entry>
+        <string>Value</string>
+        <double>50000.0</double>
+      </entry>
+      <entry>
+        <string>High stop</string>
+        <double>0.05</double>
+      </entry>
+      <entry>
+        <string>High flat</string>
+        <double>0.01</double>
+      </entry>
+      <entry>
+        <string>Strategy</string>
+        <string>DOLLAR_NEUTRAL</string>
+      </entry>
+      <entry>
+        <string>Low take</string>
+        <double>-0.02</double>
+      </entry>
+      <entry>
+        <string>Server Id</string>
+        <null/>
+      </entry>
+      <entry>
+        <string>id</string>
+        <string>19700101-080000-000-0001S</string>
+      </entry>
+      <entry>
+        <string>Low stop</string>
+        <double>-0.05</double>
+      </entry>
+      <entry>
+        <string>Low flat</string>
+        <double>-0.01</double>
+      </entry>
+      <entry>
+        <string>State</string>
+        <com.cyanspring.common.type.StrategyState>Running</com.cyanspring.common.type.StrategyState>
+      </entry>
+      <entry>
+        <string>High take</string>
+        <double>0.02</double>
+      </entry>
+      <entry>
+        <string>leg1RefValue</string>
+        <double>49998.0</double>
+      </entry>
+      <entry>
+        <string>Allow diff</string>
+        <double>100.0</double>
+      </entry>
+      <entry>
+        <string>P/L</string>
+        <double>1708.2499999999905</double>
+      </entry>
+    </strategy>
+    <instruments>
+      <map>
+        <entry>
+          <string>Value</string>
+          <double>33333.33333333333</double>
+        </entry>
+        <entry>
+          <string>Weight %</string>
+          <double>0.6666666666666666</double>
+        </entry>
+        <entry>
+          <string>Ref qty</string>
+          <double>1626.0</double>
+        </entry>
+        <entry>
+          <string>Ref price</string>
+          <double>20.5</double>
+        </entry>
+        <entry>
+          <string>Pos Value</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>Server Id</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>Pos Px</string>
+          <double>20.649999999999995</double>
+        </entry>
+        <entry>
+          <string>Leg</string>
+          <int>1</int>
+        </entry>
+        <entry>
+          <string>id</string>
+          <string>19700101-080000-000-0004P</string>
+        </entry>
+        <entry>
+          <string>Weight</string>
+          <double>2.0</double>
+        </entry>
+        <entry>
+          <string>Strategy Id</string>
+          <string>19700101-080000-000-0001S</string>
+        </entry>
+        <entry>
+          <string>Symbol</string>
+          <string>WBC.AX</string>
+        </entry>
+        <entry>
+          <string>Position</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>P/L</string>
+          <double>1463.399999999992</double>
+        </entry>
+      </map>
+      <map>
+        <entry>
+          <string>Value</string>
+          <double>16666.666666666664</double>
+        </entry>
+        <entry>
+          <string>Weight %</string>
+          <double>0.3333333333333333</double>
+        </entry>
+        <entry>
+          <string>Ref qty</string>
+          <double>450.0</double>
+        </entry>
+        <entry>
+          <string>Ref price</string>
+          <double>37.0</double>
+        </entry>
+        <entry>
+          <string>Pos Value</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>Server Id</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>Pos Px</string>
+          <double>36.45</double>
+        </entry>
+        <entry>
+          <string>Leg</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>id</string>
+          <string>19700101-080000-000-0006P</string>
+        </entry>
+        <entry>
+          <string>Weight</string>
+          <double>1.0</double>
+        </entry>
+        <entry>
+          <string>Strategy Id</string>
+          <string>19700101-080000-000-0001S</string>
+        </entry>
+        <entry>
+          <string>Symbol</string>
+          <string>BHP.AX</string>
+        </entry>
+        <entry>
+          <string>Position</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>P/L</string>
+          <double>248.74999999999616</double>
+        </entry>
+      </map>
+      <map>
+        <entry>
+          <string>Value</string>
+          <double>33333.33333333333</double>
+        </entry>
+        <entry>
+          <string>Weight %</string>
+          <double>0.6666666666666666</double>
+        </entry>
+        <entry>
+          <string>Ref qty</string>
+          <double>1543.0</double>
+        </entry>
+        <entry>
+          <string>Ref price</string>
+          <double>21.6</double>
+        </entry>
+        <entry>
+          <string>Pos Value</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>Server Id</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>Pos Px</string>
+          <double>21.247764095917045</double>
+        </entry>
+        <entry>
+          <string>Leg</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>id</string>
+          <string>19700101-080000-000-0008P</string>
+        </entry>
+        <entry>
+          <string>Weight</string>
+          <double>2.0</double>
+        </entry>
+        <entry>
+          <string>Strategy Id</string>
+          <string>19700101-080000-000-0001S</string>
+        </entry>
+        <entry>
+          <string>Symbol</string>
+          <string>ANZ.AX</string>
+        </entry>
+        <entry>
+          <string>Position</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>P/L</string>
+          <double>3.449999999999463</double>
+        </entry>
+      </map>
+      <map>
+        <entry>
+          <string>Value</string>
+          <double>16666.666666666664</double>
+        </entry>
+        <entry>
+          <string>Weight %</string>
+          <double>0.3333333333333333</double>
+        </entry>
+        <entry>
+          <string>Ref qty</string>
+          <double>303.0</double>
+        </entry>
+        <entry>
+          <string>Ref price</string>
+          <double>55.0</double>
+        </entry>
+        <entry>
+          <string>Pos Value</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>Server Id</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>Pos Px</string>
+          <double>56.0</double>
+        </entry>
+        <entry>
+          <string>Leg</string>
+          <int>1</int>
+        </entry>
+        <entry>
+          <string>id</string>
+          <string>19700101-080000-000-0002P</string>
+        </entry>
+        <entry>
+          <string>Weight</string>
+          <double>1.0</double>
+        </entry>
+        <entry>
+          <string>Strategy Id</string>
+          <string>19700101-080000-000-0001S</string>
+        </entry>
+        <entry>
+          <string>Symbol</string>
+          <string>RIO.AX</string>
+        </entry>
+        <entry>
+          <string>Position</string>
+          <double>0.0</double>
+        </entry>
+        <entry>
+          <string>P/L</string>
+          <double>-7.349999999996953</double>
+        </entry>
+      </map>
+    </instruments>
+  </com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>
+</list>

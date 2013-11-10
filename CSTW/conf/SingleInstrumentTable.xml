@@ -1,0 +1,57 @@
+<map>
+  <entry>
+    <string>Single Instrument Strategy</string>
+    <list>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Symbol</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Strategy</title>
+        <width>145</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>State</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>id</title>
+        <width>183</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Label</title>
+        <width>87</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Desc</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Position</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>P/L</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Pos Px</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+      <com.cyanspring.cstw.gui.common.ColumnProperty>
+        <title>Pos Value</title>
+        <width>100</width>
+        <editable>false</editable>
+      </com.cyanspring.cstw.gui.common.ColumnProperty>
+    </list>
+  </entry>
+</map>

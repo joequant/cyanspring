@@ -1,0 +1,1 @@
+java -ms128m -mx256m -XX:PermSize=64m -XX:MaxPermSize=128 -classpath "jars/cyanspring-ymd-1.53.jar" com.cyanspring.ymd.HistoryDataDownloader

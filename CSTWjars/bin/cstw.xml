@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+	<import resource="classpath*:common.xml" />
+ 
+	<bean id="transportService" class="com.cyanspring.transport.ActiveMQObjectService">
+		<property name="url" value="tcp://localhost:61616"></property>
+	</bean>
+
+	<bean id="eventManager" class="com.cyanspring.core.event.RemoteEventManager">
+	    <constructor-arg>
+	    	<ref bean="transportService"/>
+	    </constructor-arg>
+	</bean>
+
+	<bean id="beanHolder" class="com.cyanspring.common.BeanHolder">
+	</bean>
+
+	<bean id="alertColorConfig" class="java.util.HashMap">
+	    <constructor-arg>
+		    <map key-type="com.cyanspring.common.data.AlertType" value-type="java.lang.Integer">
+		      	<entry key="ALERT0" value="15"/>	<!-- SWT.COLOR_GRAY -->
+		       	<entry key="ALERT1" value="7"/>		<!-- SWT.COLOR_YELLOW -->
+		       	<entry key="ALERT2" value="13"/>	<!-- SWT.COLOR_CYAN -->
+		       	<entry key="ALERT3" value="5"/>		<!-- SWT.COLOR_GREEN -->
+		       	<entry key="ALERT4" value="9"/>		<!-- SWT.COLOR_BLUE -->
+		       	<entry key="ALERT5" value="16"/>	<!-- SWT.COLOR_DARK_GRAY -->
+		       	<entry key="ALERT6" value="8"/>		<!-- SWT.COLOR_DARK_YELLOW -->
+		       	<entry key="ALERT7" value="14"/>	<!-- SWT.COLOR_DARK_CYAN -->
+		       	<entry key="ALERT8" value="6"/>		<!-- SWT.COLOR_DARK_GREEN -->
+		       	<entry key="ALERT9" value="10"/>	<!-- SWT.COLOR_DARK_BLUE -->
+		       	<entry key="WARNING" value="11"/>	<!-- SWT.COLOR_MAGENTA -->
+		       	<entry key="ERROR" value="3"/> 		<!-- SWT.COLOR_RED -->
+		    </map>
+	    </constructor-arg>
+	</bean>
+</beans>

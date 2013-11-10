@@ -1,0 +1,30 @@
+<com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>
+  <priority>NORMAL</priority>
+  <txId>20120626-130244-297-0505T</txId>
+  <strategy>
+    <entry>
+      <string>Strategy</string>
+      <string>TRENDING</string>
+    </entry>
+    <entry>
+      <string>Bin Size</string>
+      <string>10</string>
+    </entry>
+  </strategy>
+  <instruments>
+    <map>
+      <entry>
+        <string>Symbol</string>
+        <string>0005.HK</string>
+      </entry>
+      <entry>
+        <string>Exit delta</string>
+        <string>0.02</string>
+      </entry>
+      <entry>
+        <string>Qty</string>
+        <string>4000</string>
+      </entry>
+    </map>
+  </instruments>
+</com.cyanspring.common.event.strategy.NewMultiInstrumentStrategyEvent>

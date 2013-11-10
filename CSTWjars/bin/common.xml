@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+	<context:annotation-config />
+
+	<bean id="dataConverter" class="com.cyanspring.common.business.util.GenericDataConverter">
+	    <property name="fieldMap">
+            <map>
+            	<entry key="Price">
+				  	<bean class="com.cyanspring.common.business.util.PriceDataConverter">
+					</bean>	
+		        </entry>
+            	<entry key="AvgPx" value-ref="priceConverter" />
+            	<entry key="Qty"  value-ref="quantityConverter" />
+            	<entry key="CumQty"  value-ref="quantityConverter" />
+            	<entry key="IM Qty"  value-ref="quantityConverter" />
+            	<entry key="Dis Qty"  value-ref="quantityConverter" />
+            	<entry key="LastShares"  value-ref="quantityConverter" />
+            </map>
+        </property>
+	    <property name="typeMap">
+            <map>
+            	<entry key="java.lang.Double">
+				  	<bean class="com.cyanspring.common.business.util.DoubleDataConverter">
+					</bean>	
+		        </entry>
+            </map>
+        </property>
+	</bean>
+	
+	<bean id="quantityConverter" class="com.cyanspring.common.business.util.QuantityDataConverter">
+	</bean>
+	<bean id="priceConverter" class="com.cyanspring.common.business.util.PriceDataConverter">
+	</bean>
+	
+</beans>

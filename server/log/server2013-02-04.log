@@ -1,0 +1,1432 @@
+23:04:35,114 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff: startup date [Mon Feb 04 23:04:35 CST 2013]; root of context hierarchy
+23:04:35,223 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+23:04:35,401 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+23:04:35,446 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+23:04:35,507 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/strategy/target/classes/conf/strategy.xml]
+23:04:35,555 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\built-in.xml]
+23:04:35,579 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+23:04:35,603 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+23:04:35,630 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+23:04:35,985 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+23:04:37,192 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+23:04:37,200 [main] INFO  Environment  - Hibernate 3.6.3.Final
+23:04:37,203 [main] INFO  Environment  - hibernate.properties not found
+23:04:37,207 [main] INFO  Environment  - Bytecode provider name : javassist
+23:04:37,211 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+23:04:37,434 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+23:04:37,504 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+23:04:37,522 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+23:04:37,523 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+23:04:37,524 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+23:04:37,536 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+23:04:37,546 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+23:04:37,592 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+23:04:37,592 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+23:04:37,596 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+23:04:39,283 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+23:04:39,328 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+23:04:39,329 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+23:04:39,330 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+23:04:39,332 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:04:39,332 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+23:04:39,333 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+23:04:39,333 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+23:04:39,334 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+23:04:39,334 [main] INFO  SettingsFactory  - Connection release mode: on_close
+23:04:39,334 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+23:04:39,334 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+23:04:39,334 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+23:04:39,334 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+23:04:39,334 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:04:39,337 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+23:04:39,337 [main] INFO  SettingsFactory  - Query language substitutions: {}
+23:04:39,337 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+23:04:39,337 [main] INFO  SettingsFactory  - Second-level cache: enabled
+23:04:39,337 [main] INFO  SettingsFactory  - Query cache: disabled
+23:04:39,337 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+23:04:39,339 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+23:04:39,339 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+23:04:39,345 [main] INFO  SettingsFactory  - Statistics: disabled
+23:04:39,345 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+23:04:39,345 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+23:04:39,346 [main] INFO  SettingsFactory  - Named query checking : enabled
+23:04:39,346 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+23:04:39,370 [main] INFO  SessionFactoryImpl  - building session factory
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3ec561
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1107c05
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@13e6226
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@13e6226
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@9dca26
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1429cb2
+23:04:39,378 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@3da850
+23:04:39,379 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1f51e5c
+23:04:39,379 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1f51e5c
+23:04:39,682 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+23:04:39,887 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+23:04:40,101 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+23:04:40,103 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+23:04:40,103 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+23:04:40,143 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+23:04:40,262 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+23:04:40,262 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Started
+23:04:40,264 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-50767-1359990276426-1:1) started
+23:04:40,580 [main] DEBUG Server  - ScheduleManager initialized
+23:04:40,580 [main] DEBUG Server  - PersistenceManager initialized
+23:04:41,244 [main] DEBUG PersistenceManager  - TextObject Records deleted: 0
+23:04:41,252 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+23:04:41,288 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 0
+23:04:41,295 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+23:04:41,313 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+23:04:41,316 [main] DEBUG Server  - OrderManager initialized
+23:04:41,317 [main] DEBUG Server  - BusinessManager initialized
+23:04:41,319 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-custom-1.53.jar
+23:04:41,321 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-custom-1.53.jar'
+23:04:41,328 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy1
+23:04:41,328 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy1.xml from cyanspring-custom-1.53.jar
+23:04:41,332 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,335 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@143ed74: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,336 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8c02cc: defining beans [customStrategy1]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,354 [main] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy1
+23:04:41,354 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy2
+23:04:41,354 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy2.xml from cyanspring-custom-1.53.jar
+23:04:41,355 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,358 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1455cf4: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,359 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1da366c: defining beans [customStrategy2FieldDefs,customStrategy2InstrumentFieldDefs,customStrategy2]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,370 [main] INFO  StrategyFactory  - Registered strategy CUSTOM2 to bean customStrategy2
+23:04:41,370 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-goldtree-1.53.jar
+23:04:41,370 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-goldtree-1.53.jar'
+23:04:41,373 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.goldtree.strategy.Basin
+23:04:41,373 [main] INFO  StrategyFactory  - Loading conf/Basin.xml from cyanspring-goldtree-1.53.jar
+23:04:41,374 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,377 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@11f2158: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,378 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10948cf: defining beans [basinStrategyFieldDefs,basinStrategyInstrumentFieldDefs,basinStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,389 [main] INFO  StrategyFactory  - Registered strategy BASIN to bean basinStrategy
+23:04:41,389 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-sample-1.53.jar
+23:04:41,390 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-sample-1.53.jar'
+23:04:41,416 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.DummyStrategy
+23:04:41,417 [main] INFO  StrategyFactory  - Loading conf/DummyStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,419 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,421 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1959352: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,422 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e3e7d2: defining beans [dummyStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,429 [main] INFO  StrategyFactory  - Registered strategy DUMMY to bean dummyStrategy
+23:04:41,429 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.MarketMakingStrategy
+23:04:41,429 [main] INFO  StrategyFactory  - Loading conf/MarketMakingStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,430 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,433 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1bb60ad: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,434 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b78953: defining beans [markingMakingStrategyFieldDefs,markingMakingStrategyInstrumentFieldDefs,marketMakingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,443 [main] INFO  StrategyFactory  - Registered strategy MARKET_MAKING to bean marketMakingStrategy
+23:04:41,443 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.TrendingStrategy
+23:04:41,443 [main] INFO  StrategyFactory  - Loading conf/TrendingStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,444 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,447 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@b173c3: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,447 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@114ef62: defining beans [trendingStrategyFieldDefs,trendingStrategyInstrumentFieldDefs,trendingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,456 [main] INFO  StrategyFactory  - Registered strategy TRENDING to bean trendingStrategy
+23:04:41,456 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralStrategy
+23:04:41,456 [main] INFO  StrategyFactory  - Loading conf/DollarNeutralStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,457 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,461 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@12cd736: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,462 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c791f4: defining beans [dollarNeutralStrategyFieldDefs,dollarNeutralInstrumentFieldDefs,dollarNeutralStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,474 [main] INFO  StrategyFactory  - Registered strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+23:04:41,474 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.lowhigh.LowHighStrategy
+23:04:41,474 [main] INFO  StrategyFactory  - Loading conf/LowHighStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,474 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,478 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@4d8d50: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,479 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3cfaab: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,488 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+23:04:41,489 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.iceberg.IcebergStrategy
+23:04:41,489 [main] INFO  StrategyFactory  - Loading conf/IcebergStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,489 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,492 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1132e76: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,492 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@61a414: defining beans [icebergStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,500 [main] INFO  StrategyFactory  - Registered strategy ICEBERG to bean icebergStrategy
+23:04:41,500 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.pov.POVStrategy
+23:04:41,500 [main] INFO  StrategyFactory  - Loading conf/POVStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,500 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,503 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@b524aa: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,503 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a4ed99: defining beans [povStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,510 [main] INFO  StrategyFactory  - Registered strategy POV to bean povStrategy
+23:04:41,511 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sdma.SDMAStrategy
+23:04:41,511 [main] INFO  StrategyFactory  - Loading conf/SDMAStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,511 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,513 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1ec41c0: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,514 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ae81ab: defining beans [sdmaStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,521 [main] INFO  StrategyFactory  - Registered strategy SDMA to bean sdmaStrategy
+23:04:41,521 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sniper.SniperStrategy
+23:04:41,521 [main] INFO  StrategyFactory  - Loading conf/SniperStrategy.xml from cyanspring-sample-1.53.jar
+23:04:41,521 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+23:04:41,524 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@3de2df: startup date [Mon Feb 04 23:04:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+23:04:41,524 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e3c2c6: defining beans [sniperStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c4fe76
+23:04:41,531 [main] INFO  StrategyFactory  - Registered strategy SNIPER to bean sniperStrategy
+23:04:41,542 [main] INFO  OrderGenerator  - Initialising OrderGenerator
+23:04:41,542 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Mon Feb 04 00:00:00 CST 2013
+23:04:41,542 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Mon Feb 04 09:00:00 CST 2013
+23:04:41,542 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Mon Feb 04 09:15:00 CST 2013
+23:04:41,542 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Mon Feb 04 09:20:00 CST 2013
+23:04:41,543 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Mon Feb 04 09:30:00 CST 2013
+23:04:41,543 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Mon Feb 04 12:00:00 CST 2013
+23:04:41,543 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Mon Feb 04 13:00:00 CST 2013
+23:04:41,543 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Mon Feb 04 13:30:00 CST 2013
+23:04:41,543 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Mon Feb 04 16:00:00 CST 2013
+23:04:41,543 [main] INFO  RefDataManager  - initialising
+23:04:41,785 [main] INFO  MarketDataManager  - initialising
+23:04:41,786 [main] INFO  DownStreamManager  - initialising
+23:04:41,786 [Server] INFO  Server  - Market data is ready: true
+23:04:41,786 [MarketDataManager] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+23:04:43,361 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+23:04:43,376 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+23:04:43,383 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+23:04:43,383 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+23:04:43,383 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+23:04:43,422 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+23:04:43,426 [main] INFO  SocketInitiator  - SessionTimer started
+23:04:43,428 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+23:04:43,430 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+23:04:43,430 [main] INFO  TickDataManager  - Existing tick directory: ticks
+23:04:43,431 [main] INFO  UpStreamManager  - initialising
+23:04:43,431 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+23:04:43,432 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0002.HK, null
+23:04:43,432 [MarketDataManager] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+23:04:43,433 [Server] INFO  Server  - Market data is ready: true
+23:04:43,433 [Server] INFO  Server  - Market data is ready: true
+23:04:43,434 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+23:04:43,437 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+23:04:43,442 [main] INFO  SocketAcceptor  - SessionTimer started
+23:04:43,447 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+23:04:43,447 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+23:04:43,447 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+23:04:43,495 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+23:04:43,497 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+23:04:43,523 [main] INFO  Server  - Published my node info
+23:04:43,523 [Server] INFO  Server  - Replied my nodeInfo
+23:04:43,525 [Thread-28] DEBUG Server  - waiting for down stream ready before recovery...
+23:04:43,525 [Server] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+23:04:43,529 [main] INFO  MarketReplay  - Market replay starts at: Mon Feb 04 23:04:43 CST 2013
+23:04:43,535 [main] INFO  MarketReplay  - Market replay ends at: Mon Feb 04 23:04:43 CST 2013
+23:04:44,223 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+23:04:44,226 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+23:04:44,226 [main] INFO  SocketAcceptor  - SessionTimer started
+23:04:44,227 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+23:04:44,227 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+23:04:44,227 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+23:04:44,252 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+23:04:44,468 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:50795
+23:04:44,470 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:50795, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+23:04:44,513 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+23:04:44,514 [QFJ Message Processor] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.system.NodeInfoEvent=2, class com.cyanspring.common.event.marketdata.QuoteSubEvent=2, class com.cyanspring.common.server.event.MarketDataReadyEvent=3, class com.cyanspring.common.server.event.DownStreamReadyEvent=1, class com.cyanspring.common.event.marketdata.QuoteEvent=2}
+23:04:44,514 [Server] INFO  Server  - Down stream is ready: true
+23:04:45,584 [Thread-28] INFO  Server  - Executions recovered: 0
+23:04:45,763 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-587-2344S assigned to container SC-0
+23:04:45,764 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] Initialize strategy: BASIN, S1-20130204-230404-587-2344S
+23:04:45,764 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1, null
+23:04:45,765 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-596-1801S assigned to container SC-1
+23:04:45,765 [Thread-SC-0] DEBUG Basin  - Checking 1
+23:04:45,765 [Server] INFO  Server  - Market data is ready: true
+23:04:45,765 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] Initialize strategy: BASIN, S1-20130204-230404-596-1801S
+23:04:45,767 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-604-1816S assigned to container SC-2
+23:04:45,768 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] QuoteEvent: S1-20130204-230445-765-2101 - 1 : [0.0@0.0,0.0@0.0][][]
+23:04:45,769 [Thread-SC-1] DEBUG Basin  - Checking 2
+23:04:45,769 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2, null
+23:04:45,769 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] Initialize strategy: BASIN, S1-20130204-230404-604-1816S
+23:04:45,769 [Server] INFO  Server  - Market data is ready: true
+23:04:45,771 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-607-1664S assigned to container SC-3
+23:04:45,771 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] Initialize strategy: BASIN, S1-20130204-230404-607-1664S
+23:04:45,772 [Thread-SC-2] DEBUG Basin  - Checking 3
+23:04:45,772 [Thread-SC-3] DEBUG Basin  - Checking 4
+23:04:45,772 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 3, null
+23:04:45,772 [Server] INFO  Server  - Market data is ready: true
+23:04:45,772 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] Strategy started
+23:04:45,772 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-608-0297S assigned to container SC-4
+23:04:45,773 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] Initialize strategy: BASIN, S1-20130204-230404-608-0297S
+23:04:45,773 [Thread-SC-4] DEBUG Basin  - Checking 5
+23:04:45,772 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] Strategy started
+23:04:45,773 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-610-1425S assigned to container SC-5
+23:04:45,773 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] Strategy started
+23:04:45,772 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] Strategy started
+23:04:45,772 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 4, null
+23:04:45,774 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 5, null
+23:04:45,772 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] Strategy started
+23:04:45,774 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-613-0867S assigned to container SC-5
+23:04:45,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] Initialize strategy: BASIN, S1-20130204-230404-610-1425S
+23:04:45,775 [Thread-SC-5] DEBUG Basin  - Checking 6
+23:04:45,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] Initialize strategy: BASIN, S1-20130204-230404-613-0867S
+23:04:45,775 [Thread-SC-5] DEBUG Basin  - Checking 11
+23:04:45,775 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] Strategy started
+23:04:45,776 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] QuoteEvent: S1-20130204-230445-772-0346 - 3 : [0.0@0.0,0.0@0.0][][]
+23:04:45,775 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-614-2172S assigned to container SC-6
+23:04:45,779 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] QuoteEvent: S1-20130204-230445-774-1280 - 4 : [0.0@0.0,0.0@0.0][][]
+23:04:45,775 [Server] INFO  Server  - Market data is ready: true
+23:04:45,780 [Server] INFO  Server  - Market data is ready: true
+23:04:45,775 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 6, null
+23:04:45,780 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 11, null
+23:04:45,780 [Server] INFO  Server  - Market data is ready: true
+23:04:45,780 [Server] INFO  Server  - Market data is ready: true
+23:04:45,780 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] Initialize strategy: BASIN, S1-20130204-230404-614-2172S
+23:04:45,781 [Thread-SC-6] DEBUG Basin  - Checking 12
+23:04:45,780 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-616-1362S assigned to container SC-6
+23:04:45,780 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] Strategy started
+23:04:45,782 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] Initialize strategy: BASIN, S1-20130204-230404-616-1362S
+23:04:45,782 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-617-1582S assigned to container SC-7
+23:04:45,781 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 12, null
+23:04:45,783 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 13, null
+23:04:45,783 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-619-0389S assigned to container SC-7
+23:04:45,782 [Thread-SC-6] DEBUG Basin  - Checking 13
+23:04:45,784 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] Strategy started
+23:04:45,783 [Server] INFO  Server  - Market data is ready: true
+23:04:45,785 [Server] INFO  Server  - Market data is ready: true
+23:04:45,785 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] Initialize strategy: BASIN, S1-20130204-230404-617-1582S
+23:04:45,785 [Thread-SC-7] DEBUG Basin  - Checking 16
+23:04:45,786 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] Initialize strategy: BASIN, S1-20130204-230404-619-0389S
+23:04:45,786 [Thread-SC-7] DEBUG Basin  - Checking 17
+23:04:45,786 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] Strategy started
+23:04:45,784 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-621-1327S assigned to container SC-7
+23:04:45,785 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 16, null
+23:04:45,786 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 17, null
+23:04:45,787 [Server] INFO  Server  - Market data is ready: true
+23:04:45,787 [Server] INFO  Server  - Market data is ready: true
+23:04:45,787 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-628-2395S assigned to container SC-8
+23:04:45,787 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-632-0776S assigned to container SC-8
+23:04:45,788 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] QuoteEvent: S1-20130204-230445-769-0703 - 2 : [0.0@0.0,0.0@0.0][][]
+23:04:45,788 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] Initialize strategy: BASIN, S1-20130204-230404-628-2395S
+23:04:45,788 [Thread-SC-8] DEBUG Basin  - Checking 23
+23:04:45,789 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] Initialize strategy: BASIN, S1-20130204-230404-632-0776S
+23:04:45,789 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-659-0383S assigned to container SC-9
+23:04:45,789 [Thread-SC-8] DEBUG Basin  - Checking 66
+23:04:45,789 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] Strategy started
+23:04:45,789 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-740-1654S assigned to container SC-9
+23:04:45,791 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-742-0595S assigned to container SC-0
+23:04:45,791 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-743-0329S assigned to container SC-0
+23:04:45,792 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-745-2239S assigned to container SC-0
+23:04:45,792 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-768-1208S assigned to container SC-0
+23:04:45,793 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-773-0661S assigned to container SC-0
+23:04:45,793 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-778-2054S assigned to container SC-0
+23:04:45,794 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-779-1383S assigned to container SC-0
+23:04:45,790 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] Initialize strategy: BASIN, S1-20130204-230404-659-0383S
+23:04:45,790 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] QuoteEvent: S1-20130204-230445-774-1281 - 5 : [0.0@0.0,0.0@0.0][][]
+23:04:45,795 [Thread-SC-9] DEBUG Basin  - Checking 83
+23:04:45,789 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 23, null
+23:04:45,795 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 66, null
+23:04:45,796 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 83, null
+23:04:45,796 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] Strategy started
+23:04:45,795 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] Initialize strategy: BASIN, S1-20130204-230404-740-1654S
+23:04:45,799 [Thread-SC-9] DEBUG Basin  - Checking 101
+23:04:45,799 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] Strategy started
+23:04:45,799 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 101, null
+23:04:45,800 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] Initialize strategy: BASIN, S1-20130204-230404-621-1327S
+23:04:45,795 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] Initialize strategy: BASIN, S1-20130204-230404-742-0595S
+23:04:45,800 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 19, null
+23:04:45,800 [Thread-SC-0] DEBUG Basin  - Checking 144
+23:04:45,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] Initialize strategy: BASIN, S1-20130204-230404-743-0329S
+23:04:45,800 [Thread-SC-0] DEBUG Basin  - Checking 151
+23:04:45,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] Initialize strategy: BASIN, S1-20130204-230404-745-2239S
+23:04:45,801 [Thread-SC-0] DEBUG Basin  - Checking 189
+23:04:45,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] Initialize strategy: BASIN, S1-20130204-230404-768-1208S
+23:04:45,801 [Thread-SC-0] DEBUG Basin  - Checking 267
+23:04:45,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] Initialize strategy: BASIN, S1-20130204-230404-773-0661S
+23:04:45,801 [Thread-SC-0] DEBUG Basin  - Checking 291
+23:04:45,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] Initialize strategy: BASIN, S1-20130204-230404-778-2054S
+23:04:45,802 [Thread-SC-0] DEBUG Basin  - Checking 293
+23:04:45,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] Initialize strategy: BASIN, S1-20130204-230404-779-1383S
+23:04:45,802 [Thread-SC-0] DEBUG Basin  - Checking 322
+23:04:45,802 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] Strategy started
+23:04:45,800 [Thread-SC-7] DEBUG Basin  - Checking 19
+23:04:45,799 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] Strategy started
+23:04:45,804 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] QuoteEvent: S1-20130204-230445-782-2491 - 12 : [0.0@0.0,0.0@0.0][][]
+23:04:45,798 [Server] INFO  Server  - Market data is ready: true
+23:04:45,797 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-835-0101S assigned to container SC-1
+23:04:45,806 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-836-1106S assigned to container SC-1
+23:04:45,806 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-837-1947S assigned to container SC-1
+23:04:45,806 [Server] INFO  Server  - Market data is ready: true
+23:04:45,806 [Server] INFO  Server  - Market data is ready: true
+23:04:45,807 [Server] INFO  Server  - Market data is ready: true
+23:04:45,807 [Server] INFO  Server  - Market data is ready: true
+23:04:45,807 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-839-1042S assigned to container SC-1
+23:04:45,804 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] QuoteEvent: S1-20130204-230445-783-0082 - 13 : [0.0@0.0,0.0@0.0][][]
+23:04:45,807 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] Strategy started
+23:04:45,807 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-840-0448S assigned to container SC-1
+23:04:45,808 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] Initialize strategy: BASIN, S1-20130204-230404-835-0101S
+23:04:45,808 [Thread-SC-1] DEBUG Basin  - Checking 330
+23:04:45,808 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-846-0445S assigned to container SC-2
+23:04:45,809 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-862-0047S assigned to container SC-2
+23:04:45,804 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] QuoteEvent: S1-20130204-230445-786-0886 - 16 : [0.0@0.0,0.0@0.0][][]
+23:04:45,800 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 144, null
+23:04:45,815 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 151, null
+23:04:45,816 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 189, null
+23:04:45,816 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 267, null
+23:04:45,816 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 291, null
+23:04:45,816 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 293, null
+23:04:45,816 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 322, null
+23:04:45,816 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 330, null
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,817 [Server] INFO  Server  - Market data is ready: true
+23:04:45,815 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] QuoteEvent: S1-20130204-230445-786-0887 - 17 : [0.0@0.0,0.0@0.0][][]
+23:04:45,822 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] Strategy started
+23:04:45,815 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-864-1979S assigned to container SC-3
+23:04:45,810 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] Initialize strategy: BASIN, S1-20130204-230404-846-0445S
+23:04:45,828 [Thread-SC-2] DEBUG Basin  - Checking 688
+23:04:45,829 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] Initialize strategy: BASIN, S1-20130204-230404-862-0047S
+23:04:45,829 [Thread-SC-2] DEBUG Basin  - Checking 700
+23:04:45,829 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] Strategy started
+23:04:45,830 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 688, null
+23:04:45,830 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] Initialize strategy: BASIN, S1-20130204-230404-864-1979S
+23:04:45,830 [Thread-SC-3] DEBUG Basin  - Checking 762
+23:04:45,832 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] Strategy started
+23:04:45,810 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] QuoteEvent: S1-20130204-230445-795-1377 - 23 : [0.0@0.0,0.0@0.0][][]
+23:04:45,836 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] QuoteEvent: S1-20130204-230445-795-1378 - 66 : [0.0@0.0,0.0@0.0][][]
+23:04:45,809 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] Strategy started
+23:04:45,838 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] Strategy started
+23:04:45,808 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] QuoteEvent: S1-20130204-230445-796-2358 - 83 : [0.0@0.0,0.0@0.0][][]
+23:04:45,839 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] Strategy started
+23:04:45,808 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] Initialize strategy: BASIN, S1-20130204-230404-836-1106S
+23:04:45,840 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] Strategy started
+23:04:45,840 [Thread-SC-1] DEBUG Basin  - Checking 386
+23:04:45,807 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] QuoteEvent: S1-20130204-230445-780-2152 - 6 : [0.0@0.0,0.0@0.0][][]
+23:04:45,836 [Server] INFO  Server  - Market data is ready: true
+23:04:45,830 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 700, null
+23:04:45,841 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 762, null
+23:04:45,842 [Server] INFO  Server  - Market data is ready: true
+23:04:45,842 [Server] INFO  Server  - Market data is ready: true
+23:04:45,843 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] QuoteEvent: S1-20130204-230445-799-1268 - 101 : [0.0@0.0,0.0@0.0][][]
+23:04:45,830 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] Strategy started
+23:04:45,847 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] QuoteEvent: S1-20130204-230445-830-2279 - 688 : [0.0@0.0,0.0@0.0][][]
+23:04:45,827 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-865-0341S assigned to container SC-3
+23:04:45,849 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] Initialize strategy: BASIN, S1-20130204-230404-865-0341S
+23:04:45,823 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] QuoteEvent: S1-20130204-230445-800-0676 - 19 : [0.0@0.0,0.0@0.0][][]
+23:04:45,851 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-866-2261S assigned to container SC-4
+23:04:45,849 [Thread-SC-3] DEBUG Basin  - Checking 836
+23:04:45,852 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] Strategy started
+23:04:45,852 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] Initialize strategy: BASIN, S1-20130204-230404-866-2261S
+23:04:45,852 [Thread-SC-4] DEBUG Basin  - Checking 857
+23:04:45,852 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] Strategy started
+23:04:45,842 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 386, null
+23:04:45,854 [Server] INFO  Server  - Market data is ready: true
+23:04:45,854 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 836, null
+23:04:45,841 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] Strategy started
+23:04:45,841 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] Initialize strategy: BASIN, S1-20130204-230404-837-1947S
+23:04:45,840 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] QuoteEvent: S1-20130204-230445-780-2153 - 11 : [0.0@0.0,0.0@0.0][][]
+23:04:45,859 [Thread-SC-1] DEBUG Basin  - Checking 388
+23:04:45,859 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] Initialize strategy: BASIN, S1-20130204-230404-839-1042S
+23:04:45,860 [Thread-SC-1] DEBUG Basin  - Checking 494
+23:04:45,860 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] Initialize strategy: BASIN, S1-20130204-230404-840-0448S
+23:04:45,862 [Thread-SC-1] DEBUG Basin  - Checking 623
+23:04:45,862 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] Strategy started
+23:04:45,863 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] QuoteEvent: S1-20130204-230445-816-2279 - 330 : [0.0@0.0,0.0@0.0][][]
+23:04:45,863 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] Strategy started
+23:04:45,858 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] QuoteEvent: S1-20130204-230445-841-1239 - 700 : [0.0@0.0,0.0@0.0][][]
+23:04:45,858 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] QuoteEvent: S1-20130204-230445-842-1194 - 762 : [0.0@0.0,0.0@0.0][][]
+23:04:45,857 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 857, null
+23:04:45,865 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 388, null
+23:04:45,865 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] Strategy started
+23:04:45,857 [Server] INFO  Server  - Market data is ready: true
+23:04:45,866 [Server] INFO  Server  - Market data is ready: true
+23:04:45,866 [Server] INFO  Server  - Market data is ready: true
+23:04:45,866 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] QuoteEvent: S1-20130204-230445-857-0494 - 836 : [0.0@0.0,0.0@0.0][][]
+23:04:45,852 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-867-1846S assigned to container SC-4
+23:04:45,867 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-872-1316S assigned to container SC-4
+23:04:45,866 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 494, null
+23:04:45,867 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] Initialize strategy: BASIN, S1-20130204-230404-867-1846S
+23:04:45,867 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 623, null
+23:04:45,867 [Thread-SC-4] DEBUG Basin  - Checking 883
+23:04:45,868 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] Strategy started
+23:04:45,867 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-877-1782S assigned to container SC-4
+23:04:45,868 [Server] INFO  Server  - Market data is ready: true
+23:04:45,868 [Server] INFO  Server  - Market data is ready: true
+23:04:45,868 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-879-1828S assigned to container SC-5
+23:04:45,869 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] Initialize strategy: BASIN, S1-20130204-230404-879-1828S
+23:04:45,869 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-880-0906S assigned to container SC-6
+23:04:45,869 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] Strategy started
+23:04:45,868 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] Initialize strategy: BASIN, S1-20130204-230404-872-1316S
+23:04:45,869 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-884-2117S assigned to container SC-6
+23:04:45,869 [Thread-SC-4] DEBUG Basin  - Checking 921
+23:04:45,870 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] QuoteEvent: S1-20130204-230445-865-1634 - 857 : [0.0@0.0,0.0@0.0][][]
+23:04:45,870 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] Strategy started
+23:04:45,870 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-885-1451S assigned to container SC-6
+23:04:45,868 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 883, null
+23:04:45,870 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 941, null
+23:04:45,870 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] Initialize strategy: BASIN, S1-20130204-230404-880-0906S
+23:04:45,870 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 921, null
+23:04:45,870 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-886-1284S assigned to container SC-8
+23:04:45,870 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 979, null
+23:04:45,871 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-888-1321S assigned to container SC-9
+23:04:45,869 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] Strategy started
+23:04:45,869 [Thread-SC-5] DEBUG Basin  - Checking 941
+23:04:45,872 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] QuoteEvent: S1-20130204-230445-870-1695 - 941 : [0.0@0.0,0.0@0.0][][]
+23:04:45,872 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] Strategy started
+23:04:45,872 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] QuoteEvent: S1-20130204-230445-815-2153 - 144 : [0.0@0.0,0.0@0.0][][]
+23:04:45,872 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] QuoteEvent: S1-20130204-230445-816-2273 - 151 : [0.0@0.0,0.0@0.0][][]
+23:04:45,873 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] QuoteEvent: S1-20130204-230445-816-2274 - 189 : [0.0@0.0,0.0@0.0][][]
+23:04:45,873 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] QuoteEvent: S1-20130204-230445-816-2275 - 267 : [0.0@0.0,0.0@0.0][][]
+23:04:45,873 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] QuoteEvent: S1-20130204-230445-816-2276 - 291 : [0.0@0.0,0.0@0.0][][]
+23:04:45,873 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] QuoteEvent: S1-20130204-230445-816-2277 - 293 : [0.0@0.0,0.0@0.0][][]
+23:04:45,873 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] QuoteEvent: S1-20130204-230445-816-2278 - 322 : [0.0@0.0,0.0@0.0][][]
+23:04:45,871 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-889-1521S assigned to container SC-9
+23:04:45,874 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-890-0702S assigned to container SC-2
+23:04:45,871 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] Initialize strategy: BASIN, S1-20130204-230404-886-1284S
+23:04:45,875 [Thread-SC-8] DEBUG Basin  - Checking 1088
+23:04:45,875 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1088, null
+23:04:45,875 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] Initialize strategy: BASIN, S1-20130204-230404-890-0702S
+23:04:45,875 [Thread-SC-2] DEBUG Basin  - Checking 1288
+23:04:45,875 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] Strategy started
+23:04:45,870 [Server] INFO  Server  - Market data is ready: true
+23:04:45,876 [Server] INFO  Server  - Market data is ready: true
+23:04:45,876 [Server] INFO  Server  - Market data is ready: true
+23:04:45,876 [Server] INFO  Server  - Market data is ready: true
+23:04:45,876 [Server] INFO  Server  - Market data is ready: true
+23:04:45,870 [Thread-SC-6] DEBUG Basin  - Checking 979
+23:04:45,876 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] Initialize strategy: BASIN, S1-20130204-230404-884-2117S
+23:04:45,876 [Thread-SC-6] DEBUG Basin  - Checking 1000
+23:04:45,876 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] Initialize strategy: BASIN, S1-20130204-230404-885-1451S
+23:04:45,877 [Thread-SC-6] DEBUG Basin  - Checking 1044
+23:04:45,877 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] QuoteEvent: S1-20130204-230445-871-0753 - 979 : [0.0@0.0,0.0@0.0][][]
+23:04:45,877 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] Strategy started
+23:04:45,870 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] Strategy started
+23:04:45,875 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1288, null
+23:04:45,878 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] QuoteEvent: S1-20130204-230445-854-1567 - 386 : [0.0@0.0,0.0@0.0][][]
+23:04:45,878 [Server] INFO  Server  - Market data is ready: true
+23:04:45,875 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] Strategy started
+23:04:45,879 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] QuoteEvent: S1-20130204-230445-875-0605 - 1088 : [0.0@0.0,0.0@0.0][][]
+23:04:45,875 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-891-0184S assigned to container SC-2
+23:04:45,879 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-907-1053S assigned to container SC-3
+23:04:45,880 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] Initialize strategy: BASIN, S1-20130204-230404-907-1053S
+23:04:45,880 [Thread-SC-3] DEBUG Basin  - Checking 1387
+23:04:45,880 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-908-2045S assigned to container SC-5
+23:04:45,880 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] Initialize strategy: BASIN, S1-20130204-230404-908-2045S
+23:04:45,880 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-909-0341S assigned to container SC-7
+23:04:45,881 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-910-0442S assigned to container SC-7
+23:04:45,881 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-911-2486S assigned to container SC-7
+23:04:45,882 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-912-1531S assigned to container SC-7
+23:04:45,882 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-913-2086S assigned to container SC-7
+23:04:45,883 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-914-1298S assigned to container SC-7
+23:04:45,883 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] Strategy started
+23:04:45,884 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] Initialize strategy: BASIN, S1-20130204-230404-891-0184S
+23:04:45,884 [Thread-SC-2] DEBUG Basin  - Checking 1299
+23:04:45,884 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] Strategy started
+23:04:45,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] Initialize strategy: BASIN, S1-20130204-230404-909-0341S
+23:04:45,884 [Thread-SC-7] DEBUG Basin  - Checking 1800
+23:04:45,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] Initialize strategy: BASIN, S1-20130204-230404-910-0442S
+23:04:45,884 [Thread-SC-7] DEBUG Basin  - Checking 1880
+23:04:45,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] Initialize strategy: BASIN, S1-20130204-230404-911-2486S
+23:04:45,885 [Thread-SC-7] DEBUG Basin  - Checking 1898
+23:04:45,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] Initialize strategy: BASIN, S1-20130204-230404-912-1531S
+23:04:45,885 [Thread-SC-7] DEBUG Basin  - Checking 1928
+23:04:45,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] Initialize strategy: BASIN, S1-20130204-230404-913-2086S
+23:04:45,873 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] Initialize strategy: BASIN, S1-20130204-230404-888-1321S
+23:04:45,873 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] Initialize strategy: BASIN, S1-20130204-230404-877-1782S
+23:04:45,885 [Thread-SC-9] DEBUG Basin  - Checking 1109
+23:04:45,886 [Thread-SC-4] DEBUG Basin  - Checking 939
+23:04:45,886 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] Strategy started
+23:04:45,885 [Thread-SC-7] DEBUG Basin  - Checking 2318
+23:04:45,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] Initialize strategy: BASIN, S1-20130204-230404-914-1298S
+23:04:45,886 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] QuoteEvent: S1-20130204-230445-870-1694 - 883 : [0.0@0.0,0.0@0.0][][]
+23:04:45,886 [Thread-SC-7] DEBUG Basin  - Checking 2368
+23:04:45,886 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] Strategy started
+23:04:45,884 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] Strategy started
+23:04:45,883 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-915-1876S assigned to container SC-7
+23:04:45,880 [Thread-SC-5] DEBUG Basin  - Checking 1398
+23:04:45,880 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] Strategy started
+23:04:45,888 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-916-0765S assigned to container SC-8
+23:04:45,878 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] QuoteEvent: S1-20130204-230445-865-1635 - 388 : [0.0@0.0,0.0@0.0][][]
+23:04:45,888 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] QuoteEvent: S1-20130204-230445-867-1820 - 494 : [0.0@0.0,0.0@0.0][][]
+23:04:45,888 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] QuoteEvent: S1-20130204-230445-868-2291 - 623 : [0.0@0.0,0.0@0.0][][]
+23:04:45,888 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-920-1344S assigned to container SC-8
+23:04:45,889 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-922-2269S assigned to container SC-3
+23:04:45,890 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-926-0532S assigned to container SC-3
+23:04:45,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] Initialize strategy: BASIN, S1-20130204-230404-922-2269S
+23:04:45,890 [Thread-SC-3] DEBUG Basin  - Checking 2698
+23:04:45,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] Initialize strategy: BASIN, S1-20130204-230404-926-0532S
+23:04:45,890 [Thread-28] DEBUG BusinessManager  - strategy S1-20130204-230404-928-1527S assigned to container SC-5
+23:04:45,890 [Thread-SC-3] DEBUG Basin  - Checking 3328
+23:04:45,890 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] Strategy started
+23:04:45,878 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1000, null
+23:04:45,891 [Server] INFO  Server  - Market data is ready: true
+23:04:45,891 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] Strategy started
+23:04:45,890 [Thread-28] INFO  Server  - Strategies recovered: 59
+23:04:45,888 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] Initialize strategy: BASIN, S1-20130204-230404-916-0765S
+23:04:45,892 [Thread-SC-8] DEBUG Basin  - Checking 2600
+23:04:45,892 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] Initialize strategy: BASIN, S1-20130204-230404-920-1344S
+23:04:45,892 [Thread-SC-8] DEBUG Basin  - Checking 2628
+23:04:45,892 [Thread-28] INFO  Server  - Server is ready: true
+23:04:45,888 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] Strategy started
+23:04:45,887 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] Strategy started
+23:04:45,886 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] QuoteEvent: S1-20130204-230445-870-1696 - 921 : [0.0@0.0,0.0@0.0][][]
+23:04:45,893 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] Strategy started
+23:04:45,893 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] Strategy started
+23:04:45,886 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] Initialize strategy: BASIN, S1-20130204-230404-889-1521S
+23:04:45,894 [Thread-SC-9] DEBUG Basin  - Checking 1199
+23:04:45,894 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] Strategy started
+23:04:45,892 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] Strategy started
+23:04:45,891 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1044, null
+23:04:45,895 [Server] INFO  Server  - Market data is ready: true
+23:04:45,895 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] Strategy started
+23:04:45,896 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] Strategy started
+23:04:45,895 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1387, null
+23:04:45,896 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] QuoteEvent: S1-20130204-230445-878-2138 - 1288 : [0.0@0.0,0.0@0.0][][]
+23:04:45,896 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1398, null
+23:04:45,896 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1299, null
+23:04:45,896 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1800, null
+23:04:45,897 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1880, null
+23:04:45,897 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] Strategy started
+23:04:45,897 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1898, null
+23:04:45,897 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1928, null
+23:04:45,897 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] Initialize strategy: BASIN, S1-20130204-230404-928-1527S
+23:04:45,897 [Thread-SC-5] DEBUG Basin  - Checking 3988
+23:04:45,897 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] Strategy started
+23:04:45,897 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2318, null
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1109, null
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 939, null
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,898 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2368, null
+23:04:45,898 [Server] INFO  Server  - Market data is ready: true
+23:04:45,899 [Server] INFO  Server  - Market data is ready: true
+23:04:45,899 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2698, null
+23:04:45,899 [Server] INFO  Server  - Market data is ready: true
+23:04:45,899 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 3328, null
+23:04:45,899 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2600, null
+23:04:45,899 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] QuoteEvent: S1-20130204-230445-891-1251 - 1000 : [0.0@0.0,0.0@0.0][][]
+23:04:45,899 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2628, null
+23:04:45,899 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 1199, null
+23:04:45,899 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] QuoteEvent: S1-20130204-230445-896-0278 - 1387 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 3988, null
+23:04:45,900 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] QuoteEvent: S1-20130204-230445-895-0343 - 1044 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] QuoteEvent: S1-20130204-230445-899-0418 - 2698 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] QuoteEvent: S1-20130204-230445-898-0243 - 939 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [Server] INFO  Server  - Market data is ready: true
+23:04:45,900 [Server] INFO  Server  - Market data is ready: true
+23:04:45,900 [Server] INFO  Server  - Market data is ready: true
+23:04:45,900 [Server] INFO  Server  - Market data is ready: true
+23:04:45,900 [Server] INFO  Server  - Market data is ready: true
+23:04:45,900 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] QuoteEvent: S1-20130204-230445-896-0280 - 1299 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] QuoteEvent: S1-20130204-230445-899-0420 - 2600 : [0.0@0.0,0.0@0.0][][]
+23:04:45,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] QuoteEvent: S1-20130204-230445-899-0421 - 2628 : [0.0@0.0,0.0@0.0][][]
+23:04:45,901 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] QuoteEvent: S1-20130204-230445-896-0279 - 1398 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] QuoteEvent: S1-20130204-230445-898-0242 - 1109 : [0.0@0.0,0.0@0.0][][]
+23:04:45,900 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] QuoteEvent: S1-20130204-230445-899-0419 - 3328 : [0.0@0.0,0.0@0.0][][]
+23:04:45,901 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] QuoteEvent: S1-20130204-230445-899-0422 - 1199 : [0.0@0.0,0.0@0.0][][]
+23:04:45,901 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] QuoteEvent: S1-20130204-230445-900-2136 - 3988 : [0.0@0.0,0.0@0.0][][]
+23:04:45,902 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] Strategy started
+23:04:45,903 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] Strategy started
+23:04:45,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] Initialize strategy: BASIN, S1-20130204-230404-915-1876S
+23:04:45,909 [Thread-SC-7] DEBUG Basin  - Checking 2388
+23:04:45,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] QuoteEvent: S1-20130204-230445-896-0281 - 1800 : [0.0@0.0,0.0@0.0][][]
+23:04:45,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] QuoteEvent: S1-20130204-230445-897-1718 - 1880 : [0.0@0.0,0.0@0.0][][]
+23:04:45,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] QuoteEvent: S1-20130204-230445-897-1719 - 1898 : [0.0@0.0,0.0@0.0][][]
+23:04:45,909 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 2388, null
+23:04:45,916 [Server] INFO  Server  - Market data is ready: true
+23:04:45,916 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] QuoteEvent: S1-20130204-230445-897-1720 - 1928 : [0.0@0.0,0.0@0.0][][]
+23:04:45,918 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] QuoteEvent: S1-20130204-230445-898-0241 - 2318 : [0.0@0.0,0.0@0.0][][]
+23:04:45,918 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] QuoteEvent: S1-20130204-230445-899-0417 - 2368 : [0.0@0.0,0.0@0.0][][]
+23:04:45,918 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] Strategy started
+23:04:45,919 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] QuoteEvent: S1-20130204-230445-916-1178 - 2388 : [0.0@0.0,0.0@0.0][][]
+23:04:46,093 [BusinessManager] DEBUG BusinessManager  - Received InitClientRequestEvent from client: 950-PC.USER.20130204-230441-621-0001
+23:04:46,264 [Thread-SC-0] DEBUG Basin  - Checking 1
+23:04:46,264 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] Open orders: 
+23:04:46,264 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] PriceInstruction: null
+23:04:46,264 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] ExecutionInstruction: null
+23:04:46,269 [Thread-SC-1] DEBUG Basin  - Checking 2
+23:04:46,269 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] Open orders: 
+23:04:46,269 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] PriceInstruction: null
+23:04:46,269 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] ExecutionInstruction: null
+23:04:46,272 [Thread-SC-3] DEBUG Basin  - Checking 4
+23:04:46,272 [Thread-SC-2] DEBUG Basin  - Checking 3
+23:04:46,272 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] Open orders: 
+23:04:46,272 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] Open orders: 
+23:04:46,272 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] PriceInstruction: null
+23:04:46,272 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] PriceInstruction: null
+23:04:46,272 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] ExecutionInstruction: null
+23:04:46,272 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] ExecutionInstruction: null
+23:04:46,273 [Thread-SC-4] DEBUG Basin  - Checking 5
+23:04:46,273 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] Open orders: 
+23:04:46,273 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] PriceInstruction: null
+23:04:46,273 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] ExecutionInstruction: null
+23:04:46,275 [Thread-SC-5] DEBUG Basin  - Checking 6
+23:04:46,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] Open orders: 
+23:04:46,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] PriceInstruction: null
+23:04:46,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] ExecutionInstruction: null
+23:04:46,275 [Thread-SC-5] DEBUG Basin  - Checking 11
+23:04:46,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] Open orders: 
+23:04:46,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] PriceInstruction: null
+23:04:46,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] ExecutionInstruction: null
+23:04:46,281 [Thread-SC-6] DEBUG Basin  - Checking 12
+23:04:46,281 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] Open orders: 
+23:04:46,281 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] PriceInstruction: null
+23:04:46,281 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] ExecutionInstruction: null
+23:04:46,282 [Thread-SC-6] DEBUG Basin  - Checking 13
+23:04:46,282 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] Open orders: 
+23:04:46,282 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] PriceInstruction: null
+23:04:46,282 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] ExecutionInstruction: null
+23:04:46,285 [Thread-SC-7] DEBUG Basin  - Checking 16
+23:04:46,285 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] Open orders: 
+23:04:46,285 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] PriceInstruction: null
+23:04:46,285 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] ExecutionInstruction: null
+23:04:46,286 [Thread-SC-7] DEBUG Basin  - Checking 17
+23:04:46,286 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] Open orders: 
+23:04:46,286 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] PriceInstruction: null
+23:04:46,286 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] ExecutionInstruction: null
+23:04:46,288 [Thread-SC-8] DEBUG Basin  - Checking 23
+23:04:46,288 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] Open orders: 
+23:04:46,288 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] PriceInstruction: null
+23:04:46,288 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] ExecutionInstruction: null
+23:04:46,289 [Thread-SC-8] DEBUG Basin  - Checking 66
+23:04:46,289 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] Open orders: 
+23:04:46,289 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] PriceInstruction: null
+23:04:46,289 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] ExecutionInstruction: null
+23:04:46,295 [Thread-SC-9] DEBUG Basin  - Checking 83
+23:04:46,295 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] Open orders: 
+23:04:46,295 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] PriceInstruction: null
+23:04:46,295 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] ExecutionInstruction: null
+23:04:46,299 [Thread-SC-9] DEBUG Basin  - Checking 101
+23:04:46,299 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] Open orders: 
+23:04:46,299 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] PriceInstruction: null
+23:04:46,299 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] ExecutionInstruction: null
+23:04:46,300 [Thread-SC-0] DEBUG Basin  - Checking 144
+23:04:46,300 [Thread-SC-7] DEBUG Basin  - Checking 19
+23:04:46,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] Open orders: 
+23:04:46,300 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] Open orders: 
+23:04:46,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] PriceInstruction: null
+23:04:46,300 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] PriceInstruction: null
+23:04:46,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] ExecutionInstruction: null
+23:04:46,300 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] ExecutionInstruction: null
+23:04:46,300 [Thread-SC-0] DEBUG Basin  - Checking 151
+23:04:46,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] Open orders: 
+23:04:46,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] PriceInstruction: null
+23:04:46,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] ExecutionInstruction: null
+23:04:46,301 [Thread-SC-0] DEBUG Basin  - Checking 291
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] Open orders: 
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] PriceInstruction: null
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] ExecutionInstruction: null
+23:04:46,301 [Thread-SC-0] DEBUG Basin  - Checking 189
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] Open orders: 
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] PriceInstruction: null
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] ExecutionInstruction: null
+23:04:46,301 [Thread-SC-0] DEBUG Basin  - Checking 267
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] Open orders: 
+23:04:46,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] PriceInstruction: null
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] ExecutionInstruction: null
+23:04:46,302 [Thread-SC-0] DEBUG Basin  - Checking 322
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] Open orders: 
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] PriceInstruction: null
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] ExecutionInstruction: null
+23:04:46,302 [Thread-SC-0] DEBUG Basin  - Checking 293
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] Open orders: 
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] PriceInstruction: null
+23:04:46,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] ExecutionInstruction: null
+23:04:46,308 [Thread-SC-1] DEBUG Basin  - Checking 330
+23:04:46,308 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] Open orders: 
+23:04:46,308 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] PriceInstruction: null
+23:04:46,308 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] ExecutionInstruction: null
+23:04:46,328 [Thread-SC-2] DEBUG Basin  - Checking 688
+23:04:46,328 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] Open orders: 
+23:04:46,328 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] PriceInstruction: null
+23:04:46,328 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] ExecutionInstruction: null
+23:04:46,329 [Thread-SC-2] DEBUG Basin  - Checking 700
+23:04:46,329 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] Open orders: 
+23:04:46,329 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] PriceInstruction: null
+23:04:46,329 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] ExecutionInstruction: null
+23:04:46,330 [Thread-SC-3] DEBUG Basin  - Checking 762
+23:04:46,330 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] Open orders: 
+23:04:46,330 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] PriceInstruction: null
+23:04:46,330 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] ExecutionInstruction: null
+23:04:46,340 [Thread-SC-1] DEBUG Basin  - Checking 386
+23:04:46,340 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] Open orders: 
+23:04:46,340 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] PriceInstruction: null
+23:04:46,340 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] ExecutionInstruction: null
+23:04:46,349 [Thread-SC-3] DEBUG Basin  - Checking 836
+23:04:46,349 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] Open orders: 
+23:04:46,349 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] PriceInstruction: null
+23:04:46,349 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] ExecutionInstruction: null
+23:04:46,352 [Thread-SC-4] DEBUG Basin  - Checking 857
+23:04:46,352 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] Open orders: 
+23:04:46,352 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] PriceInstruction: null
+23:04:46,352 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] ExecutionInstruction: null
+23:04:46,359 [Thread-SC-1] DEBUG Basin  - Checking 388
+23:04:46,359 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] Open orders: 
+23:04:46,359 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] PriceInstruction: null
+23:04:46,359 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] ExecutionInstruction: null
+23:04:46,360 [Thread-SC-1] DEBUG Basin  - Checking 494
+23:04:46,360 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] Open orders: 
+23:04:46,360 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] PriceInstruction: null
+23:04:46,360 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] ExecutionInstruction: null
+23:04:46,362 [Thread-SC-1] DEBUG Basin  - Checking 623
+23:04:46,362 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] Open orders: 
+23:04:46,362 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] PriceInstruction: null
+23:04:46,362 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] ExecutionInstruction: null
+23:04:46,367 [Thread-SC-4] DEBUG Basin  - Checking 883
+23:04:46,367 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] Open orders: 
+23:04:46,367 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] PriceInstruction: null
+23:04:46,367 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] ExecutionInstruction: null
+23:04:46,369 [Thread-SC-5] DEBUG Basin  - Checking 941
+23:04:46,369 [Thread-SC-4] DEBUG Basin  - Checking 921
+23:04:46,369 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] Open orders: 
+23:04:46,369 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] Open orders: 
+23:04:46,369 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] PriceInstruction: null
+23:04:46,369 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] PriceInstruction: null
+23:04:46,369 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] ExecutionInstruction: null
+23:04:46,369 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] ExecutionInstruction: null
+23:04:46,370 [Thread-SC-6] DEBUG Basin  - Checking 979
+23:04:46,370 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] Open orders: 
+23:04:46,370 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] PriceInstruction: null
+23:04:46,370 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] ExecutionInstruction: null
+23:04:46,375 [Thread-SC-8] DEBUG Basin  - Checking 1088
+23:04:46,375 [Thread-SC-2] DEBUG Basin  - Checking 1288
+23:04:46,375 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] Open orders: 
+23:04:46,375 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] Open orders: 
+23:04:46,375 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] PriceInstruction: null
+23:04:46,375 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] ExecutionInstruction: null
+23:04:46,375 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] PriceInstruction: null
+23:04:46,375 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] ExecutionInstruction: null
+23:04:46,376 [Thread-SC-6] DEBUG Basin  - Checking 1000
+23:04:46,376 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] Open orders: 
+23:04:46,376 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] PriceInstruction: null
+23:04:46,376 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] ExecutionInstruction: null
+23:04:46,377 [Thread-SC-6] DEBUG Basin  - Checking 1044
+23:04:46,377 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] Open orders: 
+23:04:46,377 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] PriceInstruction: null
+23:04:46,377 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] ExecutionInstruction: null
+23:04:46,380 [Thread-SC-3] DEBUG Basin  - Checking 1387
+23:04:46,380 [Thread-SC-5] DEBUG Basin  - Checking 1398
+23:04:46,380 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] Open orders: 
+23:04:46,380 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] PriceInstruction: null
+23:04:46,380 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] Open orders: 
+23:04:46,380 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] ExecutionInstruction: null
+23:04:46,380 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] PriceInstruction: null
+23:04:46,380 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] ExecutionInstruction: null
+23:04:46,384 [Thread-SC-7] DEBUG Basin  - Checking 1800
+23:04:46,384 [Thread-SC-2] DEBUG Basin  - Checking 1299
+23:04:46,384 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] Open orders: 
+23:04:46,384 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] Open orders: 
+23:04:46,384 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] PriceInstruction: null
+23:04:46,384 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] PriceInstruction: null
+23:04:46,384 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] ExecutionInstruction: null
+23:04:46,384 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] ExecutionInstruction: null
+23:04:46,384 [Thread-SC-7] DEBUG Basin  - Checking 1880
+23:04:46,384 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] Open orders: 
+23:04:46,384 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] PriceInstruction: null
+23:04:46,384 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] ExecutionInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG Basin  - Checking 1928
+23:04:46,385 [Thread-SC-4] DEBUG Basin  - Checking 939
+23:04:46,385 [Thread-SC-9] DEBUG Basin  - Checking 1109
+23:04:46,385 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] Open orders: 
+23:04:46,385 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] PriceInstruction: null
+23:04:46,385 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] ExecutionInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] Open orders: 
+23:04:46,385 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] Open orders: 
+23:04:46,385 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] PriceInstruction: null
+23:04:46,385 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] ExecutionInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] PriceInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] ExecutionInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG Basin  - Checking 1898
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] Open orders: 
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] PriceInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] ExecutionInstruction: null
+23:04:46,385 [Thread-SC-7] DEBUG Basin  - Checking 2318
+23:04:46,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] Open orders: 
+23:04:46,386 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] PriceInstruction: null
+23:04:46,386 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] ExecutionInstruction: null
+23:04:46,386 [Thread-SC-7] DEBUG Basin  - Checking 2368
+23:04:46,386 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] Open orders: 
+23:04:46,386 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] PriceInstruction: null
+23:04:46,386 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] ExecutionInstruction: null
+23:04:46,390 [Thread-SC-3] DEBUG Basin  - Checking 3328
+23:04:46,390 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] Open orders: 
+23:04:46,390 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] PriceInstruction: null
+23:04:46,390 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] ExecutionInstruction: null
+23:04:46,390 [Thread-SC-3] DEBUG Basin  - Checking 2698
+23:04:46,390 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] Open orders: 
+23:04:46,390 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] PriceInstruction: null
+23:04:46,390 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] ExecutionInstruction: null
+23:04:46,392 [Thread-SC-8] DEBUG Basin  - Checking 2600
+23:04:46,392 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] Open orders: 
+23:04:46,392 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] PriceInstruction: null
+23:04:46,392 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] ExecutionInstruction: null
+23:04:46,392 [Thread-SC-8] DEBUG Basin  - Checking 2628
+23:04:46,392 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] Open orders: 
+23:04:46,392 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] PriceInstruction: null
+23:04:46,392 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] ExecutionInstruction: null
+23:04:46,393 [Thread-SC-9] DEBUG Basin  - Checking 1199
+23:04:46,393 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] Open orders: 
+23:04:46,393 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] PriceInstruction: null
+23:04:46,393 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] ExecutionInstruction: null
+23:04:46,397 [Thread-SC-5] DEBUG Basin  - Checking 3988
+23:04:46,397 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] Open orders: 
+23:04:46,397 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] PriceInstruction: null
+23:04:46,397 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] ExecutionInstruction: null
+23:04:46,409 [Thread-SC-7] DEBUG Basin  - Checking 2388
+23:04:46,409 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] Open orders: 
+23:04:46,409 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] PriceInstruction: null
+23:04:46,409 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] ExecutionInstruction: null
+23:04:50,407 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-915-1876S
+23:04:50,832 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-913-2086S
+23:04:51,404 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-911-2486S
+23:04:51,832 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-907-1053S
+23:04:52,311 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-888-1321S
+23:04:52,904 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-908-2045S
+23:04:53,248 [OrderManager] DEBUG OrderManager  - Adding child order subscription: 950-PC.USER.20130204-230441-621-0001 : S1-20130204-230404-915-1876S
+23:04:54,764 [Thread-SC-0] DEBUG Basin  - Checking 1
+23:04:54,764 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] Open orders: 
+23:04:54,764 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] PriceInstruction: null
+23:04:54,764 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] ExecutionInstruction: null
+23:04:54,769 [Thread-SC-1] DEBUG Basin  - Checking 2
+23:04:54,769 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] Open orders: 
+23:04:54,769 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] PriceInstruction: null
+23:04:54,769 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] ExecutionInstruction: null
+23:04:54,772 [Thread-SC-2] DEBUG Basin  - Checking 3
+23:04:54,772 [Thread-SC-3] DEBUG Basin  - Checking 4
+23:04:54,772 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] Open orders: 
+23:04:54,772 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] Open orders: 
+23:04:54,772 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] PriceInstruction: null
+23:04:54,772 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] PriceInstruction: null
+23:04:54,772 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] ExecutionInstruction: null
+23:04:54,772 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] ExecutionInstruction: null
+23:04:54,773 [Thread-SC-4] DEBUG Basin  - Checking 5
+23:04:54,773 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] Open orders: 
+23:04:54,773 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] PriceInstruction: null
+23:04:54,773 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] ExecutionInstruction: null
+23:04:54,775 [Thread-SC-5] DEBUG Basin  - Checking 6
+23:04:54,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] Open orders: 
+23:04:54,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] PriceInstruction: null
+23:04:54,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] ExecutionInstruction: null
+23:04:54,775 [Thread-SC-5] DEBUG Basin  - Checking 11
+23:04:54,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] Open orders: 
+23:04:54,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] PriceInstruction: null
+23:04:54,775 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] ExecutionInstruction: null
+23:04:54,781 [Thread-SC-6] DEBUG Basin  - Checking 12
+23:04:54,781 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] Open orders: 
+23:04:54,781 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] PriceInstruction: null
+23:04:54,781 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] ExecutionInstruction: null
+23:04:54,782 [Thread-SC-6] DEBUG Basin  - Checking 13
+23:04:54,782 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] Open orders: 
+23:04:54,782 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] PriceInstruction: null
+23:04:54,782 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] ExecutionInstruction: null
+23:04:54,785 [Thread-SC-7] DEBUG Basin  - Checking 16
+23:04:54,785 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] Open orders: 
+23:04:54,785 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] PriceInstruction: null
+23:04:54,785 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] ExecutionInstruction: null
+23:04:54,787 [Thread-SC-7] DEBUG Basin  - Checking 17
+23:04:54,787 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] Open orders: 
+23:04:54,787 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] PriceInstruction: null
+23:04:54,787 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] ExecutionInstruction: null
+23:04:54,788 [Thread-SC-8] DEBUG Basin  - Checking 23
+23:04:54,788 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] Open orders: 
+23:04:54,788 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] PriceInstruction: null
+23:04:54,788 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] ExecutionInstruction: null
+23:04:54,789 [Thread-SC-8] DEBUG Basin  - Checking 66
+23:04:54,789 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] Open orders: 
+23:04:54,789 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] PriceInstruction: null
+23:04:54,789 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] ExecutionInstruction: null
+23:04:54,795 [Thread-SC-9] DEBUG Basin  - Checking 83
+23:04:54,795 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] Open orders: 
+23:04:54,795 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] PriceInstruction: null
+23:04:54,795 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] ExecutionInstruction: null
+23:04:54,799 [Thread-SC-9] DEBUG Basin  - Checking 101
+23:04:54,799 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] Open orders: 
+23:04:54,799 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] PriceInstruction: null
+23:04:54,799 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] ExecutionInstruction: null
+23:04:54,800 [Thread-SC-0] DEBUG Basin  - Checking 144
+23:04:54,800 [Thread-SC-7] DEBUG Basin  - Checking 19
+23:04:54,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] Open orders: 
+23:04:54,800 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] Open orders: 
+23:04:54,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] PriceInstruction: null
+23:04:54,800 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] PriceInstruction: null
+23:04:54,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] ExecutionInstruction: null
+23:04:54,800 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] ExecutionInstruction: null
+23:04:54,800 [Thread-SC-0] DEBUG Basin  - Checking 151
+23:04:54,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] Open orders: 
+23:04:54,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] PriceInstruction: null
+23:04:54,800 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] ExecutionInstruction: null
+23:04:54,801 [Thread-SC-0] DEBUG Basin  - Checking 291
+23:04:54,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] Open orders: 
+23:04:54,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] PriceInstruction: null
+23:04:54,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] ExecutionInstruction: null
+23:04:54,801 [Thread-SC-0] DEBUG Basin  - Checking 189
+23:04:54,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] Open orders: 
+23:04:54,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] PriceInstruction: null
+23:04:54,801 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] ExecutionInstruction: null
+23:04:54,801 [Thread-SC-0] DEBUG Basin  - Checking 267
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] Open orders: 
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] PriceInstruction: null
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] ExecutionInstruction: null
+23:04:54,802 [Thread-SC-0] DEBUG Basin  - Checking 322
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] Open orders: 
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] PriceInstruction: null
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] ExecutionInstruction: null
+23:04:54,802 [Thread-SC-0] DEBUG Basin  - Checking 293
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] Open orders: 
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] PriceInstruction: null
+23:04:54,802 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] ExecutionInstruction: null
+23:04:54,808 [Thread-SC-1] DEBUG Basin  - Checking 330
+23:04:54,808 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] Open orders: 
+23:04:54,808 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] PriceInstruction: null
+23:04:54,808 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] ExecutionInstruction: null
+23:04:54,828 [Thread-SC-2] DEBUG Basin  - Checking 688
+23:04:54,828 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] Open orders: 
+23:04:54,828 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] PriceInstruction: null
+23:04:54,828 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] ExecutionInstruction: null
+23:04:54,829 [Thread-SC-2] DEBUG Basin  - Checking 700
+23:04:54,829 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] Open orders: 
+23:04:54,829 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] PriceInstruction: null
+23:04:54,829 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] ExecutionInstruction: null
+23:04:54,830 [Thread-SC-3] DEBUG Basin  - Checking 762
+23:04:54,830 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] Open orders: 
+23:04:54,830 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] PriceInstruction: null
+23:04:54,830 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] ExecutionInstruction: null
+23:04:54,840 [Thread-SC-1] DEBUG Basin  - Checking 386
+23:04:54,840 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] Open orders: 
+23:04:54,840 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] PriceInstruction: null
+23:04:54,840 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] ExecutionInstruction: null
+23:04:54,849 [Thread-SC-3] DEBUG Basin  - Checking 836
+23:04:54,849 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] Open orders: 
+23:04:54,849 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] PriceInstruction: null
+23:04:54,849 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] ExecutionInstruction: null
+23:04:54,852 [Thread-SC-4] DEBUG Basin  - Checking 857
+23:04:54,852 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] Open orders: 
+23:04:54,852 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] PriceInstruction: null
+23:04:54,852 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] ExecutionInstruction: null
+23:04:54,859 [Thread-SC-1] DEBUG Basin  - Checking 388
+23:04:54,859 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] Open orders: 
+23:04:54,859 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] PriceInstruction: null
+23:04:54,859 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] ExecutionInstruction: null
+23:04:54,860 [Thread-SC-1] DEBUG Basin  - Checking 494
+23:04:54,860 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] Open orders: 
+23:04:54,860 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] PriceInstruction: null
+23:04:54,860 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] ExecutionInstruction: null
+23:04:54,862 [Thread-SC-1] DEBUG Basin  - Checking 623
+23:04:54,862 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] Open orders: 
+23:04:54,862 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] PriceInstruction: null
+23:04:54,862 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] ExecutionInstruction: null
+23:04:54,867 [Thread-SC-4] DEBUG Basin  - Checking 883
+23:04:54,867 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] Open orders: 
+23:04:54,867 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] PriceInstruction: null
+23:04:54,867 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] ExecutionInstruction: null
+23:04:54,869 [Thread-SC-4] DEBUG Basin  - Checking 921
+23:04:54,869 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] Open orders: 
+23:04:54,869 [Thread-SC-5] DEBUG Basin  - Checking 941
+23:04:54,869 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] Open orders: 
+23:04:54,869 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] PriceInstruction: null
+23:04:54,869 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] ExecutionInstruction: null
+23:04:54,869 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] PriceInstruction: null
+23:04:54,869 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] ExecutionInstruction: null
+23:04:54,870 [Thread-SC-6] DEBUG Basin  - Checking 979
+23:04:54,870 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] Open orders: 
+23:04:54,870 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] PriceInstruction: null
+23:04:54,870 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] ExecutionInstruction: null
+23:04:54,875 [Thread-SC-8] DEBUG Basin  - Checking 1088
+23:04:54,875 [Thread-SC-2] DEBUG Basin  - Checking 1288
+23:04:54,875 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] Open orders: 
+23:04:54,875 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] Open orders: 
+23:04:54,875 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] PriceInstruction: null
+23:04:54,875 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] ExecutionInstruction: null
+23:04:54,875 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] PriceInstruction: null
+23:04:54,875 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] ExecutionInstruction: null
+23:04:54,876 [Thread-SC-6] DEBUG Basin  - Checking 1000
+23:04:54,876 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] Open orders: 
+23:04:54,876 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] PriceInstruction: null
+23:04:54,876 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] ExecutionInstruction: null
+23:04:54,877 [Thread-SC-6] DEBUG Basin  - Checking 1044
+23:04:54,877 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] Open orders: 
+23:04:54,877 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] PriceInstruction: null
+23:04:54,877 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] ExecutionInstruction: null
+23:04:54,880 [Thread-SC-3] DEBUG Basin  - Checking 1387
+23:04:54,880 [Thread-SC-5] DEBUG Basin  - Checking 1398
+23:04:54,880 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] Open orders: 
+23:04:54,880 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] PriceInstruction: null
+23:04:54,880 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] Open orders: 
+23:04:54,880 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] PriceInstruction: null
+23:04:54,880 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] ExecutionInstruction: null
+23:04:54,880 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] ExecutionInstruction: null
+23:04:54,884 [Thread-SC-2] DEBUG Basin  - Checking 1299
+23:04:54,884 [Thread-SC-7] DEBUG Basin  - Checking 1880
+23:04:54,884 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] Open orders: 
+23:04:54,884 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] PriceInstruction: null
+23:04:54,884 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] ExecutionInstruction: null
+23:04:54,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] Open orders: 
+23:04:54,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] PriceInstruction: null
+23:04:54,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] ExecutionInstruction: null
+23:04:54,884 [Thread-SC-7] DEBUG Basin  - Checking 1800
+23:04:54,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] Open orders: 
+23:04:54,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] PriceInstruction: null
+23:04:54,884 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] ExecutionInstruction: null
+23:04:54,885 [Thread-SC-9] DEBUG Basin  - Checking 1109
+23:04:54,885 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] Open orders: 
+23:04:54,885 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] PriceInstruction: null
+23:04:54,885 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] ExecutionInstruction: null
+23:04:54,885 [Thread-SC-7] DEBUG Basin  - Checking 1928
+23:04:54,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] Open orders: 
+23:04:54,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] PriceInstruction: null
+23:04:54,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] ExecutionInstruction: null
+23:04:54,885 [Thread-SC-7] DEBUG Basin  - Checking 2318
+23:04:54,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] Open orders: 
+23:04:54,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] PriceInstruction: null
+23:04:54,885 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] ExecutionInstruction: null
+23:04:54,885 [Thread-SC-7] DEBUG Basin  - Checking 1898
+23:04:54,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] Open orders: 
+23:04:54,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] PriceInstruction: null
+23:04:54,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] ExecutionInstruction: null
+23:04:54,886 [Thread-SC-7] DEBUG Basin  - Checking 2368
+23:04:54,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] Open orders: 
+23:04:54,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] PriceInstruction: null
+23:04:54,886 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] ExecutionInstruction: null
+23:04:54,885 [Thread-SC-4] DEBUG Basin  - Checking 939
+23:04:54,886 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] Open orders: 
+23:04:54,886 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] PriceInstruction: null
+23:04:54,886 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] ExecutionInstruction: null
+23:04:54,890 [Thread-SC-3] DEBUG Basin  - Checking 3328
+23:04:54,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] Open orders: 
+23:04:54,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] PriceInstruction: null
+23:04:54,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] ExecutionInstruction: null
+23:04:54,890 [Thread-SC-3] DEBUG Basin  - Checking 2698
+23:04:54,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] Open orders: 
+23:04:54,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] PriceInstruction: null
+23:04:54,890 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] ExecutionInstruction: null
+23:04:54,892 [Thread-SC-8] DEBUG Basin  - Checking 2600
+23:04:54,897 [Thread-SC-5] DEBUG Basin  - Checking 3988
+23:04:54,893 [Thread-SC-9] DEBUG Basin  - Checking 1199
+23:04:54,901 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] Open orders: 
+23:04:54,901 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] PriceInstruction: null
+23:04:54,901 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] ExecutionInstruction: null
+23:04:54,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] Open orders: 
+23:04:54,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] PriceInstruction: null
+23:04:54,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] ExecutionInstruction: null
+23:04:54,901 [Thread-SC-8] DEBUG Basin  - Checking 2628
+23:04:54,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] Open orders: 
+23:04:54,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] PriceInstruction: null
+23:04:54,901 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] ExecutionInstruction: null
+23:04:54,901 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] Open orders: 
+23:04:54,901 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] PriceInstruction: null
+23:04:54,901 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] ExecutionInstruction: null
+23:04:54,909 [Thread-SC-7] DEBUG Basin  - Checking 2388
+23:04:54,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] Open orders: 
+23:04:54,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] PriceInstruction: null
+23:04:54,909 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] ExecutionInstruction: null
+23:05:03,264 [Thread-SC-0] DEBUG Basin  - Checking 1
+23:05:03,264 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] Open orders: 
+23:05:03,264 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] PriceInstruction: null
+23:05:03,264 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] ExecutionInstruction: null
+23:05:03,269 [Thread-SC-1] DEBUG Basin  - Checking 2
+23:05:03,269 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] Open orders: 
+23:05:03,269 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] PriceInstruction: null
+23:05:03,269 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] ExecutionInstruction: null
+23:05:03,272 [Thread-SC-2] DEBUG Basin  - Checking 3
+23:05:03,272 [Thread-SC-3] DEBUG Basin  - Checking 4
+23:05:03,272 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] Open orders: 
+23:05:03,272 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] Open orders: 
+23:05:03,272 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] PriceInstruction: null
+23:05:03,272 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] PriceInstruction: null
+23:05:03,272 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] ExecutionInstruction: null
+23:05:03,272 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] ExecutionInstruction: null
+23:05:03,273 [Thread-SC-4] DEBUG Basin  - Checking 5
+23:05:03,273 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] Open orders: 
+23:05:03,273 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] PriceInstruction: null
+23:05:03,273 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] ExecutionInstruction: null
+23:05:03,275 [Thread-SC-5] DEBUG Basin  - Checking 11
+23:05:03,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] Open orders: 
+23:05:03,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] PriceInstruction: null
+23:05:03,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] ExecutionInstruction: null
+23:05:03,275 [Thread-SC-5] DEBUG Basin  - Checking 6
+23:05:03,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] Open orders: 
+23:05:03,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] PriceInstruction: null
+23:05:03,275 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] ExecutionInstruction: null
+23:05:03,281 [Thread-SC-6] DEBUG Basin  - Checking 12
+23:05:03,281 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] Open orders: 
+23:05:03,281 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] PriceInstruction: null
+23:05:03,281 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] ExecutionInstruction: null
+23:05:03,282 [Thread-SC-6] DEBUG Basin  - Checking 13
+23:05:03,282 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] Open orders: 
+23:05:03,282 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] PriceInstruction: null
+23:05:03,282 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] ExecutionInstruction: null
+23:05:03,285 [Thread-SC-7] DEBUG Basin  - Checking 16
+23:05:03,285 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] Open orders: 
+23:05:03,285 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] PriceInstruction: null
+23:05:03,285 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] ExecutionInstruction: null
+23:05:03,286 [Thread-SC-7] DEBUG Basin  - Checking 17
+23:05:03,286 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] Open orders: 
+23:05:03,286 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] PriceInstruction: null
+23:05:03,286 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] ExecutionInstruction: null
+23:05:03,288 [Thread-SC-8] DEBUG Basin  - Checking 23
+23:05:03,288 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] Open orders: 
+23:05:03,288 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] PriceInstruction: null
+23:05:03,288 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] ExecutionInstruction: null
+23:05:03,289 [Thread-SC-8] DEBUG Basin  - Checking 66
+23:05:03,289 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] Open orders: 
+23:05:03,289 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] PriceInstruction: null
+23:05:03,289 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] ExecutionInstruction: null
+23:05:03,295 [Thread-SC-9] DEBUG Basin  - Checking 83
+23:05:03,295 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] Open orders: 
+23:05:03,295 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] PriceInstruction: null
+23:05:03,295 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] ExecutionInstruction: null
+23:05:03,299 [Thread-SC-9] DEBUG Basin  - Checking 101
+23:05:03,299 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] Open orders: 
+23:05:03,299 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] PriceInstruction: null
+23:05:03,299 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] ExecutionInstruction: null
+23:05:03,300 [Thread-SC-7] DEBUG Basin  - Checking 19
+23:05:03,300 [Thread-SC-0] DEBUG Basin  - Checking 144
+23:05:03,300 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] Open orders: 
+23:05:03,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] Open orders: 
+23:05:03,300 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] PriceInstruction: null
+23:05:03,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] PriceInstruction: null
+23:05:03,300 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] ExecutionInstruction: null
+23:05:03,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] ExecutionInstruction: null
+23:05:03,300 [Thread-SC-0] DEBUG Basin  - Checking 151
+23:05:03,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] Open orders: 
+23:05:03,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] PriceInstruction: null
+23:05:03,300 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] ExecutionInstruction: null
+23:05:03,301 [Thread-SC-0] DEBUG Basin  - Checking 189
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] Open orders: 
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] PriceInstruction: null
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] ExecutionInstruction: null
+23:05:03,301 [Thread-SC-0] DEBUG Basin  - Checking 267
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] Open orders: 
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] PriceInstruction: null
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] ExecutionInstruction: null
+23:05:03,301 [Thread-SC-0] DEBUG Basin  - Checking 291
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] Open orders: 
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] PriceInstruction: null
+23:05:03,301 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] ExecutionInstruction: null
+23:05:03,302 [Thread-SC-0] DEBUG Basin  - Checking 293
+23:05:03,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] Open orders: 
+23:05:03,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] PriceInstruction: null
+23:05:03,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] ExecutionInstruction: null
+23:05:03,302 [Thread-SC-0] DEBUG Basin  - Checking 322
+23:05:03,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] Open orders: 
+23:05:03,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] PriceInstruction: null
+23:05:03,302 [Thread-SC-0] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] ExecutionInstruction: null
+23:05:03,308 [Thread-SC-1] DEBUG Basin  - Checking 330
+23:05:03,308 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] Open orders: 
+23:05:03,308 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] PriceInstruction: null
+23:05:03,308 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] ExecutionInstruction: null
+23:05:03,328 [Thread-SC-2] DEBUG Basin  - Checking 688
+23:05:03,328 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] Open orders: 
+23:05:03,328 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] PriceInstruction: null
+23:05:03,328 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] ExecutionInstruction: null
+23:05:03,329 [Thread-SC-2] DEBUG Basin  - Checking 700
+23:05:03,329 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] Open orders: 
+23:05:03,329 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] PriceInstruction: null
+23:05:03,329 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] ExecutionInstruction: null
+23:05:03,330 [Thread-SC-3] DEBUG Basin  - Checking 762
+23:05:03,330 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] Open orders: 
+23:05:03,330 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] PriceInstruction: null
+23:05:03,330 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] ExecutionInstruction: null
+23:05:03,340 [Thread-SC-1] DEBUG Basin  - Checking 386
+23:05:03,340 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] Open orders: 
+23:05:03,340 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] PriceInstruction: null
+23:05:03,340 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] ExecutionInstruction: null
+23:05:03,349 [Thread-SC-3] DEBUG Basin  - Checking 836
+23:05:03,349 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] Open orders: 
+23:05:03,349 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] PriceInstruction: null
+23:05:03,349 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] ExecutionInstruction: null
+23:05:03,352 [Thread-SC-4] DEBUG Basin  - Checking 857
+23:05:03,352 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] Open orders: 
+23:05:03,352 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] PriceInstruction: null
+23:05:03,352 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] ExecutionInstruction: null
+23:05:03,359 [Thread-SC-1] DEBUG Basin  - Checking 388
+23:05:03,359 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] Open orders: 
+23:05:03,359 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] PriceInstruction: null
+23:05:03,359 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] ExecutionInstruction: null
+23:05:03,360 [Thread-SC-1] DEBUG Basin  - Checking 494
+23:05:03,360 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] Open orders: 
+23:05:03,360 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] PriceInstruction: null
+23:05:03,360 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] ExecutionInstruction: null
+23:05:03,362 [Thread-SC-1] DEBUG Basin  - Checking 623
+23:05:03,362 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] Open orders: 
+23:05:03,362 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] PriceInstruction: null
+23:05:03,362 [Thread-SC-1] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] ExecutionInstruction: null
+23:05:03,367 [Thread-SC-4] DEBUG Basin  - Checking 883
+23:05:03,367 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] Open orders: 
+23:05:03,367 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] PriceInstruction: null
+23:05:03,367 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] ExecutionInstruction: null
+23:05:03,370 [Thread-SC-4] DEBUG Basin  - Checking 921
+23:05:03,370 [Thread-SC-5] DEBUG Basin  - Checking 941
+23:05:03,370 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] Open orders: 
+23:05:03,370 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] PriceInstruction: null
+23:05:03,370 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] ExecutionInstruction: null
+23:05:03,370 [Thread-SC-6] DEBUG Basin  - Checking 979
+23:05:03,370 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] Open orders: 
+23:05:03,371 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] PriceInstruction: null
+23:05:03,371 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] ExecutionInstruction: null
+23:05:03,371 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] Open orders: 
+23:05:03,372 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] PriceInstruction: null
+23:05:03,372 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] ExecutionInstruction: null
+23:05:03,375 [Thread-SC-2] DEBUG Basin  - Checking 1288
+23:05:03,375 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] Open orders: 
+23:05:03,375 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] PriceInstruction: null
+23:05:03,375 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] ExecutionInstruction: null
+23:05:03,375 [Thread-SC-8] DEBUG Basin  - Checking 1088
+23:05:03,375 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] Open orders: 
+23:05:03,375 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] PriceInstruction: null
+23:05:03,375 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] ExecutionInstruction: null
+23:05:03,380 [Thread-SC-5] DEBUG Basin  - Checking 1398
+23:05:03,380 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] Open orders: 
+23:05:03,380 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] PriceInstruction: null
+23:05:03,380 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] ExecutionInstruction: null
+23:05:03,381 [Thread-SC-3] DEBUG Basin  - Checking 1387
+23:05:03,381 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] Open orders: 
+23:05:03,381 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] PriceInstruction: null
+23:05:03,381 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] ExecutionInstruction: null
+23:05:03,381 [Thread-SC-6] DEBUG Basin  - Checking 1000
+23:05:03,381 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] Open orders: 
+23:05:03,381 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] PriceInstruction: null
+23:05:03,382 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] ExecutionInstruction: null
+23:05:03,382 [Thread-SC-6] DEBUG Basin  - Checking 1044
+23:05:03,382 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] Open orders: 
+23:05:03,382 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] PriceInstruction: null
+23:05:03,382 [Thread-SC-6] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] ExecutionInstruction: null
+23:05:03,385 [Thread-SC-4] DEBUG Basin  - Checking 939
+23:05:03,385 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] Open orders: 
+23:05:03,385 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] PriceInstruction: null
+23:05:03,385 [Thread-SC-4] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] ExecutionInstruction: null
+23:05:03,385 [Thread-SC-2] DEBUG Basin  - Checking 1299
+23:05:03,385 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] Open orders: 
+23:05:03,385 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] PriceInstruction: null
+23:05:03,385 [Thread-SC-2] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] ExecutionInstruction: null
+23:05:03,385 [Thread-SC-7] DEBUG Basin  - Checking 1880
+23:05:03,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] Open orders: 
+23:05:03,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] PriceInstruction: null
+23:05:03,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] ExecutionInstruction: null
+23:05:03,385 [Thread-SC-7] DEBUG Basin  - Checking 1800
+23:05:03,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] Open orders: 
+23:05:03,385 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] PriceInstruction: null
+23:05:03,387 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] ExecutionInstruction: null
+23:05:03,387 [Thread-SC-7] DEBUG Basin  - Checking 1898
+23:05:03,387 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] Open orders: 
+23:05:03,387 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] PriceInstruction: null
+23:05:03,387 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] ExecutionInstruction: null
+23:05:03,388 [Thread-SC-7] DEBUG Basin  - Checking 2318
+23:05:03,388 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] Open orders: 
+23:05:03,389 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] PriceInstruction: null
+23:05:03,389 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] ExecutionInstruction: null
+23:05:03,389 [Thread-SC-7] DEBUG Basin  - Checking 1928
+23:05:03,390 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] Open orders: 
+23:05:03,390 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] PriceInstruction: null
+23:05:03,390 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] ExecutionInstruction: null
+23:05:03,390 [Thread-SC-7] DEBUG Basin  - Checking 2368
+23:05:03,390 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] Open orders: 
+23:05:03,390 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] PriceInstruction: null
+23:05:03,390 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] ExecutionInstruction: null
+23:05:03,385 [Thread-SC-9] DEBUG Basin  - Checking 1109
+23:05:03,390 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] Open orders: 
+23:05:03,390 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] PriceInstruction: null
+23:05:03,390 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] ExecutionInstruction: null
+23:05:03,390 [Thread-SC-3] DEBUG Basin  - Checking 3328
+23:05:03,391 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] Open orders: 
+23:05:03,391 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] PriceInstruction: null
+23:05:03,391 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] ExecutionInstruction: null
+23:05:03,391 [Thread-SC-3] DEBUG Basin  - Checking 2698
+23:05:03,391 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] Open orders: 
+23:05:03,391 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] PriceInstruction: null
+23:05:03,391 [Thread-SC-3] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] ExecutionInstruction: null
+23:05:03,393 [Thread-SC-8] DEBUG Basin  - Checking 2628
+23:05:03,393 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] Open orders: 
+23:05:03,393 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] PriceInstruction: null
+23:05:03,393 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] ExecutionInstruction: null
+23:05:03,393 [Thread-SC-8] DEBUG Basin  - Checking 2600
+23:05:03,393 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] Open orders: 
+23:05:03,393 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] PriceInstruction: null
+23:05:03,393 [Thread-SC-8] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] ExecutionInstruction: null
+23:05:03,393 [Thread-SC-9] DEBUG Basin  - Checking 1199
+23:05:03,394 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] Open orders: 
+23:05:03,394 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] PriceInstruction: null
+23:05:03,394 [Thread-SC-9] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] ExecutionInstruction: null
+23:05:03,397 [Thread-SC-5] DEBUG Basin  - Checking 3988
+23:05:03,397 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] Open orders: 
+23:05:03,397 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] PriceInstruction: null
+23:05:03,397 [Thread-SC-5] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] ExecutionInstruction: null
+23:05:03,409 [Thread-SC-7] DEBUG Basin  - Checking 2388
+23:05:03,409 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] Open orders: 
+23:05:03,409 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] PriceInstruction: null
+23:05:03,409 [Thread-SC-7] DEBUG MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] ExecutionInstruction: null
+23:05:10,572 [main] DEBUG Server  - 
+23:05:10,572 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+23:05:10,572 [main] DEBUG Server  - 
+23:05:10,572 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-907-1053S] Strategy stopping
+23:05:10,572 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-908-2045S] Strategy stopping
+23:05:10,573 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-889-1521S] Strategy stopping
+23:05:10,573 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-632-0776S] Strategy stopping
+23:05:10,573 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-911-2486S] Strategy stopping
+23:05:10,575 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-742-0595S] Strategy stopping
+23:05:10,575 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-867-1846S] Strategy stopping
+23:05:10,575 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-910-0442S] Strategy stopping
+23:05:10,576 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-872-1316S] Strategy stopping
+23:05:10,574 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-740-1654S] Strategy stopping
+23:05:10,576 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-745-2239S] Strategy stopping
+23:05:10,574 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-837-1947S] Strategy stopping
+23:05:10,577 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-888-1321S] Strategy stopping
+23:05:10,574 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-920-1344S] Strategy stopping
+23:05:10,574 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-879-1828S] Strategy stopping
+23:05:10,577 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-596-1801S] Strategy stopping
+23:05:10,574 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-891-0184S] Strategy stopping
+23:05:10,573 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-614-2172S] Strategy stopping
+23:05:10,577 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-613-0867S] Strategy stopping
+23:05:10,578 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-880-0906S] Strategy stopping
+23:05:10,578 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-877-1782S] Strategy stopping
+23:05:10,579 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-922-2269S] Strategy stopping
+23:05:10,581 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-913-2086S] Strategy stopping
+23:05:10,581 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-865-0341S] Strategy stopping
+23:05:10,582 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-866-2261S] Strategy stopping
+23:05:10,582 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-616-1362S] Strategy stopping
+23:05:10,582 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-610-1425S] Strategy stopping
+23:05:10,583 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-890-0702S] Strategy stopping
+23:05:10,583 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-916-0765S] Strategy stopping
+23:05:10,583 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-839-1042S] Strategy stopping
+23:05:10,584 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-836-1106S] Strategy stopping
+23:05:10,584 [Thread-SC-9] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-659-0383S] Strategy stopping
+23:05:10,584 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-779-1383S] Strategy stopping
+23:05:10,585 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-840-0448S] Strategy stopping
+23:05:10,586 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-886-1284S] Strategy stopping
+23:05:10,586 [Thread-SC-8] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-628-2395S] Strategy stopping
+23:05:10,587 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-862-0047S] Strategy stopping
+23:05:10,587 [Thread-SC-5] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-928-1527S] Strategy stopping
+23:05:10,588 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-846-0445S] Strategy stopping
+23:05:10,588 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-885-1451S] Strategy stopping
+23:05:10,589 [Thread-SC-4] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-608-0297S] Strategy stopping
+23:05:10,589 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-864-1979S] Strategy stopping
+23:05:10,589 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-607-1664S] Strategy stopping
+23:05:10,590 [Thread-SC-3] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-926-0532S] Strategy stopping
+23:05:10,591 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-915-1876S] Strategy stopping
+23:05:10,592 [Thread-SC-6] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-884-2117S] Strategy stopping
+23:05:10,592 [Thread-SC-2] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-604-1816S] Strategy stopping
+23:05:10,593 [Thread-SC-1] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-835-0101S] Strategy stopping
+23:05:10,593 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-778-2054S] Strategy stopping
+23:05:10,595 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-912-1531S] Strategy stopping
+23:05:10,596 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-773-0661S] Strategy stopping
+23:05:10,597 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-768-1208S] Strategy stopping
+23:05:10,597 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-619-0389S] Strategy stopping
+23:05:10,598 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-743-0329S] Strategy stopping
+23:05:10,599 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-909-0341S] Strategy stopping
+23:05:10,599 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-617-1582S] Strategy stopping
+23:05:10,600 [Thread-SC-0] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-587-2344S] Strategy stopping
+23:05:10,601 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-914-1298S] Strategy stopping
+23:05:10,602 [PersistenceManager] WARN  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal queue size: 105
+23:05:10,603 [Thread-SC-7] INFO  MultiInstrumentStrategy  - [S1-20130204-230404-621-1327S] Strategy stopping
+23:05:10,642 [PersistenceManager] WARN  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal queue size: 100
+23:05:10,646 [PersistenceManager] INFO  AsyncPriorityEventThread  - Slow consumer thread PersistenceManager normal back to normal, queue size: 99
+23:05:12,572 [main] INFO  Server  - uninitialising server
+23:05:12,572 [main] INFO  UpStreamManager  - uninitialising
+23:05:12,572 [main] INFO  TickDataManager  - uninitialising
+23:05:12,630 [main] INFO  DownStreamManager  - uninitialising
+23:05:12,630 [main] INFO  MarketDataManager  - uninitialising
+23:05:12,630 [main] INFO  RefDataManager  - uninitialising
+23:05:12,630 [main] DEBUG RemoteEventManager  - Closing transport...
+23:05:12,635 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-50767-1359990276426-1:1) is shutting down
+23:05:13,683 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Stopped
+23:05:13,706 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-50767-1359990276426-1:1) stopped

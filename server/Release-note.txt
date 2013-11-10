@@ -1,0 +1,35 @@
+Cyan Spring ATS release 1.65
+- added open field in quotes from IB adaptor
+- added alert system for strategy to fire alert to GUI
+- Terminated strategy now can be deleted from database when system starts up
+- CSTW property window now can be sorted on tag column
+- added single instrument strategy framework. Rename the previous single instrument strategy to single order strategy.
+- fixed strategy end time error.
+ 
+Cyan Spring ATS release 1.53a
+- Some fixes for latest IB interface
+- Event handling optimization for server plug-ins
+
+Cyan Spring ATS release 1.53
+- New strategy framework that allows strategy to be dynamically deployed in runtime
+- Fixed some tool tips on CSTW
+- TickDataManager is no longer a required component. This is to fix a IB connection problem in previous release
+- Refactoring to remove common dependency on transport project.
+- Refactoring to move business logic away from infrastructure logic
+- Some performance enhancements.
+
+Cyan Spring ATS release 1.36
+- added P&L field at strategy level for multi-insrument strategy
+- added server id for objects persisted. This is for better recovery in a distributed system setup.
+- strategy now can be saved in xml file
+- market data now can be stored in tick files in a pre-defined format
+- added back test framework and a running example
+
+Cyan Spring ATS release 1.32
+- added market data view in CSTW
+- added Interactive Broker adaptor
+
+Cyan Spring ATS release 1.20
+- added multi-instrument strategy frame work
+- added Dollar Neutral and Low/High strategies
+- added Multi-instrument strategy view and execution view in CSTW

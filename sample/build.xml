@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom" default="dist" basedir=".">
+    <description>
+        auto build custom project
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src/main/java"/>
+  <property name="build" location="target/classes"/>
+  <property name="dist"  location="target"/>
+
+	<path id="custom.classpath">
+	    <pathelement location="target/test-classes"/>
+	    <pathelement location="target/classes"/>
+	    <pathelement location="cyanspring-common-1.0.jar"/>
+	    <pathelement location="cyanspring-strategy-1.0.jar"/>
+	    <pathelement location="slf4j-api-1.6.1.jar"/>
+	</path>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac debug="true" debuglevel="${debuglevel}" destdir="${build}" srcdir="${src}">
+        <classpath refid="custom.classpath"/>
+    </javac>
+<!--    <javac srcdir="${src}" destdir="${build}"/>  --> 
+  </target>
+
+  <target name="dist" depends="compile"
+        description="generate the distribution" >
+
+    <!-- create jar file -->
+    <jar jarfile="${dist}/cyanspring-custom-1.0.jar" basedir="${build}"/>
+  	<echo message="Created: ${dist}/cyanspring-custom-1.0.jar"/>
+  </target>
+
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>
+
+

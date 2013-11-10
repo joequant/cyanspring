@@ -1,0 +1,245 @@
+20:19:35,332 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff: startup date [Wed Feb 06 20:19:35 CST 2013]; root of context hierarchy
+20:19:35,432 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server.xml]
+20:19:35,602 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\server_sim.xml]
+20:19:35,643 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\business.xml]
+20:19:35,703 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\strategy.xml]
+20:19:35,743 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\built-in.xml]
+20:19:35,773 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/C:/Projects/algo/common/target/classes/conf/common.xml]
+20:19:35,793 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\MarketSession.xml]
+20:19:35,813 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [C:\Projects\algo\server\conf\persistence.xml]
+20:19:36,173 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,parentOrderValidator,orderFieldValidator,strategyOrderValidator,parentOrderPreCheck,fixToOrderMap,fixParentOrderConverter,fixDataConverter,utcTimeOnlyConverter,parentOrderDefaultValueFiller,defaultStartEndTime,strategyFactory,globalStrategySettings,singleInstrumentCommonDisplayFields,multiInstrumentCommonDisplayFields,multiInstrumentCommonInstrumentDisplayFields,singleInstrumentCommonFieldDefs,multiInstrumentCommonFieldDefs,multiInstrumentCommonInstrumentFieldDefs,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,org.springframework.beans.factory.config.MethodInvokingFactoryBean#2,defaultExecutionAnalyzer,defaultExecutionManager,dataConverter,quantityConverter,priceConverter,marketSessionManager,dataSource,sessionFactory,setDerbyLog,server,systemInfo,transportService,eventManager,persistenceManager,mdManager,simMarketDataAdaptor,simExchange,strategyContainer,orderManager,scheduleManager,tickTable,tickTableManager,businessManager,orderGenerator,tickDataManager,tickDataWriter,refDataManager,downStreamManager,simDownStreamAdaptor,upStreamManager,fixUpStreamAdaptor,fixDownStreamAdaptor,simExchangeFixSettings]; root of factory hierarchy
+20:19:37,397 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+20:19:37,397 [main] INFO  Environment  - Hibernate 3.6.3.Final
+20:19:37,397 [main] INFO  Environment  - hibernate.properties not found
+20:19:37,413 [main] INFO  Environment  - Bytecode provider name : javassist
+20:19:37,413 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+20:19:37,617 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+20:19:37,679 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.Execution -> ANYONE.EXECUTIONS
+20:19:37,695 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.common.business.ChildOrder -> ANYONE.ACTIVE_CHILD_ORDERS
+20:19:37,695 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.ChildOrderAudit -> ANYONE.CHILD_ORDER_AUDIT
+20:19:37,695 [main] INFO  HbmBinder  - Mapping class: com.cyanspring.server.persistence.TextObject -> ANYONE.STRATEGIES
+20:19:37,710 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+20:19:37,710 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+20:19:37,757 [main] WARN  RootClass  - composite-id class does not override equals(): com.cyanspring.server.persistence.TextObject
+20:19:37,757 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.cyanspring.server.persistence.TextObject
+20:19:37,757 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+20:19:39,255 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+20:19:39,303 [main] INFO  SettingsFactory  - Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+20:19:39,303 [main] INFO  SettingsFactory  - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+20:19:39,303 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+20:19:39,303 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+20:19:39,303 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+20:19:39,303 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Connection release mode: on_close
+20:19:39,303 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+20:19:39,303 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+20:19:39,303 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+20:19:39,303 [main] INFO  SettingsFactory  - Query language substitutions: {}
+20:19:39,303 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Second-level cache: enabled
+20:19:39,303 [main] INFO  SettingsFactory  - Query cache: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+20:19:39,303 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+20:19:39,303 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+20:19:39,318 [main] INFO  SettingsFactory  - Statistics: disabled
+20:19:39,318 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+20:19:39,318 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+20:19:39,318 [main] INFO  SettingsFactory  - Named query checking : enabled
+20:19:39,318 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+20:19:39,334 [main] INFO  SessionFactoryImpl  - building session factory
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1db9f45
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b59919
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b59919
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1566a6c
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@650646
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@650646
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@7efa96
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@800aa1
+20:19:39,349 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@39da8a
+20:19:39,677 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+20:19:39,942 [main] INFO  Server  - SystemInfo: Test:EB:S1:tcp://localhost:61616
+20:19:40,161 [main] INFO  BrokerService  - Using Persistence Adapter: MemoryPersistenceAdapter
+20:19:40,161 [main] INFO  BrokerService  - ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting
+20:19:40,161 [main] INFO  BrokerService  - For help or more information please see: http://activemq.apache.org/
+20:19:40,192 [JMX connector] INFO  ManagementContext  - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+20:19:40,317 [main] INFO  TransportServerThreadSupport  - Listening for connections at: tcp://127.0.0.1:61616
+20:19:40,317 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Started
+20:19:40,317 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-54290-1360153176603-1:1) started
+20:19:40,676 [main] DEBUG Server  - ScheduleManager initialized
+20:19:40,676 [main] DEBUG Server  - PersistenceManager initialized
+20:19:41,550 [main] DEBUG PersistenceManager  - TextObject Records deleted: 0
+20:19:41,550 [main] WARN  HQLQueryPlan  - manipulation query [delete from ChildOrder where created < :created and serverId = :serverId] resulted in [2] split queries
+20:19:41,582 [main] DEBUG PersistenceManager  - ChildOrder Records deleted: 0
+20:19:41,598 [main] DEBUG PersistenceManager  - ChildOrderAudit Records deleted: 0
+20:19:41,613 [main] DEBUG PersistenceManager  - Execution Records deleted: 0
+20:19:41,613 [main] DEBUG Server  - OrderManager initialized
+20:19:41,613 [main] DEBUG Server  - BusinessManager initialized
+20:19:41,613 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-custom-1.53.jar
+20:19:41,629 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-custom-1.53.jar'
+20:19:41,629 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy1
+20:19:41,629 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy1.xml from cyanspring-custom-1.53.jar
+20:19:41,645 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,645 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@167acf2: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,645 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f7cfe: defining beans [customStrategy1]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,660 [main] INFO  StrategyFactory  - Registered strategy CUSTOM1 to bean customStrategy1
+20:19:41,660 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.custom.strategy.CustomStrategy2
+20:19:41,660 [main] INFO  StrategyFactory  - Loading conf/CustomStrategy2.xml from cyanspring-custom-1.53.jar
+20:19:41,660 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,676 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@52a2e3: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,676 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2982bf: defining beans [customStrategy2FieldDefs,customStrategy2InstrumentFieldDefs,customStrategy2]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,676 [main] INFO  StrategyFactory  - Registered strategy CUSTOM2 to bean customStrategy2
+20:19:41,676 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-goldtree-1.53.jar
+20:19:41,676 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-goldtree-1.53.jar'
+20:19:41,691 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.goldtree.strategy.Basin
+20:19:41,691 [main] INFO  StrategyFactory  - Loading conf/Basin.xml from cyanspring-goldtree-1.53.jar
+20:19:41,691 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,691 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@6c9f0f: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,691 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1866417: defining beans [basinStrategyFieldDefs,basinStrategyInstrumentFieldDefs,basinStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,707 [main] INFO  StrategyFactory  - Registered strategy BASIN to bean basinStrategy
+20:19:41,707 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.goldtree.strategy.Vase
+20:19:41,707 [main] INFO  StrategyFactory  - Loading conf/Vase.xml from cyanspring-goldtree-1.53.jar
+20:19:41,707 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,707 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1e6743e: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,707 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c562f: defining beans [vaseStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,723 [main] INFO  StrategyFactory  - Registered strategy VASE to bean vaseStrategy
+20:19:41,723 [main] INFO  StrategyFactory  - loading strategy jar file: strategies\cyanspring-sample-1.53.jar
+20:19:41,723 [main] INFO  ClassEnumerator  - Reading JAR file: 'strategies/cyanspring-sample-1.53.jar'
+20:19:41,769 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.DummyStrategy
+20:19:41,769 [main] INFO  StrategyFactory  - Loading conf/DummyStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,769 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,769 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1e35ecd: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,769 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@793536: defining beans [dummyStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,785 [main] INFO  StrategyFactory  - Registered strategy DUMMY to bean dummyStrategy
+20:19:41,785 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.MarketMakingStrategy
+20:19:41,785 [main] INFO  StrategyFactory  - Loading conf/MarketMakingStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,785 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,785 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@966905: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,785 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15fc606: defining beans [markingMakingStrategyFieldDefs,markingMakingStrategyInstrumentFieldDefs,marketMakingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,801 [main] INFO  StrategyFactory  - Registered strategy MARKET_MAKING to bean marketMakingStrategy
+20:19:41,801 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.custom.TrendingStrategy
+20:19:41,801 [main] INFO  StrategyFactory  - Loading conf/TrendingStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,801 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,801 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1410a85: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,801 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a81bd5: defining beans [trendingStrategyFieldDefs,trendingStrategyInstrumentFieldDefs,trendingStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,816 [main] INFO  StrategyFactory  - Registered strategy TRENDING to bean trendingStrategy
+20:19:41,816 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.dollarneutral.DollarNeutralStrategy
+20:19:41,816 [main] INFO  StrategyFactory  - Loading conf/DollarNeutralStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,816 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,816 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@24c22b: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,832 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@187c12a: defining beans [dollarNeutralStrategyFieldDefs,dollarNeutralInstrumentFieldDefs,dollarNeutralStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,832 [main] INFO  StrategyFactory  - Registered strategy DOLLAR_NEUTRAL to bean dollarNeutralStrategy
+20:19:41,832 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.multiinstrument.lowhigh.LowHighStrategy
+20:19:41,832 [main] INFO  StrategyFactory  - Loading conf/LowHighStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,832 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,847 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@4391f0: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,847 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13e9934: defining beans [lowHighStrategyFieldDefs,lowHighInstrumentFieldDefs,lowHighStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,863 [main] INFO  StrategyFactory  - Registered strategy LOW_HIGH to bean lowHighStrategy
+20:19:41,863 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.iceberg.IcebergStrategy
+20:19:41,863 [main] INFO  StrategyFactory  - Loading conf/IcebergStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,863 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,863 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@108ea49: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,863 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e064c: defining beans [icebergStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,863 [main] INFO  StrategyFactory  - Registered strategy ICEBERG to bean icebergStrategy
+20:19:41,863 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.pov.POVStrategy
+20:19:41,863 [main] INFO  StrategyFactory  - Loading conf/POVStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,863 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,879 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@17aaa0e: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,879 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17c4779: defining beans [povStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,879 [main] INFO  StrategyFactory  - Registered strategy POV to bean povStrategy
+20:19:41,879 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sdma.SDMAStrategy
+20:19:41,879 [main] INFO  StrategyFactory  - Loading conf/SDMAStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,879 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,879 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@1132e76: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,894 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@edf4c8: defining beans [sdmaStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,894 [main] INFO  StrategyFactory  - Registered strategy SDMA to bean sdmaStrategy
+20:19:41,894 [main] INFO  StrategyFactory  - discovered custom strategy: class com.cyanspring.sample.singleinstrument.sniper.SniperStrategy
+20:19:41,894 [main] INFO  StrategyFactory  - Loading conf/SniperStrategy.xml from cyanspring-sample-1.53.jar
+20:19:41,894 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from resource loaded through InputStream
+20:19:41,894 [main] INFO  GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@54f169: startup date [Wed Feb 06 20:19:41 CST 2013]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@19dfbff
+20:19:41,894 [main] INFO  DefaultListableBeanFactory  - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fae78f: defining beans [sniperStrategy]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@23e5d1
+20:19:41,910 [main] INFO  StrategyFactory  - Registered strategy SNIPER to bean sniperStrategy
+20:19:41,925 [main] INFO  OrderGenerator  - Initialising OrderGenerator
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: AM_NO_TRADING : Wed Feb 06 00:00:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION : Wed Feb 06 09:00:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_MARKET_TYPE_ONLY : Wed Feb 06 09:15:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: AM_OPEN_AUCTION_BLOCKING : Wed Feb 06 09:20:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: AM_CONTINUOUS_TRADING : Wed Feb 06 09:30:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING : Wed Feb 06 12:00:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: LUNCH_BLOCKING_AMEND_CANCEL_ALLOW : Wed Feb 06 13:00:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: PM_CONTINUOUS_TRADING : Wed Feb 06 13:30:00 CST 2013
+20:19:41,925 [main] DEBUG MarketSessionManager  - Session start time: PM_NO_TRADING : Wed Feb 06 16:00:00 CST 2013
+20:19:41,925 [main] INFO  RefDataManager  - initialising
+20:19:42,222 [main] INFO  MarketDataManager  - initialising
+20:19:42,222 [main] INFO  DownStreamManager  - initialising
+20:19:42,222 [MarketDataManager] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+20:19:42,222 [Server] INFO  Server  - Market data is ready: true
+20:19:44,437 [main] INFO  SessionSchedule  - [FIX.4.2:Algo->SIMULATOR] daily, 00:00:00-UTC - 00:00:00-UTC
+20:19:44,453 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:Algo->SIMULATOR
+20:19:44,469 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+20:19:44,469 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+20:19:44,469 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+20:19:44,516 [main] INFO  IoSessionInitiator  - [FIX.4.2:Algo->SIMULATOR] [localhost/127.0.0.1:13679]
+20:19:44,516 [main] INFO  SocketInitiator  - SessionTimer started
+20:19:44,516 [main] WARN  DownStreamManager  - Down Stream connection is down: FIX.4.2:Algo->SIMULATOR
+20:19:44,532 [main] DEBUG TickDataManager  - Initialising TickDataManager....
+20:19:44,532 [main] INFO  TickDataManager  - Existing tick directory: ticks
+20:19:44,532 [main] INFO  UpStreamManager  - initialising
+20:19:44,532 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0001.HK, null
+20:19:44,532 [Server] INFO  Server  - Market data is ready: true
+20:19:44,532 [MarketDataManager] DEBUG MarketDataManager  - QuoteSubEvent: 0002.HK, null
+20:19:44,532 [MarketDataManager] INFO  AsyncEventProcessor  - processQuoteEvent added in method map
+20:19:44,532 [Server] INFO  Server  - Market data is ready: true
+20:19:44,532 [main] INFO  SessionSchedule  - [FIX.4.2:ACCEPTOR1->INITIATOR1] daily, 00:00:00-UTC - 23:00:00-UTC
+20:19:44,532 [main] DEBUG FixAdaptor  - Adding FIX session: FIX.4.2:ACCEPTOR1->INITIATOR1
+20:19:44,547 [main] INFO  SocketAcceptor  - SessionTimer started
+20:19:44,563 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+20:19:44,563 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+20:19:44,563 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+20:19:44,578 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13678
+20:19:44,578 [main] WARN  UpStreamManager  - Up Stream connection is down: FIX.4.2:ACCEPTOR1->INITIATOR1
+20:19:44,610 [main] INFO  Server  - Published my node info
+20:19:44,625 [Server] INFO  AsyncEventProcessor  - processAsyncTimerEvent added in method map
+20:19:44,625 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+20:19:44,656 [main] INFO  MarketReplay  - Market replay starts at: Wed Feb 06 20:19:44 CST 2013
+20:19:44,656 [main] INFO  MarketReplay  - Market replay ends at: Wed Feb 06 20:19:44 CST 2013
+20:19:45,915 [main] INFO  SessionSchedule  - [FIX.4.2:SIMULATOR->Algo] daily, 00:00:00-UTC - 00:00:00-UTC
+20:19:45,915 [main] DEBUG ExchangeFixManager  - onCreate: FIX.4.2:SIMULATOR->Algo
+20:19:45,915 [main] INFO  SocketAcceptor  - SessionTimer started
+20:19:45,915 [main] INFO  NetworkingOptions  - Socket option: SocketTcpNoDelay=true
+20:19:45,915 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWrites=false
+20:19:45,915 [main] INFO  NetworkingOptions  - Socket option: SocketSynchronousWriteTimeout=30000
+20:19:45,946 [main] INFO  SocketAcceptor  - Listening for connections at 0.0.0.0/0.0.0.0:13679
+20:19:46,626 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+20:19:48,456 [main] DEBUG Server  - 
+20:19:48,456 [main] DEBUG Server  - >>>> CLOSING DOWN SERVER, PLEASE WAIT FOR ALL COMPONENTS CLEAN SHUTDOWN <<<
+20:19:48,456 [main] DEBUG Server  - 
+20:19:48,456 [main] DEBUG AsyncEventManager  - Event Stats: 
+{class com.cyanspring.common.event.marketdata.QuoteSubEvent=2, class com.cyanspring.common.event.system.NodeInfoEvent=1, class com.cyanspring.common.event.marketdata.QuoteEvent=2, class com.cyanspring.common.server.event.MarketDataReadyEvent=3, class com.cyanspring.common.server.event.ServerShutdownEvent=2}
+20:19:48,627 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+20:19:49,577 [SocketAcceptorIoProcessor-1.0] INFO  AcceptorIoHandler  - MINA session created: /127.0.0.1:54311
+20:19:49,577 [SocketConnectorIoProcessor-0.0] INFO  InitiatorIoHandler  - MINA session created for FIX.4.2:Algo->SIMULATOR: local=/127.0.0.1:54311, class org.apache.mina.transport.socket.nio.SocketSessionImpl, remote=localhost/127.0.0.1:13679
+20:19:50,469 [main] INFO  Server  - uninitialising server
+20:19:50,469 [main] INFO  UpStreamManager  - uninitialising
+20:19:50,469 [main] INFO  TickDataManager  - uninitialising
+20:19:50,469 [main] INFO  DownStreamManager  - uninitialising
+20:19:50,469 [main] INFO  MarketDataManager  - uninitialising
+20:19:50,469 [main] INFO  RefDataManager  - uninitialising
+20:19:50,469 [main] DEBUG RemoteEventManager  - Closing transport...
+20:19:50,469 [main] INFO  BrokerService  - ActiveMQ Message Broker (localhost, ID:950-PC-54290-1360153176603-1:1) is shutting down
+20:19:50,547 [QFJ Message Processor] DEBUG ExchangeFixManager  - logon: FIX.4.2:SIMULATOR->Algo
+20:19:50,641 [Thread-27] DEBUG Server  - waiting for down stream ready before recovery...
+20:19:52,467 [main] INFO  TransportConnector  - Connector tcp://localHost:61616 Stopped
+20:19:52,482 [main] INFO  BrokerService  - ActiveMQ JMS Message Broker (localhost, ID:950-PC-54290-1360153176603-1:1) stopped
